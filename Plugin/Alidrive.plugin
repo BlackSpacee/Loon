@@ -1,0 +1,14 @@
+#!name=阿里云盘
+#!desc=阿里云盘解锁VIP倍速
+#!homepage=https://github.com/chxm1023/Rewrite/tree/main
+#!author=chxm1023
+#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/alidrive.png
+
+
+[Script]
+
+http-response ^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js, requires-body=true, timeout=60 ,tag=alidrive_8
+
+[MITM]
+
+hostname = *.aliyundrive.com,*.alipan.com
