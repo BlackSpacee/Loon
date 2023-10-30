@@ -1,5 +1,9 @@
-#!name=信息流处理
-#!desc=bilibili
+#!name = BiliBili首页信息流处理
+#!desc = 关闭短视频模式
+#!author = @ddgksf2013
+#!homepage = https://gist.githubusercontent.com/ddgksf2013/a04e64065d08f5871ccf1e79c06a8c04/raw/bilibili.feed.enhance.js
+#!icon = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png
+#!date = [2023/6/4]
 
 [Script]
 
