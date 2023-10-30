@@ -1,0 +1,10 @@
+#!name=信息流处理
+#!desc=bilibili
+
+[Script]
+
+http-request ^https?:\/\/app\.bilibili\.com\/x\/v\d\/feed\/index\? script-path=https://gist.githubusercontent.com/ddgksf2013/a04e64065d08f5871ccf1e79c06a8c04/raw/bilibili.feed.enhance.js, timeout=60 ,tag=bilibili.feed.enhance_17
+
+[MITM]
+
+hostname = app.bilibili.com
