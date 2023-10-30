@@ -2,7 +2,7 @@
 #!desc = 启动时开启直连模式&移除广告[2023/08/17]
 #!author = @ddgksf2013, @blackmatrix7, @app2smile, @yjqiang, @kokoryh, @Maasea, @BiliUniverse
 #!homepage = https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Bilibili.conf
-#!icon = https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png
+#!icon = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Bili.png
 
 [Rewrite]
 
