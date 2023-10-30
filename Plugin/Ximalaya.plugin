@@ -1,8 +1,9 @@
-#!name=喜马拉雅净化
-#!author=@ddgksf2013
-#!homepage=https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Ximalaya.conf
-#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/ximalaya.png
-#!date=[2023/10/29]
+#!name = 喜马拉雅净化
+#!desc = 如果广告仍然存在，请清除缓存或卸载应用重新安装
+#!author = @ddgksf2013
+#!homepage = https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Ximalaya.conf
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/ximalaya.png
+#!date = [2023/10/29]
 
 [Rewrite]
 
