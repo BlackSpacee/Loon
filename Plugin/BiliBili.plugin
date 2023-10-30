@@ -1,7 +1,7 @@
 #!name=B站1080P高码率解锁4K
-#!desc=@移除AD
+#!desc=启动时开启直连模式&移除广告
 #!author=ddgksf2013
-#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/Bilibili.png
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png
 
 [Rewrite]
 
@@ -77,9 +77,9 @@ http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app
 http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.dynamic\.v2\.Dynamic\/Dyn(All|Video)$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, timeout=60 ,tag=bilibili_proto_beta_141
 
 # ～ BiliBili_哔哩哔哩_启动时开启直连模式[自行启用]@ddgksf2013
-#http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_startup_direct.js, requires-body=true, timeout=60 ,tag=bilibili_startup_direct_144
+http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_startup_direct.js, requires-body=true, timeout=60 ,tag=bilibili_startup_direct_144
 # ～ BiliBili_哔哩哔哩_繁体CC字幕转中文简体[自行启用hostname=aisubtitle.hdslb.com,i0.hdslb.com]@ddgksf2013
-#http-response ^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js, requires-body=true, timeout=60 ,tag=bilibili_cc_146
+http-response ^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js, requires-body=true, timeout=60 ,tag=bilibili_cc_146
 # ～ BiliBili_哔哩哔哩_去除统一设置的皮肤[注释留存]@ddgksf2013
 #http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, timeout=60 ,tag=bilibili_json_148
 
