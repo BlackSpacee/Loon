@@ -1,0 +1,12 @@
+#!name=aliYunPanCheckIn
+#!desc=aliYunPanCheckIn
+
+[Script]
+
+http-response https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, requires-body=true, tag=阿里云盘签到cookie_10
+
+cron "0 10 0 * * ?" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, timeout=60, tag=阿里云盘签到
+
+[MITM]
+
+hostname = auth.alipan.com
