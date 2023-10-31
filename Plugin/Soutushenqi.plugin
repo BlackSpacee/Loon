@@ -1,0 +1,12 @@
+#!name=搜图神器
+#!desc=搜图神器解锁会员
+#!homepage=https://github.com/Alex0510/Eric/tree/master/surge/Script
+#!author=Alex0510
+#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/soutushenqi.png
+#!date=[2022/8/31]
+
+
+[MITM]
+hostname=wallpaper.soutushenqi.com
+[Script]
+http-response http:\/\/wallpaper\.soutushenqi\.com\/api\/v1\/account\/token requires-body=1,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/SearchArtifact.js
