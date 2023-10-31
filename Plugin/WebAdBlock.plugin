@@ -1,5 +1,6 @@
 
 #!name=影视网站去广告
+#!desc=常用网页端影视去广告
 #!openUrl = https://github.com/ddgksf2013/WebSite
 #!homepage=https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Html/WebAdBlock.conf
 #!author=@ddgksf2013
