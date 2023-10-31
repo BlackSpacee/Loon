@@ -19,10 +19,10 @@
 [Script]
 
 # > 百度网盘_开屏广告@ddgksf2013
-http-response ^https?:\/\/pan\.baidu\.com\/api\/getsyscfg script-path=http://script.hub/convert/_start_/https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js/_end_/baiduCloud.vip.js?type=qx-script&target=loon-script, requires-body=true, timeout=60 ,tag=baiduCloud.vip_13
+http-response ^https?:\/\/pan\.baidu\.com\/api\/getsyscfg script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=true, timeout=60 ,tag=baiduCloud.vip_13
 
 # > 百度网盘_会员权益@ddgksf2013
-http-response ^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?app_id script-path=http://script.hub/convert/_start_/https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js/_end_/baiduCloud.vip.js?type=qx-script&target=loon-script, requires-body=true, timeout=60 ,tag=baiduCloud.vip_21
+http-response ^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?app_id script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=true, timeout=60 ,tag=baiduCloud.vip_21
 
 [MITM]
 
