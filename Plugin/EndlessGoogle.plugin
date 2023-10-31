@@ -1,0 +1,15 @@
+#!name=Google
+#!desc=Google搜索自动翻页
+#!homepage=https://github.com/langkhach270389/Surge-LK/tree/main/scripts/langkhach
+#!author=langkhach270389
+#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Google.png
+#!date=[2021/3/20]
+
+
+[Script]
+
+http-response ^https?:\/\/www\.google\..*\/search script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/endlessgoogle.js, requires-body=true, timeout=60 ,tag=endlessgoogle_9
+
+[MITM]
+
+hostname = www.google.*
