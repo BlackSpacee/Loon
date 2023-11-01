@@ -13,4 +13,5 @@ hostname=*.aoscdn.com
 [Script]
 
 
-http-response https?:\/\/.*\.aoscdn\.com\/base\/vip\/client\/authorizations$ script-path=http://script.hub/convert/_start_/https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/apowersoft.js/_end_/apowersoft.js?type=qx-script&target=loon-script, requires-body=true, timeout=60 ,tag=apowersoft_13
+
+http-response ^https?:\/\/.*\.aoscdn\.com\/base\/vip\/client\/authorizations$ script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/apowersoft.js, requires-body=true, timeout=60 ,tag=apowersoft_13
