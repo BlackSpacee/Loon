@@ -1,6 +1,6 @@
 [Script]
 
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/Guding88/Script/main/Picsew.js, requires-body=true, timeout=60 ,tag=Picsew_3
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=http://script.hub/convert/_start_/https://raw.githubusercontent.com/Guding88/Script/main/Picsew.js/_end_/Picsew.js?type=qx-script&target=loon-script&wrap_response=true&compatibilityOnly=true, requires-body=true, timeout=60 ,tag=Picsew_3
 
 [MITM]
 
