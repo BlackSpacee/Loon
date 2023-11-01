@@ -8,8 +8,8 @@
 
 [Script]
 
-http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
-
+# http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+http-response https://pan.baidu.com/rest/2.0/membership/user script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/bdyun.js,requires-body=1,max-size=0
 
 [Mitm]
 hostname =pan.baidu.com
