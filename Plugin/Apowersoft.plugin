@@ -5,13 +5,11 @@
 #!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/aoruankoutu.png
 #!date=[2022/9/13]
 
-[MITM]
-
-hostname=*.aoscdn.com
-
-
 [Script]
 
+# 傲软抠图解锁会员
+http-response ^https?:(.+).aoscdn.com/base/vip/v2/vips$ script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/arkt.js, requires-body=true, timeout=60 ,tag=arkt_17
 
+[MITM]
 
-http-response ^https?:\/\/.*\.aoscdn\.com\/base\/vip\/client\/authorizations$ script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/apowersoft.js, requires-body=true, timeout=60 ,tag=apowersoft_13
+hostname = *.aoscdn.com
