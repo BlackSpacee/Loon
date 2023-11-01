@@ -6,6 +6,6 @@
 #!date=[2022/11/13]
 
 [Script]
-http-response ^http[s]?:\/\/123.56.125.184 requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/dsj.js
+http-response ^http[s]?:\/\/123.56.125.184 script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/dsj.js,requires-body=true, timeout=10, tag=电视家
 [MITM] 
 hostname = 123.56.125.184
