@@ -6,7 +6,10 @@
 #!date=[2022/11/14]
 
 [Script]
-http-response ^https:\/\/awvp\.aoscdn\.com\/base\/vip\/client\/authorizations script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zt.js,requires-body=true, timeout=10, tag=zuotang
+# http-response ^https:\/\/awvp\.aoscdn\.com\/base\/vip\/client\/authorizations script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zt.js,requires-body=true, timeout=10, tag=zuotang
+http-response ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn) script-path=http://script.hub/convert/_start_/https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zt.js/_end_/zt.js?type=qx-script&target=loon-script&wrap_response=true, requires-body=true, timeout=60 ,tag=zt_13
+
 
 [MITM] 
-hostname = awvp.aoscdn.com
+#hostname = awvp.aoscdn.com
+hostname =*.aoscdn.com,*.apsapp.cn
