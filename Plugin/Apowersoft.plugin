@@ -7,9 +7,9 @@
 
 [Script]
 
-# 傲软抠图解锁会员
-http-response ^https?:(.+).aoscdn.com/base/vip/v2/vips$ script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/arkt.js, requires-body=true, timeout=60 ,tag=arkt_17
+# ～ 傲软抠图解锁会员权限（2023-03-19）@ddgksf2013
+http-response https://awvp.aoscdn.com/base/vip/v2/vips script-path=apowersoft.js, requires-body=true, timeout=60 ,tag=apowersoft_13
 
 [MITM]
 
-hostname = *.aoscdn.com
+hostname = awvp.aoscdn.com
