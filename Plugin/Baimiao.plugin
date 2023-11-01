@@ -11,4 +11,5 @@
 hostname = baimiao.uzero.cn
 
 [Script]
-http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$ requires-body=1，script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/baimiao.js
+# http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$ requires-body=1，script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/baimiao.js
+http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$ script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/baimiao.js, requires-body=true, timeout=10, tag=白描
