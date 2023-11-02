@@ -8,12 +8,12 @@
 [Script]
 
 # 京东比价
-http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js, requires-body=true, timeout=60 ,tag=main_3
+http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js, requires-body=true, timeout=6000 ,tag=main_3
 
 # 淘宝比价
-http-request ^http://.+/amdc/mobileDispatch script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js, requires-body=true, timeout=60 ,tag=main_5
+http-request ^http://.+/amdc/mobileDispatch script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js, requires-body=true, timeout=6000 ,tag=main_5
 
-http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js, requires-body=true, timeout=60 ,tag=main_6
+http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js, requires-body=true, timeout=6000 ,tag=main_6
 
 [MITM]
 
