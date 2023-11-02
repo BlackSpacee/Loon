@@ -79,10 +79,14 @@ http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\
 http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.(view|viewunite)\.v1\.View\/(View|TFInfo)$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, tag=bilibili_proto_beta_139
 
 
+
+# ～ BiliBili首页信息流处理[关闭短视频模式hostname=app.bilibili.com]@ddgksf2013
+http-request ^https?:\/\/app\.bilibili\.com\/x\/v\d\/feed\/index\? script-path=https://gist.githubusercontent.com/ddgksf2013/a04e64065d08f5871ccf1e79c06a8c04/raw/bilibili.feed.enhance.js, tag=bilibili.feed.enhance_17
 # ～ BiliBili_哔哩哔哩_启动时开启直连模式@ddgksf2013
 http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_startup_direct.js, requires-body=true, tag=bilibili_startup_direct_144
 # ～ BiliBili_哔哩哔哩_繁体CC字幕转中文简体[自行启用hostname=aisubtitle.hdslb.com,i0.hdslb.com]@ddgksf2013
 http-response ^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js, requires-body=true, tag=bilibili_cc_146
+
 
 
 [MITM]
