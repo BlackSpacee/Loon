@@ -1,7 +1,7 @@
 [Script]
 
 # > Picsew解锁专业版
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://github.com/itcast-l/shadowrocket-module/blob/main/js/Picsew.js, requires-body=true, timeout=60 ,tag=Picsew_8
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://github.com/itcast-l/shadowrocket-module/blob/main/js/Picsew.js, requires-body=true, timeout=600000 ,tag=Picsew_8
 
 [MITM]
 
