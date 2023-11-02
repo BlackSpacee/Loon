@@ -34,19 +34,19 @@
 [Script]
 
 # > 我的页面去推广
-http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_39
+http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=6000 ,tag=keepStyle_39
 
 # > 应用底部栏净化
-http-response ^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_41
+http-response ^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=6000 ,tag=keepStyle_41
 
 # > 发现页处理
-http-response https://api.gotokeep.com/homepage/v\d/tab script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_43
+http-response https://api.gotokeep.com/homepage/v\d/tab script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=6000 ,tag=keepStyle_43
 
 # > 课程预览页广告
-http-response https://api.gotokeep.com/nuocha/course/v2/\w+/preview script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_45
+http-response https://api.gotokeep.com/nuocha/course/v2/\w+/preview script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=6000 ,tag=keepStyle_45
 
 # > 我的运动页面去除下方推荐
-http-response https://api.gotokeep.com/sportpage/sport/v3/mysport script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_47
+http-response https://api.gotokeep.com/sportpage/sport/v3/mysport script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=6000 ,tag=keepStyle_47
 
 [MITM]
 
