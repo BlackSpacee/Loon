@@ -12,7 +12,7 @@
 
 [Script]
 
-http-response ^https?:\/\/.*\.(weilai555\.com:1000|ecoliving168\.com)\/api\/v\d\/movie\/(index_recommend.+|detail) script-path=https://raw.githubusercontent.com/chxm1023/Advertising/main/555ad.js, requires-body=true, timeout=60 ,tag=555ad_9
+http-response ^https?:\/\/.*\.(weilai555\.com:1000|ecoliving168\.com)\/api\/v\d\/movie\/(index_recommend.+|detail) script-path=https://raw.githubusercontent.com/chxm1023/Advertising/main/555ad.js, requires-body=true
 
 [MITM]
 
