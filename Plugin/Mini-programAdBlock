@@ -86,10 +86,7 @@
 # > 蜜雪冰城 微信小程序净化
 ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/adinfo\/adplace\/query - reject-dict
 # > Manner 微信小程序净化(去除首页轮播图以及进入小程序弹窗)
-^https:\/\/triangle\.
-
-BlanSpace, [2023/10/31 13:06]
-wearemanner\.com\/mp-api\/v1\/ads - reject-dict
+^https:\/\/triangle\.wearemanner\.com\/mp-api\/v1\/ads - reject-dict
 # 弹窗广告+横幅广告 #主机名ad.maoyan.com
 ^https:\/\/ad\.maoyan\.com\/api\/position\/detail - reject-dict
 # 电竞赛事+热门赛事 #主机名wx.maoyan.com
@@ -160,10 +157,7 @@ wearemanner\.com\/mp-api\/v1\/ads - reject-dict
 ^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/banner - reject-dict
 ^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/global - reject-dict
 # > 享道出行 微信小程序净化
-^https:\/\/passengerapi\.saicmobility\.
-
-BlanSpace, [2023/10/31 13:06]
-com\/(ad\/requestAd|pay\/v1\/queryOpenedCouponPackages) - reject-dict
+^https:\/\/passengerapi\.saicmobility\.com\/(ad\/requestAd|pay\/v1\/queryOpenedCouponPackages) - reject-dict
 # > 携程旅行 微信小程序净化
 ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/13916\/tripAds - reject-dict
 ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/12673\/queryWeChatHotEvent - reject-dict
@@ -222,10 +216,7 @@ http-response ^https:\/\/gz\.gongzijx\.com\/wp\-json\/wp\/v2\/posts script-path=
 http-response ^https:\/\/gjsx\.vip\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_104
 
 # > 古茗 微信小程序净化
-http-response ^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(ump|touch|external\/front) script-path=https://raw.
-
-BlanSpace, [2023/10/31 13:06]
-githubusercontent.com/fmz200/wool_scripts/main/Scripts/ming.js, requires-body=true, timeout=60 ,tag=ming_106
+http-response ^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(ump|touch|external\/front) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ming.js, requires-body=true, timeout=60 ,tag=ming_106
 
 http-response ^https:\/\/hkj178\.com\/wp\-json\/mp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_122
 
@@ -274,10 +265,7 @@ http-response ^https:\/\/d\.smkj33\.top\/wp\-json\/wp\/v2\/posts script-path=htt
 http-response ^https:\/\/d\.syshhc\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_242
 
 # > 酸鸡汤、老爷花苑、御花园
-http-response ^https:\/\/[a-z]+\.ddly666\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.
-
-BlanSpace, [2023/10/31 13:06]
-js, requires-body=true, timeout=60 ,tag=applet_244
+http-response ^https:\/\/[a-z]+\.ddly666\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_244
 
 # > 搜罗好货
 http-response ^https:\/\/www\.i3zh\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60 ,tag=applet_246
