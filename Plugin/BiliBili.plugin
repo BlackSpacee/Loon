@@ -1,5 +1,5 @@
 #!name = B站1080P高码率解锁4K
-#!desc = 启动时开启直连模式&移除广告&繁体CC字幕转简体&Upos替换腾讯Cos对象存储CDN
+#!desc = 启动时开启直连模式&繁体CC字幕转简体&Upos替换腾讯Cos对象存储CDN&移除广告等
 #!author = @ddgksf2013 @blackmatrix7 @app2smile @yjqiang @kokoryh @Maasea @BiliUniverse @alyce233
 #!homepage = https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Bilibili.conf
 #!icon = https://raw.githubusercontent.com/Blackspacee/icon/main/Mini/BiliBili.png
@@ -24,7 +24,7 @@
 # ～ BiliBili_哔哩哔哩_屏蔽DefaultWord@ddgksf2013
 ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.interface\.v1\.Search\/Default - reject
 
-# ～ 哔哩哔哩Upos服务器替换为腾讯Cos对象存储[upos-hz-mirrorakam.akamaized.net]@ddgksf2013@alyce233 Date:2022-08-10
+# ～ 哔哩哔哩Upos服务器替换为腾讯Cos对象存储[upos-hz-mirrorakam.akamaized.net]@ddgksf2013@alyce233       Date:[2022-08-10]
 ^https?:\/\/upos-hz-mirrorakam\.akamaized\.net\/(.*) https://upos-sz-mirrorcos.bilivideo.com/$1 302
 
 
@@ -72,21 +72,33 @@ http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/top\/activity script-
 # ～ BiliBili_哔哩哔哩_热搜发现@ddgksf2013
 http-response ^https://app.bilibili.com/x/v2/search/square script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, tag=bilibili_json_128
 
+
+
+# ～ BiliBili_哔哩哔哩_搜索去广告@BiliUniverse
+http-response ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.polymer\.app\.search\.v1\.Search\/SearchAll$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, tag=bilibili_proto_beta_133
+
+# ～ BiliBili_哔哩哔哩_交互点赞投票弹幕及会员弹幕@BiliUniverse
+http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.community\.service\.dm\.v1\.DM\/(DmView|DmSegMobile) script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, tag=bilibili_proto_beta_135
+
 # ～ BiliBili_哔哩哔哩_青少年弹窗@BiliUniverse
 http-response ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, tag=bilibili_proto_beta_137
 
 # ～ BiliBili_哔哩哔哩_UP主推荐广告[适配ipad端]@BiliUniverse
 http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.(view|viewunite)\.v1\.View\/(View|TFInfo)$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, tag=bilibili_proto_beta_139
 
+# ～ BiliBili_哔哩哔哩_动态综合页及视频页去广告@BiliUniverse
+http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app\.dynamic\.v2\.Dynamic\/Dyn(All|Video)$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_proto_beta.js, requires-body=true, binary-body-mode=true, tag=bilibili_proto_beta_141
 
 
-# ～ BiliBili首页信息流处理[关闭短视频模式hostname=app.bilibili.com]@ddgksf2013
+
+# ～ BiliBili首页信息流处理[关闭短视频模式hostname=app.bilibili.com]@ddgksf2013         Date:[2023/6/4]
 http-request ^https?:\/\/app\.bilibili\.com\/x\/v\d\/feed\/index\? script-path=https://gist.githubusercontent.com/ddgksf2013/a04e64065d08f5871ccf1e79c06a8c04/raw/bilibili.feed.enhance.js, tag=bilibili.feed.enhance_17
 # ～ BiliBili_哔哩哔哩_启动时开启直连模式@ddgksf2013
 http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_startup_direct.js, requires-body=true, tag=bilibili_startup_direct_144
 # ～ BiliBili_哔哩哔哩_繁体CC字幕转中文简体[自行启用hostname=aisubtitle.hdslb.com,i0.hdslb.com]@ddgksf2013
 http-response ^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js, requires-body=true, tag=bilibili_cc_146
-
+# ～ BiliBili_哔哩哔哩_去除统一设置的皮肤[注释留存]@ddgksf2013
+http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js, requires-body=true, tag=bilibili_json_148
 
 
 [MITM]
