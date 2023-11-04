@@ -7,7 +7,7 @@
 
 [Script]
 
-http-response ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn) script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zt.js, requires-body=true
+http-response ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn) script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zt.js, requires-body=true, timeout=6000 ,tag=zt_13
 
 
 [MITM]
