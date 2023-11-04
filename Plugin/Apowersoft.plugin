@@ -8,7 +8,7 @@
 
 [Script]
 
-http-response https://awvp.aoscdn.com/base/vip/v2/vips script-path=https://raw.githubusercontent.com/ddgksf2013/MoYu/master/apowersoft.js, requires-body=true,timeout=6000
+http-response https://awvp.aoscdn.com/base/vip/v2/vips script-path=https://raw.githubusercontent.com/ddgksf2013/MoYu/master/apowersoft.js, requires-body=true, timeout=6000 ,tag=apowersoft_13
 
 [MITM]
 
