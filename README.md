@@ -1,1 +1,5 @@
-[![Page Views Count](https://badges.toozhao.com/badges/01HF8SVWV6QVPS4NT22MWQ697K/green.svg)](https://badges.toozhao.com/stats/01HF8SVWV6QVPS4NT22MWQ697K "Get your own page views count badge on badges.toozhao.com")  [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=BlackSpacee)](https://github.com/anuraghazra/github-readme-stats)   [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=javascript,html)](https://github.com/anuraghazra/github-readme-stats)
+[![Page Views Count](https://badges.toozhao.com/badges/01HF8SVWV6QVPS4NT22MWQ697K/green.svg)](https://badges.toozhao.com/stats/01HF8SVWV6QVPS4NT22MWQ697K "Get your own page views count badge on badges.toozhao.com") 
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=javascript,html)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=BlackSpacee)](https://github.com/anuraghazra/github-readme-stats)  
