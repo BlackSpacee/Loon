@@ -1,0 +1,72 @@
+# 工作流名称
+name: Generate
+
+# 工作流触发时机, see: https://docs.github.com/zh/actions/using-workflows/triggering-a-workflow
+# 触发条件修改为: 当 main 分支有 push 操作 || 每天 0 点
+on:
+  schedule:
+    - cron: '30 22 * * *'
+  push:
+    branches: 
+      - main  
+
+# 作业, see: https://docs.github.com/zh/actions/using-jobs/using-jobs-in-a-workflow
+jobs:
+
+  # 插入掘金列表, 使用 KunLunXu-CC/juejin-posts-action 生成文章列表, see: https://github.com/KunLunXu-CC/juejin-posts-action
+  juejin-posts: 
+    runs-on: ubuntu-latest    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Append Juejin Posts List🔧
+        uses: KunLunXu-CC/juejin-posts-action@main
+        with: 
+          user_id: "4459274891717223"
+      
+      - run: |
+          git pull
+      - name: Push to GitHub
+        uses: EndBug/add-and-commit@v9
+        with:
+          branch: main
+          default_author: github_actions
+          message: 'juejin-posts'
+  
+  # 生成统计图, see: https://github.com/lowlighter/metrics
+  github-metrics: 
+    runs-on: ubuntu-latest    
+    steps:
+      - name: metrics-Half-year-calendar
+        uses: lowlighter/metrics@latest
+        with:
+          base: ""
+          filename: assets/metrics.plugin.isocalendar.svg
+          token: ${{ github.token }}
+          plugin_isocalendar: yes
+  
+  # 生成 Snake 图(贪吃蛇), 用 Platane/snk 生成图片, see: https://github.com/Platane/snk
+  github-Snake: 
+    runs-on: ubuntu-latest    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-snake.svg
+            assets/github-snake-dark.svg?palette=github-dark
+            assets/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+      
+      - run: |
+          git pull
+      - name: Push to GitHub
+        uses: EndBug/add-and-commit@v9
+        with:
+          branch: main
+          default_author: github_actions
+          message: 'create github Snake'
