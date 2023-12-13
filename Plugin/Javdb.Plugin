@@ -1,0 +1,15 @@
+#!name=JavDB
+#!desc=JavDB
+
+
+[Script]
+
+http-response ^https?:\/\/api\.hechuangxinxi\.xyz\/api\/v\d\/(users|startup|ads) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/JavDB.js, requires-body=true, timeout=60, tag=JavDB
+
+http-request ^https?:\/\/api\.hechuangxinxi\.xyz\/api\/v\d\/(movies\/.*\/play|startup) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/JavDB.js, timeout=60, tag=JavDB
+
+
+
+[MITM]
+
+hostname = api.hechuangxinxi.xyz
