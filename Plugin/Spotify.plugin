@@ -1,8 +1,12 @@
 #!name = Spotify解锁
-#!desc = 脚本必须>=iOS15系统,音质不能设置为超高(建议登录后再打开脚本,重启app等待脚本生效)
-#!openUrl = https://github.com/app2smile/rules#spotify
+#!desc = iOS必须>=iOS15系统,音质不能设置为超高(建议登录后再打开脚本,重启app等待脚本生效)
+#!author = @app2smile
+#!openUrl = 
+#!homepage = https://github.com/app2smile/rules#spotify
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Spotify_1.png
 #!date = [2023/10/4]
 # 功能: 1.去除播放广告 2.歌手/专辑列表正常展示 3.去除随机播放
+
 
 [Mitm]
 hostname =spclient.wg.spotify.com
