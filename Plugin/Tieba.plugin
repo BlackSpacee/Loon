@@ -2,7 +2,7 @@
 #!desc = 过滤贴吧广告，需注意此插件会导致新回复等通知功能不可用，需手动进入消息页点击查看。仅限iOS 15及以上版本系统使用。
 #!openUrl = 
 #!author = @app2smile
-#!homepage = https://github.com/app2smile/rules/tree/master/js
+#!homepage = https://raw.githubusercontent.com/app2smile/rules/master/plugin/tieba.plugin
 #!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Tieba.png
 #!date = [2023/9/24]
 
