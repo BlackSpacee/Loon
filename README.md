@@ -36,7 +36,7 @@
 
 * [@blackmatrix7](https://www.github.com/blackmatrix7)
 
-* [@app2smile](https://www.github.com/app2mile)
+* [@app2smile](https://github.com/app2smile)
 
 * [@VirgilClyne](https://github.com/VirgilClyne)
 
@@ -47,6 +47,8 @@
 * [@lodepuly](https://gitlab.com/lodepuly/vpn_tool)
 
 * [@Maasea](https://github.com/Maasea)
+
+* [@28413761](https://github.com/28413761)
 
 * [@fmz200](https://github.com/fmz200)
 
