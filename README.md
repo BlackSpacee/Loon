@@ -31,7 +31,7 @@
 <br/>
 
 ### 😘 特别鸣谢 :
-> ❤ 感谢以下众多大佬默默无私的奉献和开源精神。此致谢名单里还包含了那些帮助过我的，给我的学习测试和研究带来指导性的大佬。排名不分先后，如有任何纰漏或疑问可联系[@BlankSpace](https://t.me/BlankSpace_Chatbot)
+> ❤ 感谢以下众多大佬默默无私的奉献和开源精神。此致谢名单里包含了那些热心帮助过我的、对我学习测试和研究带来指导性的众多大佬。排名不分先后，如有任何纰漏或疑问可联系我[@BlankSpace](https://t.me/BlankSpace_Chatbot)
 
 
 * [@blackmatrix7](https://www.github.com/blackmatrix7)
