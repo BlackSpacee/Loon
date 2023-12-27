@@ -1,10 +1,10 @@
 #!name = 555电影
-#!desc=555电影-去广告净化
+#!desc = 555电影-去广告净化
 #!openUrl = https://555dyy.top
-#!homepage=https://github.com/chxm1023/Advertising
-#!author=chxm1023
-#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/555.png
-#!date=[2023/9/9]
+#!homepage = https://github.com/chxm1023/Advertising
+#!author = chxm1023
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/555.png
+#!date = [2023/9/9]
 
 [Rewrite]
 

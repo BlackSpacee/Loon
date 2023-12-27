@@ -1,7 +1,17 @@
+#!name = Picsew
+#!desc = Picsew滚动截图+解锁订阅
+#!openUrl = https://555dyy.top
+#!homepage = https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Picsew.js
+#!author = @89996462
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Picsew.png
+#!date = [2022/10/8]
+
+
+
+
 [Script]
 
-# > Picsew解锁专业版
-http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://github.com/itcast-l/shadowrocket-module/blob/main/js/Picsew.js, requires-body=true, timeout=600000 ,tag=Picsew_8
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Picsew.js, requires-body=true, timeout=60, tag=Picsew
 
 [MITM]
 
