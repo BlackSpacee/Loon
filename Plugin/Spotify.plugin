@@ -3,7 +3,7 @@
 #!author = @app2smile
 #!openUrl = https://raw.githubusercontent.com/app2smile/rules/master/plugin/spotify.plugin
 #!homepage = https://github.com/app2smile/rules#spotify
-#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Spotify_1.png
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Spotify_2.png
 #!date = [2023/10/4]
 # 功能: 1.去除播放广告 2.歌手/专辑列表正常展示 3.去除随机播放
 
