@@ -1,9 +1,9 @@
-#!name=搜图神器
-#!desc=搜图神器解锁会员
-#!homepage=https://github.com/chxm1023/Rewrite/tree/main
-#!author=chxm1023
-#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Soutushenqi.png
-#!date=[2023/11/30]
+#!name = 搜图神器
+#!desc = 搜图神器解锁会员
+#!homepage = https://github.com/chxm1023/Rewrite/tree/main
+#!author = chxm1023
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Soutushenqi.png
+#!date = [2023/11/30]
 
 
 [Script]

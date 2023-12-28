@@ -1,9 +1,9 @@
-#!name=美团
-#!desc=去除美团广告
-#!homepage=https://github.com/bai1zi/shadowrocket-surge-loon-qx
-#!author=bai1zi
-#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Meituan.png
-#!date=[2022/9/14]
+#!name = 美团
+#!desc = 去除美团广告
+#!homepage = https://github.com/bai1zi/shadowrocket-surge-loon-qx
+#!author = @bai1zi
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Meituan.png
+#!date = [2022/9/14]
 
 [Rule]
 

@@ -1,9 +1,9 @@
-#!name=QQ空间广告屏蔽
-#!desc=屏蔽QQ空间广告 广告位仍存在
-#!homepage=https://github.com/zqzess/rule_for_quantumultX/tree/master/Loon/Plugin
-#!author=zqzess
-#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/QQkongjian.png
-#!date=[2022/11/21]
+#!name = QQ空间广告屏蔽
+#!desc = 屏蔽QQ空间广告 广告位仍存在
+#!homepage = https://github.com/zqzess/rule_for_quantumultX/tree/master/Loon/Plugin
+#!author = zqzess
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/QQkongjian.png
+#!date = [2022/11/21]
 
 [Rule]
 DOMAIN,d3g.qq.com,REJECT

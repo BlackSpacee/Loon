@@ -1,9 +1,9 @@
-#!name=微信公众号去广告
-#!desc=[不包含公众号信息流AD、朋友圈AD]  [推荐开启青少年模式可去除朋友圈AD或换区]
-#!homepage=https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/WeChat.conf
-#!author=@ddgksf2013
-#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/WeChat.png
-#!date=[2023/10/29]
+#!name = 微信公众号去广告
+#!desc = [不包含公众号信息流AD、朋友圈AD]  [推荐开启青少年模式可去除朋友圈AD或换区]
+#!homepage = https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/WeChat.conf
+#!author = @ddgksf2013
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/WeChat.png
+#!date = [2023/10/29]
 
 
 [Rewrite]

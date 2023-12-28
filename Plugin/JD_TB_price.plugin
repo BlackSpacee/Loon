@@ -1,9 +1,9 @@
-#!name=JD | TB Price comparison
-#!desc=京东淘宝比价
-#!homepage=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
-#!author=@yichahucha @Small
-#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/JD.png
-#!date=[2021/6/25]
+#!name = JD | TB Price comparison
+#!desc = 京东淘宝比价
+#!homepage = https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+#!author = @yichahucha @Small
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/JD.png
+#!date = [2021/6/25]
 
 [Script]
 

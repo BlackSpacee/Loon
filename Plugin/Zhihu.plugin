@@ -1,9 +1,9 @@
-#!name=知乎去广告及体验增强
-#!desc=人在蒙古,刚下航母
-#!homepage=https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zheye
-#!author=blackmatrix7
-#!icon=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Zhihu.png
-#!date=[2023/10/26]
+#!name = 知乎去广告及体验增强
+#!desc = 人在蒙古,刚下航母
+#!homepage = https://github.com/blackmatrix7/ios_rule_script/tree/master/script/zheye
+#!author = @blackmatrix7
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Zhihu.png
+#!date = [2023/10/26]
 
 [Rule]
 # 拦截开屏广告
