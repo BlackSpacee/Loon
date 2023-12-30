@@ -9,7 +9,7 @@ cron "32 9 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/mai
 cron "5 8 * * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/histoday.js, timeout=10, tag=历史上的今天
 cron "17 17 17 ? * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/rumors.js, timeout=10, tag=今日辟谣
 cron "35 9 * * *" script-path=https://raw.githubusercontent.com/chxm1023/Task/main/hljk.js, timeout=10, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png
-cron "5 9 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js, timeout=10, tag=每天60秒读懂世界, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Category_Book.png
+cron "31 9 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js, timeout=10, tag=每天60秒读懂世界, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Category_Book.png
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/wnCalendar/wnCalendar.js, timeout=300, tag=今日黄历, img-url=https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/synology-calendar.png
 cron "55 7 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/energy-collection.js, timeout=10, tag=蚂蚁森林收能量, img-url=https://raw.githubusercontent.com/Yuheng0101/icon/main/alipay.png
 cron "12 12 * * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/appsdoor.js, timeout=10, tag=AppStore限免, img-url=https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/AppStore.png
