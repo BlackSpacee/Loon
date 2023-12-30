@@ -24,12 +24,12 @@ http-request ^https?:\/\/api-ipv6\.app\.acfun\.cn\/rest\/app\/user\/(signIn|hasS
 http-response https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, requires-body=true, tag=阿里云盘签到Cookie
 
 # 高德打车Cookie(@wf021325)     github地址:https://github.com/wf021325/qx/tree/main/task
-http-response ^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60 ,tag=ampDache_16
+http-response ^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60 ,tag=高德打车Cookie
 
 # 建行生活Cookie(@FoKit)        github地址:https://github.com/FoKit/Scripts
 http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin), script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=1,tag=建行Cookie
 
 # 喜马拉雅Cookie(@ClydeTime)        github地址:https://github.com/ClydeTime/Quantumult/tree/main/Script/Task
-http-request ^https?:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/,script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js
+http-request ^https?:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/,script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js,tag=喜马拉雅Cookie
 
-hostname = %APPEND% app.bilibili.com, m.bilibili.com,      *.bilibili.com，  c.tieba.baidu.com,tiebac.baidu.com,      api-ipv6.app.acfun.cn,*.acfun.cn,*.app.acfun.cn，       auth.alipan.com，            *.amap.com,              yunbusiness.ccb.com,            xmc.ximalaya.com
+hostname = %APPEND% app.bilibili.com, m.bilibili.com,*.bilibili.com,c.tieba.baidu.com,tiebac.baidu.com,api-ipv6.app.acfun.cn,*.acfun.cn,*.app.acfun.cn,auth.alipan.com,*.amap.com,yunbusiness.ccb.com,xmc.ximalaya.com
