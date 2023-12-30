@@ -1,7 +1,7 @@
 # 签到订阅 By BlackSpacee.
 # 个人收集常用签到脚本,仅自用.
 
-#通知类
+# 通知类
 
 cron "0 10 * * *" script-path=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/Push/Movie.js, timeout=10, tag=近期热映电影, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/Aiqiyi.png
 cron "14 9 * * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/tv.js, timeout=10, tag=电视热门榜, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/shutiao.png
@@ -14,12 +14,11 @@ cron "0 9 * * *" script-path=https://raw.githubusercontent.com/zqzess/rule_for_q
 cron "55 7 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/energy-collection.js, timeout=10, tag=蚂蚁森林收能量, img-url=https://raw.githubusercontent.com/Yuheng0101/icon/main/alipay.png
 cron "12 12 * * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/appsdoor.js, timeout=10, tag=AppStore限免, img-url=https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/AppStore.png
 cron "15 16 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js, timeout=10, tag=摸鱼时间到
-cron "0 0 23 1 *" script-path=https://raw.githubusercontent.com/zmqcherish/proxy-script/main/bilibili/bilibili_config.js, timeout=10, tag=B站竖版删除配置, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
-cron "0 */6 * * ?" script-path=https://raw.githubusercontent.com/chxm1023/Task/main/dns-clear-cache.js, timeout=10, tag=清理Dns缓存, img-url=https://raw.githubusercontent.com/chxm1023/Task/main/icon/clean.png
 
 
 
-#签到类
+
+# 签到类
 
 # BiliBili等级任务(不投币版本)(@ClydeTime)      github地址:https://github.com/ClydeTime/BiliBili/tree/main
 cron "30 0 * * *" script-path=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/BIliBIli_DailyBonus/BiliBiliDailyBonus.js, tag=B站每日等级任务
@@ -44,3 +43,8 @@ cron "23 1 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/ma
 
 # 喜马拉雅Cookie(@ClydeTime)        github地址:https://github.com/ClydeTime/Quantumult/tree/main/Script/Task
 cron "35 1 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js, timeout=60, tag=喜马拉雅签到任务
+
+
+# END
+cron "0 0 23 1 *" script-path=https://raw.githubusercontent.com/zmqcherish/proxy-script/main/bilibili/bilibili_config.js, timeout=10, tag=B站竖版删除配置, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
+cron "0 */6 * * ?" script-path=https://raw.githubusercontent.com/chxm1023/Task/main/dns-clear-cache.js, timeout=10, tag=清理Dns缓存, img-url=https://raw.githubusercontent.com/chxm1023/Task/main/icon/clean.png
