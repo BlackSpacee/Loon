@@ -1,0 +1,46 @@
+# 签到订阅 By BlackSpacee.
+# 个人收集常用签到脚本,仅自用.
+
+#通知类
+
+cron "0 10 * * *" script-path=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/Push/Movie.js, timeout=10, tag=近期热映电影, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/erdongchanyo/Aiqiyi.png
+cron "14 9 * * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/tv.js, timeout=10, tag=电视热门榜, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/shutiao.png
+cron "32 9 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/douban.js, timeout=10, tag=豆瓣每日推荐, img-url=https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/douban.png
+cron "5 8 * * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/histoday.js, timeout=10, tag=历史上的今天
+cron "17 17 17 ? * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/rumors.js, timeout=10, tag=今日辟谣
+cron "35 9 * * *" script-path=https://raw.githubusercontent.com/chxm1023/Task/main/hljk.js, timeout=10, tag=汇率监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/exchangerate.png
+cron "5 9 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js, timeout=10, tag=每天60秒读懂世界, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Category_Book.png
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/wnCalendar/wnCalendar.js, timeout=300, tag=今日黄历, img-url=https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/png/synology-calendar.png
+cron "55 7 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/energy-collection.js, timeout=10, tag=蚂蚁森林收能量, img-url=https://raw.githubusercontent.com/Yuheng0101/icon/main/alipay.png
+cron "12 12 * * *" script-path=https://raw.githubusercontent.com/deezertidal/private/main/appsdoor.js, timeout=10, tag=AppStore限免, img-url=https://raw.githubusercontent.com/chxm1023/Script_X/main/icon/AppStore.png
+cron "15 16 * * *" script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js, timeout=10, tag=摸鱼时间到
+cron "0 0 23 1 *" script-path=https://raw.githubusercontent.com/zmqcherish/proxy-script/main/bilibili/bilibili_config.js, timeout=10, tag=B站竖版删除配置, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
+cron "0 */6 * * ?" script-path=https://raw.githubusercontent.com/chxm1023/Task/main/dns-clear-cache.js, timeout=10, tag=清理Dns缓存, img-url=https://raw.githubusercontent.com/chxm1023/Task/main/icon/clean.png
+
+
+
+#签到类
+
+# BiliBili等级任务(不投币版本)(@ClydeTime)      github地址:https://github.com/ClydeTime/BiliBili/tree/main
+cron "30 0 * * *" script-path=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/BIliBIli_DailyBonus/BiliBiliDailyBonus.js, tag=B站每日等级任务
+
+# BiliBili直播签到(@chavyleung)       github地址:https://github.com/chavyleung/scripts/tree/master/bilibili
+cron "0 1 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, timeout=86400, tag=BiliBili直播签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png
+
+# 百度贴吧签到(@blackmatrix7)     github地址:https://github.com/blackmatrix7/ios_rule_script/tree/master/script/tieba
+cron "7 0 * * *" script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js, timeout=10, tag=百度贴吧签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/tieba.png
+
+# Acfun签到(@MCdasheng)     github地址:https://github.com/MCdasheng/QuantumultX/tree/main/Scripts/myScripts
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/acfun.js, timeout=60, tag=Acfun签到
+
+# 阿里云盘签到(@lowking)      github地址:https://github.com/lowking/Scripts/tree/master/ali
+cron "0 10 0 * * ?" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, timeout=60, tag=阿里云盘签到
+
+# 高德打车签到(@wf021325)     github地址:https://github.com/wf021325/qx/tree/main/task
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=60, tag=高德打车签到
+
+# 建行生活签到(@FoKit)        github地址:https://github.com/FoKit/Scripts
+cron "23 1 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,tag = 建行生活签到
+
+# 喜马拉雅Cookie(@ClydeTime)        github地址:https://github.com/ClydeTime/Quantumult/tree/main/Script/Task
+cron "35 1 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js, timeout=60, tag=喜马拉雅签到任务
