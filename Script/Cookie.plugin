@@ -1,5 +1,27 @@
+# 获取Cookie订阅 By BlackSpacee.
+# 个人收集常用签到脚本,仅自用.
+# 该订阅仅适用于定时签到脚本的Cookie获取.
+# 您可以在使用后手动将其禁用，以免产生不必要的MITM.
 
 
-http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
 
 
+
+# BiliBili每日等级任务(@ClydeTime)    github地址:https://github.com/ClydeTime/BiliBili/tree/main
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/BIliBIli_DailyBonus/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hostname = app.bilibili.com, m.bilibili.com,    
