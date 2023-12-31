@@ -1,5 +1,9 @@
 #!name = 贴吧签到&Cookie
 #!author = @blackmatrix7
+#!homepage = https://github.com/blackmatrix7/ios_rule_script/tree/master/script/tieba
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Tieba.png
+#!date = [2022/12/26]
+
 
 [Script]
 

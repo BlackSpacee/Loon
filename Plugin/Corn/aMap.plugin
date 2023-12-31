@@ -1,6 +1,8 @@
 #!name = 高德打车签到&Cookie
 #!author = @wf021325
-
+#!homepage = https://github.com/wf021325/qx/tree/main/task
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/GaodeMap.png
+#!date = [2023/10/12]
 
 
 [Script]

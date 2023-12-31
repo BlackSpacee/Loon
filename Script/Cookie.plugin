@@ -29,7 +29,7 @@ http-response ^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/
 # 建行生活Cookie(@FoKit)        github地址: https://github.com/FoKit/Scripts
 http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin), script-path = https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=1,tag=建行生活Cookie
 
-# 喜马拉雅Cookie(@ClydeTime)        github地址: https://github.com/ClydeTime/Quantumult/tree/main/Script/Task
+# 喜马拉雅Cookie(@ClydeTime)        github地址: https://github.com/ClydeTime/Surge/tree/main/Script/Task
 http-request ^https?:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/,script-path = https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js,tag=喜马拉雅Cookie
 
 hostname = %APPEND% app.bilibili.com, m.bilibili.com,*.bilibili.com,c.tieba.baidu.com,tiebac.baidu.com,api-ipv6.app.acfun.cn,*.acfun.cn,*.app.acfun.cn,auth.alipan.com,*.amap.com,yunbusiness.ccb.com,xmc.ximalaya.com
