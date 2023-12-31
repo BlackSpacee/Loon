@@ -255,7 +255,7 @@ async function signBiliBili() {
 		var flag = true
 		let exec_times = config.Settings?.exec	//用户设置投币次数
 		if (!Boolean(exec_times)) {
-			exec_times = 5
+			exec_times = 0
 			real_times = 5 - (Number(config.coins.num) / 10)
 		} else {
 			exec_times = Number(exec_times)

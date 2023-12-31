@@ -12,8 +12,8 @@
 [Script]
 # BiliBili每日等级任务
 
-http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path = https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/DailyBonus/BiliBili/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
-cron "30 0 * * *" script-path = https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/DailyBonus/BiliBili/BiliBiliDailyBonus.js, tag=B站每日等级任务
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path = https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
+cron "30 0 * * *" script-path = https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站每日等级任务
 
 [MITM]
 hostname = app.bilibili.com, m.bilibili.com
