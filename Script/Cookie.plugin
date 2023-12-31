@@ -5,31 +5,31 @@
 
 
 
-# BiliBili等级任务(@ClydeTime)      github地址:https://github.com/ClydeTime/BiliBili/tree/main
-http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/BIliBIli_DailyBonus/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
+# BiliBili等级任务(@ClydeTime)      github地址: https://github.com/ClydeTime/BiliBili/tree/main
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path = https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/DailyBonus/BiliBili/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
 
-# BiliBili直播签到Cookie(@chavyleung)       github地址:https://github.com/chavyleung/scripts/tree/master/bilibili
+# BiliBili直播签到Cookie(@chavyleung)       github地址: https://github.com/chavyleung/scripts/tree/master/bilibili
 # 打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com 先登录再打开cookie刷新网页即可
-http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js, timeout=10, tag=BiliBili直播签到Cookie
+http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path = https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js, timeout=10, tag=BiliBili直播签到Cookie
 
-# 贴吧获取Cookie(@blackmatrix7)     github地址:https://github.com/blackmatrix7/ios_rule_script/tree/master/script/tieba
-http-request ^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js,tag=贴吧_获取Cookie1
-http-request ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js,tag=贴吧_新版Cookie2
-http-request ^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js,tag=贴吧_新版Cookie3
+# 贴吧获取Cookie(@blackmatrix7)     github地址: https://github.com/blackmatrix7/ios_rule_script/tree/master/script/tieba
+http-request ^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login script-path = https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js,tag=贴吧_获取Cookie1
+http-request ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig script-path = https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js,tag=贴吧_新版Cookie2
+http-request ^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo script-path = https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js,tag=贴吧_新版Cookie3
 
-# Acfun获取Cookie(@MCdasheng)     github地址:https://github.com/MCdasheng/QuantumultX/tree/main/Scripts/myScripts
-http-request ^https?:\/\/api-ipv6\.app\.acfun\.cn\/rest\/app\/user\/(signIn|hasSignedIn|getSignInInfos) script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/acfun.cookie.js, timeout=60 ,tag=Acfun获取Cookie
+# Acfun获取Cookie(@MCdasheng)     github地址: https://github.com/MCdasheng/QuantumultX/tree/main/Scripts/myScripts
+http-request ^https?:\/\/api-ipv6\.app\.acfun\.cn\/rest\/app\/user\/(signIn|hasSignedIn|getSignInInfos) script-path = https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/acfun.cookie.js, timeout=60 ,tag=Acfun获取Cookie
 
-# 阿里云盘获取Cookie(@lowking)      github地址:https://github.com/lowking/Scripts/tree/master/ali
-http-response https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, requires-body=true, tag=阿里云盘签到Cookie
+# 阿里云盘获取Cookie(@lowking)      github地址: https://github.com/lowking/Scripts/tree/master/ali
+http-response https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token script-path = https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, requires-body=true, tag=阿里云盘签到Cookie
 
-# 高德打车Cookie(@wf021325)     github地址:https://github.com/wf021325/qx/tree/main/task
-http-response ^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60 ,tag=高德打车Cookie
+# 高德打车Cookie(@wf021325)     github地址: https://github.com/wf021325/qx/tree/main/task
+http-response ^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path = https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60 ,tag=高德打车Cookie
 
-# 建行生活Cookie(@FoKit)        github地址:https://github.com/FoKit/Scripts
-http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin), script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=1,tag=建行生活Cookie
+# 建行生活Cookie(@FoKit)        github地址: https://github.com/FoKit/Scripts
+http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin), script-path = https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=1,tag=建行生活Cookie
 
-# 喜马拉雅Cookie(@ClydeTime)        github地址:https://github.com/ClydeTime/Quantumult/tree/main/Script/Task
-http-request ^https?:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/,script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js,tag=喜马拉雅Cookie
+# 喜马拉雅Cookie(@ClydeTime)        github地址: https://github.com/ClydeTime/Quantumult/tree/main/Script/Task
+http-request ^https?:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/,script-path = https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js,tag=喜马拉雅Cookie
 
 hostname = %APPEND% app.bilibili.com, m.bilibili.com,*.bilibili.com,c.tieba.baidu.com,tiebac.baidu.com,api-ipv6.app.acfun.cn,*.acfun.cn,*.app.acfun.cn,auth.alipan.com,*.amap.com,yunbusiness.ccb.com,xmc.ximalaya.com
