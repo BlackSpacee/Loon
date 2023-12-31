@@ -8,7 +8,7 @@
 
 [Script]
 
-http-response ^https?:\/\/www\.google\..*\/search script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/endlessgoogle.js, requires-body=true, tag=endlessgoogle_9
+http-response ^https?:\/\/www\.google\..*\/search script-path = https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/Other/EndlessGoogle.js, requires-body=true, tag=endlessgoogle_9
 
 [MITM]
 
