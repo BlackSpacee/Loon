@@ -5,7 +5,7 @@
 
 
 
-# BiliBili等级任务(@ClydeTime)      github地址: https://github.com/ClydeTime/BiliBili/tree/main
+# BiliBili等级任务(@ClydeTime)      github地址: https://github.com/ClydeTime/Quantumult/tree/main/Script/Task
 http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path = https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, tag=B站Cookie(APP)
 
 # BiliBili直播签到Cookie(@chavyleung)       github地址: https://github.com/chavyleung/scripts/tree/master/bilibili
