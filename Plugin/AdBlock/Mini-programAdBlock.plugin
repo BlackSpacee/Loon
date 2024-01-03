@@ -1,7 +1,7 @@
 #!name = App&小程序净化合集
 #!desc = 去除一些冗余的模块，遇到异常时关闭此脚本
 #!author = @fmz200 @28413761
-#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Other/zhangjun.png
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/zhangjun.png
 #!homepage = https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/cleanup.snippet
 #!raw-url = https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/rewrite/chongxie.txt
 #!tg-group = https://t.me/lanjieguanggao
