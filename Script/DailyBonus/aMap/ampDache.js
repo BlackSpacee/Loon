@@ -37,12 +37,11 @@ function s(e,t){var n,r=4-e.length%4;n=t?0==(3&e.length)?e.length>>>2:1+(e.lengt
 const $ = new Env("高德地图签到");
 const _key = 'GD_Val';
 var gdVal = $.getdata(_key) || ($.isNode() ? process.env[_key] : '');
-
 $.is_debug = ($.isNode() ? process.env.IS_DEDUG : $.getdata('is_debug')) || 'false';//false-true
 const notify = $.isNode() ? require('./sendNotify') : '';
 var message = '';
 
-var node='', channel, adiu='', userId='', actID='', playID='', sessionid='';
+var node='', channel='', adiu='', userId='', actID='', playID='', sessionid='',isOk=false;
 
 !(async() => {
     if (typeof $request != "undefined") {
@@ -53,7 +52,7 @@ var node='', channel, adiu='', userId='', actID='', playID='', sessionid='';
         let obj = JSON.parse(gdVal);
         userId = obj.userId;
         sessionid = obj.sessionid;
-        adiu = obj.adiu;
+        adiu = obj.adiu; 
         if (sessionid.length < 30) {
             $.msg($.name, '', '❌请先获取sessionid🎉');
             return;
@@ -62,30 +61,26 @@ var node='', channel, adiu='', userId='', actID='', playID='', sessionid='';
         $.msg($.name, '', '❌请先获取sessionid🎉');
         return;
     }
-	intRSA();
-	intCryptoJS();
-	
-    message += `----------微信小程序签到----------\n`;
-    node = 'wechatMP',channel = 'h5_common',actID = '4zRzeQUM8eb',playID = '4zRA5kwg75G';
-    await checkIn(); isOk && (await signIn());
+    intRSA();
+    intCryptoJS();
+
+    //message += `----------微信小程序签到----------\n`;
+    //node = 'wechatMP',channel = 'h5_common',actID = '4zRzeQUM8eb',playID = '4zRA5kwg75G';
+    //await checkIn(); isOk && (await signIn());
 
     message += `----------高德地图APP签到----------\n`;
-    node = 'Amap',channel = 'h5_common',actID = '4yQc1Mt8nzJ',playID = '4yQcyzXdkYU';
+    node = 'Amap',channel = 'h5_common',actID = '53m5Q2UjZ6J',playID = '53m5Xt43PGU';
     await checkIn(); isOk && (await signIn());
 
-    message += `----------支付宝小程序签到----------\n`;
-    node = 'alipayMini',channel = 'alipay_mini',actID = '4zRAarAdbrf',playID = '4zRANYHwdgJ';
-    await checkIn(); isOk && (await signIn());
+    //message += `----------支付宝小程序签到----------\n`;
+    //node = 'alipayMini',channel = 'alipay_mini',actID = '4zRAarAdbrf',playID = '4zRANYHwdgJ';
+    //await checkIn(); isOk && (await signIn());
 
-    console.log(message);//node,青龙日志
+    console.log(message); //node,青龙日志
     await SendMsg(message);
 })()
-    .catch((e) => {
-        $.log("", `❌失败! 原因: ${e}!`, "");
-    })
-    .finally(() => {
-        $.done();
-    });
+.catch((e) => {$.log("", `❌失败! 原因: ${e}!`, "");})
+.finally(() => {$.done();});
 
 
 function getToken() {
@@ -103,16 +98,16 @@ function getToken() {
         }
     } else if ($request && $request.method != 'OPTIONS') { //WX、ALI、APP
         let abc = {};
-        let obj = JSON.parse($response.body);
+		let obj = JSON.parse($response.body);
         abc.userId = obj.content.uid;
         abc.adiu = obj.content.adiu;
         let hed = $request.headers;
-        abc.sessionid = hed['sessionid'];
+        abc.sessionid = hed['Sessionid'] || hed['sessionid'];
         if (abc.sessionid.length > 30) {
             $.setdata(JSON.stringify(abc), _key);
             $.msg($.name, '获取签到sessionid成功🎉', $.toStr(abc));
         } else {
-            const ck = hed['Cookie'] || hed['cookie'];
+            let ck = hed['Cookie'] || hed['cookie'];
             if (ck.includes('sessionid=')) {
                 abc.sessionid = ck.split("sessionid=")[1].split(";")[0];
                 if (abc.sessionid.length > 30) {
@@ -165,7 +160,7 @@ function getHeaders(sessionid) {
 
 function getShowBody(node, channel,adiu, userId, sign, actID, playIDs) {
     return {
-        "bizVersion": "060305",
+        "bizVersion": "060800",
         "h5version": "6.35.14",
         "platform": "ios",
         "tid": adiu,
@@ -190,7 +185,7 @@ function getShowBody(node, channel,adiu, userId, sign, actID, playIDs) {
 }
 function getSigBody(node, channel, adiu, userId, sign, actID, playID, signTerm, signDay) {
     return{
-        "bizVersion": "060305",
+        "bizVersion": "060800",
         "h5version": "6.35.14",
         "platform": "ios",
         "tid": adiu,
