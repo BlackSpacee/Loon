@@ -15,7 +15,7 @@ if (url.indexOf(sy) != -1) {
 } else if (url.indexOf(my) != -1) {
     let body = $response.body;
     body = body.replace(/"product_name":"免费版·个人"/g, '"product_name":"团队版·终身"');
-    body = body.replace(/"is_expired":\w+/g， '"is_expired":true');
-    body = body.replace(/"lifetime_vip":\w+/g， '"lifetime_vip":true');
+    body = body.replace(/"is_expired":\w+/g, '"is_expired":true');
+    body = body.replace(/"lifetime_vip":\w+/g, '"lifetime_vip":true');
     $done({ body });
 }
