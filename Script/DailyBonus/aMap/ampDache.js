@@ -64,17 +64,17 @@ var node='', channel='', adiu='', userId='', actID='', playID='', sessionid='',i
     intRSA();
     intCryptoJS();
 
-    //message += `----------微信小程序签到----------\n`;
-    //node = 'wechatMP',channel = 'h5_common',actID = '4zRzeQUM8eb',playID = '4zRA5kwg75G';
-    //await checkIn(); isOk && (await signIn());
+    message += `----------微信小程序签到----------\n`;
+    node = 'wechatMP',channel = 'h5_common',actID = '53A31cHhhPJ',playID = '53A3fQm9AM7';
+    await checkIn(); isOk && (await signIn());
 
     message += `----------高德地图APP签到----------\n`;
     node = 'Amap',channel = 'h5_common',actID = '53m5Q2UjZ6J',playID = '53m5Xt43PGU';
     await checkIn(); isOk && (await signIn());
 
-    //message += `----------支付宝小程序签到----------\n`;
-    //node = 'alipayMini',channel = 'alipay_mini',actID = '4zRAarAdbrf',playID = '4zRANYHwdgJ';
-    //await checkIn(); isOk && (await signIn());
+    message += `----------支付宝小程序签到----------\n`;
+    node = 'alipayMini',channel = 'alipay_mini',actID = '53wHnt77TQ5',playID = '53wHtx24q7u';
+    await checkIn(); isOk && (await signIn());
 
     console.log(message); //node,青龙日志
     await SendMsg(message);
@@ -161,7 +161,7 @@ function getHeaders(sessionid) {
 function getShowBody(node, channel,adiu, userId, sign, actID, playIDs) {
     return {
         "bizVersion": "060800",
-        "h5version": "6.35.14",
+        "h5version": "6.80.17",
         "platform": "ios",
         "tid": adiu,
         "eId": "",
@@ -186,7 +186,7 @@ function getShowBody(node, channel,adiu, userId, sign, actID, playIDs) {
 function getSigBody(node, channel, adiu, userId, sign, actID, playID, signTerm, signDay) {
     return{
         "bizVersion": "060800",
-        "h5version": "6.35.14",
+        "h5version": "6.80.17",
         "platform": "ios",
         "tid": adiu,
         "eId": "",
@@ -231,7 +231,7 @@ function checkIn() {
                             signTerm = obj?.data?.playMap?.dailySign?.signTerm;
                             signDay = t.day;
                             isSign = t.isSign;//isSign = 1 为签到过，懒得管了，让它再提交一次吧
-                            message += `查询:${t.date} isSign=${isSign}\n`;
+                            message += `查询:${t.date} isSign=${isSign} ${t.award.amount}里程\n`;
                             return isOk = true;//查询结果
                         }
                     })
