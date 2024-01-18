@@ -1,0 +1,24 @@
+#!name = 🏆Bing Task @mcdasheng6888
+#!desc = 操作步骤详见脚本注释
+#!url = https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/Bing/bing.sgmodule
+
+[Script]
+
+http-request ^https\:\/\/(www|cn)\.bing\.com\/search\?.*q=pc.* script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/Bing/bingSearch/bingSearch.cookie.js, requires-body=true, tag=bingSearch_4
+
+http-request ^https\:\/\/(www|cn)\.bing\.com\/search\?.*q=testt.* script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/Bing/bingSearch/bingSearch.cookie.js, requires-body=true, tag=bingSearch_5
+
+http-request ^https\:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/Bing/bingPoint/bingPoint.cookie.js, requires-body=true, tag=bingPoint_6
+
+http-request ^https:\/\/prod\.rewardsplatform\.microsoft\.com\/dapi\/me\/activities script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/Bing/bingRead/bingRead.cookie.js, requires-body=true, tag=bingRead_7
+
+#cron "0-59/3 * * * * *" script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/Bing/bingSearch/bingSearch.js, timeout=60, tag=🔍BingSearch
+cron "36-40/2 10 * * *" script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/Bing/bingSearch/bingSearch_v2.js, timeout=60, tag=🔍BingSearchv2
+
+cron "38 10 * * *" script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/Bing/bingRead/bingRead.js, timeout=60, tag=📖BingRead
+
+#cron "32 10 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js, timeout=60, tag=🏆BingPoint
+
+[MITM]
+
+hostname = rewards.bing.com,prod.rewardsplatform.microsoft.com,www.bing.com,cn.bing.com

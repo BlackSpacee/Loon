@@ -1,0 +1,315 @@
+#!name = App&小程序净化合集
+#!desc = 去除一些冗余的模块，遇到异常时关闭此脚本
+#!author = @fmz200 @28413761
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/zhangjun.png
+#!homepage = https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/cleanup.snippet
+#!raw-url = https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/rewrite/chongxie.txt
+#!tg-group = https://t.me/lanjieguanggao
+#!date = [2023/11/30]
+#!support = 约88款app
+
+[Rewrite]
+
+# 首页上方广告
+^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_info - reject-dict
+# hostname = hwimg.beingfine.cn, learnywhere.cn
+^https:\/\/hwimg\.beingfine\.cn\/float_button - reject-dict
+^https:\/\/hwimg\.beingfine\.cn\/card - reject-dict
+^https:\/\/learnywhere\.cn\/api\/activity\/23\/423dsj\/inapp\/bb\/promote - reject-dict
+# hostname = minicap.caocaokeji.cn
+^https:\/\/minicap\.caocaokeji\.cn\/advert-bss\/pullAdvert - reject-dict
+# hostname = ccmsupport-sz.tenpay.com
+^https:\/\/ccmsupport-sz\.tenpay\.com\/cgi-bin\/common\/ccm_page_element.cgi - reject
+# hostname = cbd-gateway-service-applets.hualala.com
+^https:\/\/cbd-gateway-service-applets\.hualala\.com\/arch\/api\/banner\/QueryBannerImgList - reject-dict
+# hostname = supplier-api.imdada.cn
+^https:\/\/supplier-api\.imdada\.cn\/fe\/public\/ad\/spot\?forwardServiceName=growth-activity - reject-dict
+# > 滴滴打车 小程序净化 感谢#豆豆分享
+^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/core - reject-dict
+# hostname = capis*.didapinche.com
+^https:\/\/capis(-\d)?\.didapinche\.com\/adbase - reject
+# hostname = 
+^https:\/\/wechat-api\.i-xiaoma\.com\.cn\/app\/v1\/bus\/wechat\/content - reject-dict
+# hostname = www.deppon.com
+^https:\/\/www\.deppon\.com\/gwapi\/memberService\/eco\/member\/grade\/commonInterface - reject-dict
+# > 丰巢 微信小程序净化
+^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage - reject-dict
+^https:\/\/dsp\.fcbox\.com - reject-dict
+# > 怪兽充电 微信小程序
+^https:\/\/aag\.enmonster\.com\/apa\/index\/advert\/skin - reject
+^https:\/\/aag\.enmonster\.com\/apa\/(index\/)?advert\/(skin|multi\/positions|demand\/home\/poster) - reject
+# 我的界面广告 支付宝小程序
+^https:\/\/aag\.enmonster\.com\/apa\/advert\/multi\/positions - reject
+# 我的界面广告 微信小程序
+^https:\/\/aag\.enmonster\.com\/apa\/advert\/demand\/home\/poster - reject
+# > 广州地铁乘车码 微信小程序净化
+^https:\/\/apis\.alenable\.com\/mall\/v1\/api\/mall\/skin\/user\/get - reject-dict
+^https:\/\/apis\.alenable\.com\/ycx\/v1\/api\/adPut - reject-dict
+^https:\/\/res\.hongyibo\.com\.cn\/os\/gs\/resapi\/activity - reject-dict
+# > 货拉拉 微信小程序净化
+^https:\/\/qapi\.huolala\.cn\/ads - reject-dict
+^https:\/\/appuser-static\.huolala\.cn\/imgs - reject-dict
+^https:\/\/qapi\.huolala\.cn\/home_new_user - reject-dict
+^https:\/\/qapi\.huolala\.cn\/get_service_list - reject-dict
+# > 哈啰 微信小程序首页弹窗屏蔽
+^https:\/\/api\.hellobike\.com\/api\?adx - reject-dict
+# > 华住会 微信小程序净化
+^https:\/\/api-fouth-mem\.huazhu\.com\/api\/rights\/bannerList - reject-dict
+# > 黑科技软件
+^https:\/\/hkj178.com/wp-json/mp/v2/advert/wechat - reject-200
+# > 街电 微信小程序
+^https:\/\/s\.jiediankeji\.com\/adv - reject-dict
+# > 极兔快递 微信小程序净化
+^https:\/\/applets\.jtexpress\.com\.cn - reject-dict
+# > 锦江酒店 微信小程序净化
+^https:\/\/wxapp\.bestwehotel\.com\/gw3\/app-mini\/trip-hotel-banner\/activity\/getActivityInfo - reject-dict
+# > 肯德基 微信小程序净化
+^https:\/\/orders\.kfc\.com\.cn\/preorder-portal\/api\/v2\/coupon - reject-dict
+^https:\/\/dynamicad\.kfc\.com\.cn\/api - reject-dict
+^https:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/custom_v2\/wxapp - reject-dict
+^https:\/\/orders\.kfc\.com\.cn\/preorder-portal\/api\/v2\/activity - reject-dict
+# > 快狗打车搬家 微信小程序净化
+^https:\/\/suyun-guest\.daojia\.com\/api\/kuaigou\/banjia\/review - reject-dict
+# > 来电 小程序净化
+^https:\/\/mobile-api\.imlaidian\.com\/api\/args - reject-dict
+# > 罗森点点 微信小程序净化
+^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/mina\/systemSetting - reject-dict
+^https:\/\/plt\.yorentown\.com\/pltapp\/v1\/banner - reject-dict
+# > 老乡鸡 微信小程序净化
+^https:\/\/member\.lxjchina\.com\.cn\/mini-server\/home\/page\/banner - reject-dict
+# > 美柚 微信小程序净化
+^https:\/\/wxproj\.seeyouyima\.com\/data\/today_tips - reject-dict
+# > 麦当劳 微信小程序净化
+^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/hotActivity - reject-dict
+# > 蜜雪冰城 微信小程序净化
+^https:\/\/mxsa\.mxbc\.net\/api\/v1\/adinfo\/adplace\/query - reject-dict
+# > Manner 微信小程序净化(去除首页轮播图以及进入小程序弹窗)
+^https:\/\/triangle\.wearemanner\.com\/mp-api\/v1\/ads - reject-dict
+# 弹窗广告+横幅广告 #主机名ad.maoyan.com
+^https:\/\/ad\.maoyan\.com\/api\/position\/detail - reject-dict
+# 电竞赛事+热门赛事 #主机名wx.maoyan.com
+^https:\/\/wx\.maoyan\.com\/maoyansh\/api\/mobile\/(hotMatchList|eSportsIps) - reject-dict
+# 猫眼放映厅 #主机名vod-movie.maoyan.com
+^https:\/\/vod-movie\.maoyan\.com\/vod\/video\/onlineMovies\.json - reject-dict
+# 精彩演出
+^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/movie\/wonderShow - reject-dict
+# 七日精选
+^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/performances\/calendar\/0 - reject-dict
+# 今日必抢
+^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/performances\/rob\/main - reject-dict
+# 大咖新动态
+^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/celebrityBasicList\/query - reject-dict
+# 为你推荐
+^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/recommend\/performances - reject-dict
+# 首页底部推荐 #主机名api.maoyan.com
+^https:\/\/api\.maoyan\.com\/sns\/common\/feed\/channel\/v2\/list\.json - reject-dict
+# 演出页面全部拦截
+^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/ad\/detail - reject-dict
+# > 奈雪 微信小程序净化
+^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/index\/activeConfig\/v2 - reject-dict
+^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/resource\/config\/homeBannerNodes - reject-dict
+^https:\/\/webapi\.qmai\.cn\/web\/catering\/advertising\/ad - reject-dict
+^https:\/\/images\.qmai\.cn\/s214925\/2023 - reject-dict
+# > 青桔 微信小程序净化
+^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=cms\.htw\.delivery - reject-dict
+^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.combineHomepageInfo - reject-dict
+^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.mallRecommend - reject-dict
+# > 申通快递 微信小程序净化
+^https:\/\/customer-app\.sto\.cn\/api\/app\/banner\/banner - reject-dict
+^https:\/\/sto-customer-app\.oss-cn-shanghai\.aliyuncs\.com\/images - reject-dict
+^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ABOTTOM - reject-dict
+^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ACENTER - reject-dict
+^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AMINE%3ABOTTOM - reject-dict
+^https:\/\/api\.sodalife\.xyz\/v1\/goods - reject-dict
+^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AREWARDS%3ACENTER - reject-dict
+# > 搜电充电 微信小程序
+^https:\/\/wxs-weixin\.sd\.zhumanggroup\.com\/api\/v2\/ad - reject-dict
+# > 神州租车 微信小程序净化
+^https:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/marketing - reject-dict
+^https:\/\/apiproxy\.zuche\.com\/resource\/carrctapi\/home\/page\/advertising - reject-dict
+# > 闪送 微信小程序净化
+^https:\/\/miniprogram\.ishansong\.com\/cms\/faq\/query - reject-dict
+^https:\/\/ads\.ishansong\.com\/advert - reject-dict
+# > 首旅如家 微信小程序净化
+^https:\/\/wx\.bthhotels\.com\/miniapp\/weixin\/v1\/home\/index_banner - reject-dict
+^https:\/\/app\.homeinns\.com\/api\/v6\/indexs - reject-dict
+^https:\/\/app\.homeinns\.com\/api\/v5\/local - reject-dict
+^https:\/\/app\.homeinns\.com\/api\/v5\/index - reject-dict
+# > 松果出行 @keywos
+^https:\/\/api\.songguo7\.com\/(\w{3})?mp\/v2\/misc\/(toast|user_operate_info) - reject-dict
+# > 首汽约车 微信小程序净化
+^https:\/\/gw-passenger-wap\.01zhuanche\.com\/gw-passenger-wap\/zhuanche-passenger-token\/commonSkipToken\/common\/getAdList - reject-dict
+^https:\/\/passenger\.t3go\.cn\/passenger-activity-api\/notoken\/api\/v1\/resource\/getSource - reject-dict
+# > U净 APP净化 感谢#豆豆分享
+^https:\/\/adsoss\.zhinengxiyifang\.cn\/ads - reject
+^https?:\/\/ads\.zhinengxiyifang\.cn\/api\/v1\.1\/ads\/* - reject-200
+# > 微快递 微信小程序净化
+^https:\/\/api\.kuaidihelp\.com\/g_order_core\/v2\/mina\/User\/getBannerList - reject-dict
+# > 小电充电 微信小程序
+^https:\/\/smarket\.dian\.so - reject-dict
+^https:\/\/file\.dian\.so\/c\/leto - reject-dict
+# > 小兔充充 小程序净化 感谢#豆豆分享
+^https:\/\/ad\.xiaotucc\.com\/advert - reject
+# > 星巴克 微信小程序净化
+^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/popup - reject-dict
+^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/banner - reject-dict
+^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/global - reject-dict
+# > 享道出行 微信小程序净化
+^https:\/\/passengerapi\.saicmobility\.com\/(ad\/requestAd|pay\/v1\/queryOpenedCouponPackages) - reject-dict
+# > 携程旅行 微信小程序净化
+^https:\/\/m\.ctrip\.com\/restapi\/soa2\/13916\/tripAds - reject-dict
+^https:\/\/m\.ctrip\.com\/restapi\/soa2\/12673\/queryWeChatHotEvent - reject-dict
+# > 悠洗APP 微信小程序净化 由TEXAS和豆豆提供
+^https:\/\/api\.ulife\.group\/signintask\/adServing - reject-dict
+^https:\/\/api\.ulife\.group\/auth\/account\/getUpgradeStrategy - reject-dict
+^https:\/\/api\.ulife\.group\/market\/frontEntrance\/getThirdAdvertising\?displayPort=1&type=15 - reject-dict
+^https:\/\/api\.ulife\.group\/market\/memberCard\/listMemberCard\?isShowSecondaryCard=1 - reject-dict
+^https:\/\/api\.ulife\.group\/auth\/account\/entrance - reject-dict
+^https:\/\/alittle-tea\.oss-cn-shanghai\.aliyuncs\.com\/images\/platform\/alittle - reject-dict
+# > 中通快递 微信小程序净化
+^https:\/\/hdgateway\.zto\.com\/getApolloConfig - reject-dict
+^https:\/\/hdgateway\.zto\.com\/track - reject-dict
+^https:\/\/hdgateway\.zto\.com\/getAdInfo - reject-dict
+^https:\/\/hdgateway\.zto\.com\/listJumperShow - reject-dict
+
+[Script]
+# hostname = tan.ipnas.ltd
+http-response ^https:\/\/tan\.ipnas\.ltd\/wp-json\/wp\/v2 script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# 弹框显示内容
+http-response ^https:\/\/iosoi\.cn\/wp-json\/wp\/v2\/posts/\d+ script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# 辅助去除页面嵌入式式卡片广告
+http-response ^https:\/\/iosoi\.cn\/wp-content\/plugins script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# hostname = wx.wxqqurl.cn
+http-response ^https:\/\/wx\.wxqqurl\.cn\/wp-json\/watch-life-net\/v1\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# hostname = 4thdimension.top
+http-response ^https:\/\/4thdimension\.top\/wp\-json\/watch\-life\-net\/v1\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# hostname = miniapp.sexytea2013.com
+http-response ^https:\/\/miniapp\.sexytea2013\.com\/cms\/slot\/queryByCodes\?codes=INDEX_TOP_BANNER script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cyys.js, requires-body=true, timeout=60, tag=cyys
+
+# hostname = coco-com.e.verystar.net
+http-response ^https:\/\/coco-com\.e\.verystar\.net\/v1\/home\/info script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/coco.js, requires-body=true, timeout=60, tag=coco
+
+# hostname = common.diditaxi.com.cn, conf.diditaxi.com.cn
+http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v5 script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didi.js, requires-body=true, timeout=60, tag=didi
+
+# hostname = tvapp.guilaile.cn
+http-response ^https:\/\/tvapp\.guilaile\.cn\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > EMS 微信小程序净化 由TEXAS和豆豆提供
+http-response ^https:\/\/ump\.ems\.com\.cn\/new-generation-extend\/redis\/pageInfoByChannel script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ems.js, requires-body=true, timeout=60, tag=ems
+
+# > free黑科技
+http-response ^https:\/\/www\.freeheikeji\.cn\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 公子黑科技
+http-response ^https:\/\/gz\.gongzijx\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 搞机师兄
+http-response ^https:\/\/gjsx\.vip\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 古茗 微信小程序净化
+http-response ^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(ump|touch|external\/front) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ming.js, requires-body=true, timeout=60, tag=ming
+
+http-response ^https:\/\/hkj178\.com\/wp\-json\/mp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 黑科技软件源
+http-response ^https:\/\/qj\.bpojie\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 火箭软件库
+http-response ^https:\/\/jt\.jxjt888\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 科技窝
+http-response ^https:\/\/www\.benbenfx\.xyz\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+http-response ^https:\/\/www\.bbkj\.work\/wp-json\/watch-life-net\/v1\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+http-response ^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/home script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/lawson.js, requires-body=true, timeout=60, tag=lawson
+
+# > 老胡群英会
+http-response ^https:\/\/g\.syshhc\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 老鬼黑科技
+http-response ^https:\/\/www\.laoguikeji\.cn\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 漫画台 Lite
+http-response ^https?:\/\/comic\.321mh\.com\/app_api\/v\d\/getcomicinfo_body script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/manhuatailite.js, requires-body=true, timeout=60, tag=manhuatailite
+
+# > 挪瓦咖啡 微信小程序净化
+http-response ^https:\/\/webapi\.qmai\.cn\/web\/catering\/design\/homePage-Config script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/kff.js, requires-body=true, timeout=60, tag=kff
+
+# > 屈臣氏 微信小程序开屏(或许APP也可以干掉)
+http-response ^https:\/\/mystore-gw\.watsonsvip\.com\.cn\/gfu\/popup\/advert\/launch script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/watsons.js, requires-body=true, timeout=60, tag=watsons
+
+http-response ^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.homeConfig script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/qingju.js, requires-body=true, timeout=60, tag=qingju
+
+# > 全家微会员 微信小程序净化
+http-response ^https:\/\/minifm\.maxxipoint\.com\/banner\/list script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/FamilyMart.js, requires-body=true, timeout=60, tag=FamilyMart
+
+# > 苏打校园APP 净化 （需要卸载重装）@TEXAS提供
+http-response ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ATOP script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/soda.js, requires-body=true, timeout=60, tag=soda
+
+# > 森茂小苑
+http-response ^https:\/\/[a-z]+\.smkj33\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+http-response ^https:\/\/d\.smkj33\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 世颜说
+http-response ^https:\/\/d\.syshhc\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 酸鸡汤、老爷花苑、御花园
+http-response ^https:\/\/[a-z]+\.ddly666\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 搜罗好货
+http-response ^https:\/\/www\.i3zh\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 天书乱谈
+http-response ^https:\/\/[a-z]+\.tslt\.xyz\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+http-response ^https:\/\/b\.tslt\.xyz\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 天泽百宝箱
+http-response ^https:\/\/(c|a)\.jxjt888\.top\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 图层黑科技
+http-response ^https:\/\/m\.xgjyouhui\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > T3出行 微信小程序净化
+http-response ^https:\/\/passenger\.t3go\.cn\/(solution\-|common\-)?(passenger\-)?(activity\-|app\-)?api\/notoken\/(trip\/)?api\/(home\/|common\/)?(v[1-3]\/)?(ad\/getNegativescreen|solution\/passenger\/open\/getHomeMenu|leftmenu|getHomeInfoGlobal) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/T3.js, requires-body=true, timeout=60, tag=T3
+
+http-response ^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xiaotucc.js, requires-body=true, timeout=60, tag=xiaotucc
+
+# > 小纸箱助手
+http-response ^https:\/\/xcx\.xianbaow\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 小野分享
+http-response ^https:\/\/lysl2020\.com\/wp\-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+# > 小打卡
+http-response ^https?:\/\/uranus\.sharedaka\.com\/api\/v3\/user\/info\/get script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xiaodaka.js, requires-body=true, timeout=60, tag=xiaodaka
+
+# > 喜茶 微信小程序净化
+http-response ^https:\/\/go\.heytea\.com\/api\/service-portal\/vip script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/heytea.js, requires-body=true, timeout=60, tag=heytea
+
+# > 搜罗好货
+http-response ^https?:\/\/wp3\.lobdol\.cn\/wp-json\/wp\/v2\/posts script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js, requires-body=true, timeout=60, tag=applet
+
+http-response ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/13012\/getWaterflowInfo script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/T3.js, requires-body=true, timeout=60, tag=T3
+
+http-response ^https:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7 script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/yx.js, requires-body=true, timeout=60, tag=yx
+
+# > 一点点 微信小程序净化
+http-response ^https:\/\/cappapi\.alittle-tea\.com\/open\?method=catering\.set\.ad script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/alittle-tea.js, requires-body=true, timeout=60, tag=alittle-tea
+
+# > 掌上公交
+http-response ^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.do script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhangshanggongjiao.js, requires-body=true, timeout=60, tag=zhangshanggongjiao
+
+# > 扎比科技资源箱 弹框显示内容
+http-response ^https:\/\/jabi\.coding\.net\/p\/xcx\/d\/xcx\/git\/raw\/master\/jabikj\.json script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jabi.js, requires-body=true, timeout=60, tag=jabi
+
+[MITM]
+hostname = member.alipan.com, vod-movie.maoyan.com, wx.maoyan.com, api.maoyan.com, ad.maoyan.com, hwimg.beingfine.cn, learnywhere.cn, newton.gumingnc.com, gw-passenger-wap.01zhuanche.com, www.deppon.com, passengerapi.saicmobility.com, passenger.t3go.cn, webapi.qmai.cn, images.qmai.cn, wx.mygolbs.com, hkj178.com, ccmsupport-sz.tenpay.com, api.songguo7.com, triangle.wearemanner.com, cappapi.alittle-tea.com, alittle-tea.oss-cn-shanghai.aliyuncs.com, member.lxjchina.com.cn, cbd-gateway-service-applets.hualala.com, coco-com.e.verystar.net, lawsonapi.yorentown.com, plt.yorentown.com, minifm.maxxipoint.com, htwkop.xiaojukeji.com, mxsa.mxbc.net, go.heytea.com, miniapp.sexytea2013.com, api-fouth-mem.huazhu.com, wxapp.bestwehotel.com, mystore-gw.watsonsvip.com.cn, app.homeinns.com, wx.bthhotels.com, tm-api.pin-dao.cn, res.pizzahut.com.cn, orders.kfc.com.cn, dynamicad.kfc.com.cn, res.kfc.com.cn, api.mcd.cn, 3pp.starbucks.com.cn, wechat-api.i-xiaoma.com.cn, apiproxy.zuche.com, miniprogram.ishansong.com, ads.ishansong.com, minicap.caocaokeji.cn, applets.jtexpress.com.cn, ump.ems.com.cn, api.hellobike.coming, api.kuaidihelp.com, wxproj.seeyouyima.com, qapi.huolala.cn, appuser-static.huolala.cn, apis.alenable.com, suyun-user.daojia.com, adsoss.zhinengxiyifang.cn, api-marketing.zhinengxiyifang.cn, ads.zhinengxiyifang.cn, capis*.didapinche.com, conf.diditaxi.com.cn, ad.xiaotucc.com, mapi.xiaotucc.com, aag.enmonster.com, smarket.dian.so, file.dian.so, s.jiediankeji.com, wxs-weixin.sd.zhumanggroup.com, mobile-api.imlaidian.com, api.sodalife.xyz, hdgateway.zto.com, api.ulife.group, common.diditaxi.com.cn, webchatapp.fcbox.com, dsp.fcbox.com, supplier-api.imdada.cn, customer-app.sto.cn, sto-customer-app.oss-cn-shanghai.aliyuncs.co, res.hongyibo.com.cn, r2.gzyct.com, api.hellobike.com, dock.tenchii.com, fscdn.zto.com, tan.ipnas.ltd, 4thdimension.top, www.benbenfx.xyz, *.smkj33.top, tvapp.guilaile.cn, gz.gongzijx.com, d.syshhc.top, gjsx.vip, jt.jxjt888.top, *.tslt.xyz, g.syshhc.top, c.jxjt888.top, www.laoguikeji.cn, qj.bpojie.com, b.tslt.xyz, m.xgjyouhui.com, www.freeheikeji.cn, xcx.xianbaow.com, jabi.coding.net, iosoi.cn, d.smkj33.top, *.ddly666.top, a.jxjt888.top, lysl2020.com, www.i3zh.com, comic.321mh.com, uranus.sharedaka.com, wp3.lobdol.cn, wx.wxqqurl.cn, www.bbkj.work

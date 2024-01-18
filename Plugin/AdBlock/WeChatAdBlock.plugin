@@ -1,0 +1,17 @@
+#!name = 微信公众号去广告
+#!desc = 不包含公众号信息流AD、朋友圈AD , 推荐开启青少年模式可去除朋友圈AD或换区
+#!homepage = 
+#!author = @RuCu6
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/WeChat.png
+#!date = [2023/9/8]
+
+
+[Rewrite]
+# 移除公众号中的推广内容 //mp.weixin.qq.com
+^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|masonryfeed|relatedarticle)\? reject-dict
+
+# [Script]
+# http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Weixin/Weixin_Official_Accounts_remove_ads.js, requires-body = true, tag = 微信公众号去广告
+
+[Mitm]
+hostname = mp.weixin.qq.com

@@ -1,0 +1,14 @@
+#!name = GithubPro
+#!desc = Ai功能不可用, 其他杂项功能正常
+#!openUrl = 
+#!homepage = https://raw.githubusercontent.com/Yu9191/Rewrite/main/Github.js
+#!author = @ios151
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Github.png
+#!date = [2023/12/26]
+
+
+[Script]
+http-response https://api.github.com/graphql script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Github.js, requires-body=true, timeout=60, tag=Github
+
+[MITM]
+hostname = api.github.com
