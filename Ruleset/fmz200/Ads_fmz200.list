@@ -5,7 +5,7 @@
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/NaiSi_01.png
 #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/fenliu.list
 #!tg-group：https://t.me/lanjieguanggao
-#!date：2024-01-01 09:23:00
+#!date：2024-01-19 20:03:00
 #!support：约9392行
 #!proxy-select：reject
 #############################################
@@ -32,10 +32,12 @@ DOMAIN-KEYWORD,video-cn.snssdk.com
 DOMAIN-KEYWORD,volcvod.com
 DOMAIN-KEYWORD,volceapplog.com
 
-# > 收集用户隐私联盟
-DOMAIN-KEYWORD,volces.com
-DOMAIN-KEYWORD,volccdn.com
-# DOMAIN-KEYWORD,volc.com
+# > 收集用户隐私联盟，若有问题自行设置白名单
+# DOMAIN-KEYWORD,volces.com
+# DOMAIN-KEYWORD,volccdn.com
+DOMAIN-KEYWORD,volc.com
+
+
 
 # >>>>>>>>>>>>>>> ✅ 0 ✅ <<<<<<<<<<<<<<
 
@@ -1017,6 +1019,18 @@ DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com
 
 # > 收钱吧 买单小程序去广告
 DOMAIN,ads-shopping.shouqianba.com
+
+# > 什么值得买
+DOMAIN,aaid.uyunad.com
+DOMAIN,acs4baichuan.m.taobao.com
+DOMAIN,adashxgc.ut.taobao.com
+DOMAIN,analytics-api.smzdm.com
+DOMAIN,baichuan-sdk.alicdn.com
+DOMAIN,dgstatic.jd.com
+DOMAIN,msg.umengcloud.com
+DOMAIN,sec.umeng.com
+DOMAIN,ulogs.umeng.com
+DOMAIN,ynuf.aliapp.org
 
 
 
