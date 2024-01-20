@@ -4,10 +4,10 @@
 #!homepage=https://github.com/fmz200/wool_scripts
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/NaiSi_01.png
 #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/fenliu.list
-#!tg-group：https://t.me/lanjieguanggao
-#!date：2024-01-19 20:03:00
-#!support：约9392行
-#!proxy-select：reject
+#!tg-group=https://t.me/lanjieguanggao
+#!date=2024-01-20 11:03:00
+#!support=约9392行
+#!proxy-select=reject
 #############################################
 # "reject"        策略返回 HTTP 状态码 404,不附带任何额外内容
 # "reject-200"    策略返回 HTTP 状态码 200,不附带任何额外内容
@@ -29,13 +29,9 @@ DOMAIN-KEYWORD,pangolin-sdk-toutiao
 DOMAIN-KEYWORD,pangolin.snssdk.com
 DOMAIN-KEYWORD,pglstatp-toutiao
 DOMAIN-KEYWORD,video-cn.snssdk.com
-DOMAIN-KEYWORD,volcvod.com
-DOMAIN-KEYWORD,volceapplog.com
 
 # > 收集用户隐私联盟，若有问题自行设置白名单
-# DOMAIN-KEYWORD,volces.com
-# DOMAIN-KEYWORD,volccdn.com
-DOMAIN-KEYWORD,volc.com
+DOMAIN-KEYWORD,volc
 
 
 
@@ -923,6 +919,9 @@ DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao.com
 
 
 # >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
+# > QQ音乐
+DOMAIN,us.l.qq.com
+
 # > 蜻蜓FM
 DOMAIN,ad.qingting.fm
 DOMAIN,adlaunch.qingting.fm
