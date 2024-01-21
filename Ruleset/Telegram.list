@@ -1,4 +1,4 @@
-# 2024-01-04 18:00
+# 2024-01-21 20:08
 
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,contest.com
@@ -36,6 +36,9 @@ DOMAIN-SUFFIX,imem.app
 
 # Swiftgram
 DOMAIN-SUFFIX,swiftgram.app
+
+# Turrit
+DOMAIN-SUFFIX,iturrit.com
 
 # DC1
 IP-CIDR,91.108.12.0/22,no-resolve
