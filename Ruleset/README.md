@@ -25,7 +25,7 @@
 | [Apple ID](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/AppleID/AppleID.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 苹果服务策略组 |
 | [Apple Store](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/AppStore/AppStore.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 苹果服务策略组 |
 | [Apple Mail](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/AppleMail/AppleMail.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 苹果服务策略组 |
-| [Apple](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/Apple/Apple.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 苹果服务策略组 |
+| [Apple](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/Apple.list) | [@NobyDa](https://github.com/NobyDa) | 苹果服务策略组 |
 | [Emby](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/Emby.list) | [@Repcz](https://github.com/Repcz/Tool/tree/X) | 常见的Emby服务地址分流, 可选低倍率节点策略 |
 | [国际媒体](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/GlobalMedia/GlobalMedia.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 自定地区策略 |
 | [LAN](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/LAN) | [@Repcz](https://github.com/Repcz/Tool/tree/X) | DIRECT, 局域网规则 |

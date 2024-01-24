@@ -29,6 +29,7 @@ jobs:
         run: |
           # Apple
           curl -L -o Loon-repo/Ruleset/ApplePush.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
+          curl -L -o Loon-repo/Ruleset/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
 
           # OpenAI
           curl -L -o Loon-repo/Ruleset/OpenAI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/OpenAI.list"
@@ -114,7 +115,6 @@ jobs:
           cp -r tmp/rule/Loon/Emby Ruleset/
 
           cp -r tmp/rule/Loon/AppleID Ruleset/
-          cp -r tmp/rule/Loon/AppleMusic Ruleset/
           cp -r tmp/rule/Loon/AppleMusic Ruleset/
           cp -r tmp/rule/Loon/iCloud Ruleset/
           cp -r tmp/rule/Loon/TestFlight Ruleset/
