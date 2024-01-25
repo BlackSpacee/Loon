@@ -5,7 +5,7 @@
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/NaiSi_01.png
 #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/fenliu.list
 #!tg-group=https://t.me/lanjieguanggao
-#!date=2024-01-20 11:03:00
+#!date=2024-01-25 16:43:00
 #!support=约9392行
 #!proxy-select=reject
 #############################################
@@ -575,6 +575,7 @@ DOMAIN,livewebbs2pcdn.msstatic.com
 DOMAIN,huyafile.msstatic.com
 DOMAIN,livewebbs2.msstatic.com
 DOMAIN,business.msstatic.com
+DOMAIN-SUFFIX,v1d.szbdyd.com
 
 # > 哈啰 大部分图片无法正常加载
 # DOMAIN-KEYWORD,assets.51downapp.cn
@@ -974,6 +975,7 @@ DOMAIN-SUFFIX,v.gdt.qq.com
 # > soul
 DOMAIN,soul-ad.soulapp.cn
 DOMAIN,ad-r.soulapp.cn
+DOMAIN,ad-reward.soulapp.cn
 DOMAIN-SUFFIX,cdn.soulapp.cn
 
 # > Snapchat
