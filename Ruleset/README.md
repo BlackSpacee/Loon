@@ -13,8 +13,8 @@
 | [ChatGPT Voice](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/ChatGPT_Voice.list) | [@lodepuly](https://gitlab.com/lodepuly/vpn_tool) | 和 OpenAI 同一地区策略 |
 | [OpenAI](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/OpenAI.list) | [@lodepuly](https://gitlab.com/lodepuly/vpn_tool) | 和 ChatGPT Voice 同一地区策略 |
 | [Telegarm](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/Telegram.list) | [@Repcz](https://github.com/Repcz/Tool/tree/X) | 建议跟DC数据中心同一地区策略 |
-| [Github](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/GitHub/GitHub.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 微软服务策略组 |
 | [Coplilot](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/Copilot.list) | [@lodepuly](https://gitlab.com/lodepuly/vpn_tool) | 微软服务策略组 |
+| [Github](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/GitHub/GitHub.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 微软服务策略组 |
 | [Bing](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/Bing/Bing.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 微软服务策略组 |
 | [MicroSoft](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/Microsoft/Microsoft.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 微软服务策略组 |
 | [Instagram](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/Instagram/Instagram.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 理应放在 Facebook 前面, 并同一地区策略 |
@@ -25,6 +25,7 @@
 | [Apple ID](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/AppleID/AppleID.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 苹果服务策略组 |
 | [Apple Store](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/AppStore/AppStore.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 苹果服务策略组 |
 | [Apple Mail](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/AppleMail/AppleMail.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 苹果服务策略组 |
+| [Apple iCloud](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/iCloud/iCloud.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 苹果服务策略组 |
 | [Apple](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/Apple.list) | [@NobyDa](https://github.com/NobyDa) | 苹果服务策略组 |
 | [Emby](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/Emby.list) | [@Repcz](https://github.com/Repcz/Tool/tree/X) | 常见的Emby服务地址分流, 可选低倍率节点策略 |
 | [国际媒体](https://www.nsloon.com/openloon/import?rules=https://raw.githubusercontent.com/BlackSpacee/Loon/main/Ruleset/GlobalMedia/GlobalMedia.list) | [@blackmatrix7](https://github.com/blackmatrix7) | 自定地区策略 |
