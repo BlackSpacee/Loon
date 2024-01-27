@@ -1,4 +1,4 @@
-# Unbreak 神机 规则修正
+# Unbreak
 # > General
 DOMAIN,app.adjust.com
 DOMAIN,app.appsflyer.com
@@ -35,8 +35,7 @@ DOMAIN,vi.l.qq.com
 DOMAIN,analytics.strava.com
 # > Umeng
 DOMAIN,msg.umeng.com
-DOMAIN,msg.umengcloud.com
-#############
+DOMAIN,msg.umengcloud.com#############
 #!name=分流修正
 #!desc=修正某些被分流到外区的国内网站
 #!author=fmz200
