@@ -20,7 +20,7 @@ jobs:
           git checkout --orphan main
           git branch -D Clearhistory
           git add .
-          git commit -m "BlankSpace"
+          git commit -m "Release"
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f -u origin main
       - name: Cleanup Workflow

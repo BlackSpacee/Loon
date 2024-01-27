@@ -75,6 +75,9 @@ jobs:
           curl -L -o Loon-repo/Ruleset/fmz200/Ads_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list"
           curl -L -o Loon-repo/Ruleset/fmz200/Ads_RuCu6.list "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
 
+          # 神机规则修正
+          curl -L -o Loon-repo/Ruleset/Unbreak.list "https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list"
+
           # ConnersHua
           mkdir -p Loon-repo/Ruleset/ConnersHua
           curl -L -o Loon-repo/Ruleset/ConnersHua/Ads_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
