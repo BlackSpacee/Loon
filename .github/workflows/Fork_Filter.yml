@@ -118,6 +118,7 @@ jobs:
           cp -r tmp/rule/Loon/Emby Ruleset/
 
           cp -r tmp/rule/Loon/AppleID Ruleset/
+          cp -r tmp/rule/Loon/AppStore Ruleset/
           cp -r tmp/rule/Loon/AppleMusic Ruleset/
           cp -r tmp/rule/Loon/iCloud Ruleset/
           cp -r tmp/rule/Loon/TestFlight Ruleset/
