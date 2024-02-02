@@ -143,6 +143,7 @@ jobs:
             sed -i -e 's/, /,/g' -e 's/;/# /g' -e 's/host,/HOST,/g' -e 's/host-/HOST-/g'  -e 's/suffix/SUFFIX/g' -e 's/-keyword/-KEYWORD/g' -e 's/,reject/,REJECT/g' -e 's/ip-cidr/IP-CIDR/g' -e 's/geoip/GEOIP/g' "$file"
             # 删除不必要的部分
             sed -i 's/,REJECT//g' "$file"
+            sed -i 's/,direct//g' "$file"
             # 删除extended-matching
             sed -i 's/,extended-matching//g' "$file"
             # 修改HOST为DOMAIN
@@ -176,17 +177,21 @@ jobs:
         run: |
           mkdir -p Loon-repo/Ruleset/Own/
           touch Loon-repo/Ruleset/Own/Direct.list
-
+      
           if [ -f "Loon-repo/Ruleset/Own/Direct.list" ] ; then
             # 清空 Direct.list 文件
             > Loon-repo/Ruleset/Own/Direct.list
-
+      
             cat Loon-repo/Ruleset/Unbreak.list >> Loon-repo/Ruleset/Own/Direct.list
-            echo "#############" >> Loon-repo/Ruleset/Own/Direct.list
+            echo "  " >> Loon-repo/Ruleset/Own/Direct.list    # 添加两行空格
             cat Loon-repo/Ruleset/fmz200/Direct_fmz200.list >> Loon-repo/Ruleset/Own/Direct.list
+      
+            # 使用awk进行去重, 保留注释行, 方便排查问题和反馈.
+            awk '!seen[$0]++' Loon-repo/Ruleset/Own/Direct.list > tmpfile && mv tmpfile Loon-repo/Ruleset/Own/Direct.list
           else
             echo "$file not found."
           fi
+      
           
       - name: output Reject.list
         run: |
@@ -197,12 +202,15 @@ jobs:
               > Loon-repo/Ruleset/Own/Reject.list
 
             cat Loon-repo/Ruleset/fmz200/Ads_RuCu6.list >> Loon-repo/Ruleset/Own/Reject.list
-            echo "#############" >> Loon-repo/Ruleset/Own/Reject.list
+            echo "##########################" >> Loon-repo/Ruleset/Own/Reject.list
             cat Loon-repo/Ruleset/ConnersHua/Ads_ConnersHua.list >> Loon-repo/Ruleset/Own/Reject.list
-            echo "#############" >> Loon-repo/Ruleset/Own/Reject.list
+            echo "##########################" >> Loon-repo/Ruleset/Own/Reject.list
             cat Loon-repo/Ruleset/ConnersHua/Hijacking_ConnersHua.list >> Loon-repo/Ruleset/Own/Reject.list
-            echo "#############" >> Loon-repo/Ruleset/Own/Reject.list
+            echo "  " >> Loon-repo/Ruleset/Own/Reject.list
             cat Loon-repo/Ruleset/ConnersHua/Tracking_ConnersHua.list >> Loon-repo/Ruleset/Own/Reject.list
+
+            # 使用awk进行去重, 保留注释行, 方便排查问题和反馈.
+            awk '!seen[$0]++' Loon-repo/Ruleset/Own/Reject.list > tmpfile && mv tmpfile Loon-repo/Ruleset/Own/Reject.list
           else
             echo "$file not found."
           fi
