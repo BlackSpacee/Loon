@@ -18,123 +18,123 @@
 
 
 # >>>>>>>>>>>>>>> ✅ 1 ✅ <<<<<<<<<<<<<<
-DOMAIN,ad.12306.cn,direct
+DOMAIN,ad.12306.cn
 
 
 
 
 # >>>>>>>>>>>>>>> ✅ A ✅ <<<<<<<<<<<<<<
 # > anti-ad
-DOMAIN-KEYWORD,anti-ad.net,direct
+DOMAIN-KEYWORD,anti-ad.net
 
 # > Alibaba
-DOMAIN,log.mmstat.com,direct
-DOMAIN,sycm.mmstat.com,direct
+DOMAIN,log.mmstat.com
+DOMAIN,sycm.mmstat.com
 
 # > 爱影视
-DOMAIN,static.jssp.tv,direct
-DOMAIN,lain.bgm.tv,direct
-DOMAIN,tiao.cjkypo.com,direct
-DOMAIN,ok.zuidapic.com,direct
-DOMAIN,ts.thefilehosting.com,direct
-DOMAIN,deo.shopeemobile.com,direct
-DOMAIN,m3u8.255tv.tk,direct
-DOMAIN,m3u8.mstopq.com,direct
-DOMAIN,ain.bgm.tv,direct
-DOMAIN-KEYWORD,vip.lz-cdn,direct
-DOMAIN-KEYWORD,ax1x.com,direct
-DOMAIN-KEYWORD,o.lencr.org,direct
-DOMAIN-KEYWORD,ttcdn-tos.kkimg.cc,direct
+DOMAIN,static.jssp.tv
+DOMAIN,lain.bgm.tv
+DOMAIN,tiao.cjkypo.com
+DOMAIN,ok.zuidapic.com
+DOMAIN,ts.thefilehosting.com
+DOMAIN,deo.shopeemobile.com
+DOMAIN,m3u8.255tv.tk
+DOMAIN,m3u8.mstopq.com
+DOMAIN,ain.bgm.tv
+DOMAIN-KEYWORD,vip.lz-cdn
+DOMAIN-KEYWORD,ax1x.com
+DOMAIN-KEYWORD,o.lencr.org
+DOMAIN-KEYWORD,ttcdn-tos.kkimg.cc
 
 
 
 # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
 # > 大师兄影视
-DOMAIN,sdk.alibaba.com.ailbaba.me,direct
-DOMAIN,img.ffzypic.com,direct
-DOMAIN,img.liangzipic.com,direct
-DOMAIN,img.bfzypic.com,direct
-DOMAIN,img.kuaikanzy.net,direct
-DOMAIN,vip.imgffzy.com,direct
-DOMAIN,vip.ffzyread.com,direct
-DOMAIN,cdn.jsdelivr.net,direct
-DOMAIN,image.maimn.com,direct
-DOMAIN-KEYWORD,bfzycdn.com,direct
-DOMAIN-KEYWORD,vip.kuaikan-cdn,direct
-DOMAIN-KEYWORD,vip.ffzy-play,direct
-DOMAIN-KEYWORD,vip.ffzy-online,direct
+DOMAIN,sdk.alibaba.com.ailbaba.me
+DOMAIN,img.ffzypic.com
+DOMAIN,img.liangzipic.com
+DOMAIN,img.bfzypic.com
+DOMAIN,img.kuaikanzy.net
+DOMAIN,vip.imgffzy.com
+DOMAIN,vip.ffzyread.com
+DOMAIN,cdn.jsdelivr.net
+DOMAIN,image.maimn.com
+DOMAIN-KEYWORD,bfzycdn.com
+DOMAIN-KEYWORD,vip.kuaikan-cdn
+DOMAIN-KEYWORD,vip.ffzy-play
+DOMAIN-KEYWORD,vip.ffzy-online
 
 
 
 # >>>>>>>>>>>>>>> ✅ P ✅ <<<<<<<<<<<<<<
 # > 苹果推送服务
-DOMAIN-KEYWORD,push.apple.com,direct
+DOMAIN-KEYWORD,push.apple.com
 # > 苹果时间同步
-DOMAIN,time.apple.com,direct
+DOMAIN,time.apple.com
 # > 苹果天气服务
-DOMAIN-KEYWORD,weather-edge.apple.com,direct
-DOMAIN-KEYWORD,weather-adge.apple.com,direct
-DOMAIN-SUFFIX,weather-data.apple.com,direct
-DOMAIN-SUFFIX,weather-map.apple.com,direct
-DOMAIN-SUFFIX,weather-analytics-events.apple.com,direct
+DOMAIN-KEYWORD,weather-edge.apple.com
+DOMAIN-KEYWORD,weather-adge.apple.com
+DOMAIN-SUFFIX,weather-data.apple.com
+DOMAIN-SUFFIX,weather-map.apple.com
+DOMAIN-SUFFIX,weather-analytics-events.apple.com
 # > 苹果内购服务
-DOMAIN-KEYWORD,buy.itunes.apple.com,direct
+DOMAIN-KEYWORD,buy.itunes.apple.com
 # > 苹果icloud
-DOMAIN-KEYWORD,icloud.com,direct
+DOMAIN-KEYWORD,icloud.com
 # > 苹果输入法相关服务
-DOMAIN-KEYWORD,api.smoot.apple.com,direct
-DOMAIN-KEYWORD,api.smoot.apple.cn,direct
+DOMAIN-KEYWORD,api.smoot.apple.com
+DOMAIN-KEYWORD,api.smoot.apple.cn
 # > 苹果iMessage服务
-DOMAIN,init.ess.apple.com,direct
+DOMAIN,init.ess.apple.com
 # > 苹果其他服务
-DOMAIN-KEYWORD,ssl.apple.com,direct
-DOMAIN-KEYWORD,humb.apple.com,direct
-DOMAIN,smp-device-content.apple.com,direct
-DOMAIN-KEYWORD,api-adservices.apple.com,direct
-DOMAIN-KEYWORD,ls.apple.com,direct
-DOMAIN-KEYWORD,gsa.apple.com,direct
-DOMAIN-KEYWORD,ess.apple.com,direct
+DOMAIN-KEYWORD,ssl.apple.com
+DOMAIN-KEYWORD,humb.apple.com
+DOMAIN,smp-device-content.apple.com
+DOMAIN-KEYWORD,api-adservices.apple.com
+DOMAIN-KEYWORD,ls.apple.com
+DOMAIN-KEYWORD,gsa.apple.com
+DOMAIN-KEYWORD,ess.apple.com
 # > 苹果app store
-DOMAIN,itunes.apple.com,direct
+DOMAIN,itunes.apple.com
 
 
 
 # >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
 # > QQ空间
-DOMAIN-KEYWORD,ctc.qzs.qzone.qq.com,direct
+DOMAIN-KEYWORD,ctc.qzs.qzone.qq.com
 
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
 # > Strava
-DOMAIN,analytics.strava.com,direct
+DOMAIN,analytics.strava.com
 
 
 
 # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
 # > Tencent
-DOMAIN,fairplay.l.qq.com,direct
-DOMAIN,livew.l.qq.com,direct
-DOMAIN,vd.l.qq.com,direct
-DOMAIN,vi.l.qq.com,direct
+DOMAIN,fairplay.l.qq.com
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+DOMAIN,vi.l.qq.com
 
 
 
 # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
 # > Umeng
-DOMAIN,msg.umeng.com,direct
-DOMAIN,msg.umengcloud.com,direct
+DOMAIN,msg.umeng.com
+DOMAIN,msg.umengcloud.com
 
 
 
 # >>>>>>>>>>>>>>> ✅ X ✅ <<<<<<<<<<<<<<
 # > 携程
-DOMAIN-KEYWORD,aw-s.tripcdn.com,direct
-DOMAIN-KEYWORD,trip.com,direct
+DOMAIN-KEYWORD,aw-s.tripcdn.com
+DOMAIN-KEYWORD,trip.com
 
 
 
 # > 其他分流修正
 # > 路由器后台
-IP-CIDR,192.168.0.1/24,direct,no-resolve
+IP-CIDR,192.168.0.1/24,no-resolve
 # > 天翼网关
-IP-CIDR,192.168.1.1/24,direct,no-resolve
+IP-CIDR,192.168.1.1/24,no-resolve
