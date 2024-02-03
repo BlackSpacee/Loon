@@ -7,7 +7,7 @@ jobs:
   BlankSpace:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4.1.0
+      - uses: actions/checkout@v4
         with:
           ref: main
 
