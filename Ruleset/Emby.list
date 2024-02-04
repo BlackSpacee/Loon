@@ -1,6 +1,6 @@
 # 基于 https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list 修改
 #
-# 2024-01-15 21:40
+# 2024-02-04 11:39
 
 
 ##### A #####
@@ -31,6 +31,9 @@ DOMAIN-SUFFIX,line.emby.men
 DOMAIN-SUFFIX,mius.uk
 
 ##### F #####
+
+# Facmata
+DOMAIN-SUFFIX,cinema.facmata.net
 
 ##### G #####
 
