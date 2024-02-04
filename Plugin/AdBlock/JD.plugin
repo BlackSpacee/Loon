@@ -1,0 +1,22 @@
+#!name = 京东去广告
+#!desc = 移除京东开屏广告，精简我的页面产品推广。
+#!openUrl = 
+#!author = @RuCu6
+#!homepage = https://github.com/RuCu6/QuanX/blob/main/Scripts/jingdong.js
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/JD.png
+#!date = [2023/12/24]
+
+[Rule]
+DOMAIN, dns.jd.com, REJECT
+IP-CIDR, 101.124.19.122/32, REJECT, no-resolve
+IP-CIDR6, 2402:db40:5100:1011::5/128, REJECT, no-resolve
+URL-REGEX, ^http:\/\/\w{32}\.jddebug\.com\/diagnose\?, REJECT
+
+[Rewrite]
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) reject-dict
+
+[Script]
+http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path = https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/jingdong.js, requires-body = true, tag = 移除京东广告
+
+[Mitm]
+hostname = api.m.jd.com

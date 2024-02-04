@@ -1,0 +1,27 @@
+#!name = 百度网盘
+#!desc = 百度网盘SVIP+去开屏广告脚本
+#!homepage = https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js
+#!author = @ddgksf2013
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/BaiduCloud.png
+#!date = [2023/7/30]
+
+
+[Rewrite]
+# > 百度网盘_设置信息流@ddgksf2013
+^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list - reject-200
+# > 百度网盘_通用广告@ddgksf2013
+^https?:\/\/pan\.baidu\.com\/rest\/.*\/pcs\/ad - reject-200
+# > 百度网盘_活动推广@ddgksf2013
+^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry - reject-200
+
+
+[Script]
+# > 百度网盘_开屏广告@ddgksf2013
+http-response ^https?:\/\/pan\.baidu\.com\/api\/getsyscfg script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=true, timeout=60 ,tag=baiduCloud.vip_13
+
+# > 百度网盘_会员权益@ddgksf2013
+http-response ^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?app_id script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=true, timeout=60 ,tag=baiduCloud.vip_21
+
+
+[MITM]
+hostname = pan.baidu.com

@@ -1,0 +1,13 @@
+#!name = BiliBili直播签到&Cookie
+#!author = @chavyleung
+#!homepage = https://github.com/chavyleung/scripts/tree/master/bilibili
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/BiliBili_White.png
+#!date = [2022/7/12]
+
+
+[Script]
+http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path = https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js, timeout=10, tag=BiliBili直播签到Cookie
+cron "0 1 * * *" script-path = https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, timeout=86400, tag=BiliBili直播签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/BiliBili.png
+
+[MITM]
+hostname = *.bilibili.com

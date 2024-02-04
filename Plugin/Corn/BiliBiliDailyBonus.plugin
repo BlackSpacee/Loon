@@ -1,0 +1,19 @@
+#!name = BiliBili等级签到&Cookie
+#!author = @ClydeTime
+#!homepage = https://github.com/ClydeTime/Quantumult/tree/main/Script/Task
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/BiliBili_White.png
+# 现将获取cookie与定时任务合并为一个模块
+# 保持开启,如检测到cookie变更会自动更新,解决cookie经常过期的问题(cookie仍有效不提醒更新)
+# 任务奖励：经验值/硬币/大会员积分/年度会员领取B币等
+# ================ Boxjs订阅 ================
+# 订阅地址：https://raw.githubusercontent.com/ClydeTime/BiliBili/main/boxjs/BiliBili.boxjs.json
+# 更新时间：[2024/1/1]
+
+[Script]
+# BiliBili每日等级任务
+
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path = https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, tag=B站Cookie(APP)
+cron "30 0 * * *" script-path = https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js, tag=B站每日等级任务
+
+[MITM]
+hostname = app.bilibili.com, m.bilibili.com

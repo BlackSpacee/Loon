@@ -1,0 +1,13 @@
+#!name = 人人视频
+#!desc = 人人视频解锁VIP
+#!homepage = https://github.com/chxm1023/Rewrite/tree/main
+#!author = chxm1023
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/RenRenshipin.png
+#!date = [2023/9/28]
+
+
+[Script]
+http-response ^https?:\/\/api\.(hujuvod\.com|qwapp\.top)\/(user\/personal\/information|app\/drama\/page) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/renrenshipin.js, requires-body=true, timeout=60 ,tag=renrenshipin_8
+
+[MITM]
+hostname = api.hujuvod.com,api.qwapp.top

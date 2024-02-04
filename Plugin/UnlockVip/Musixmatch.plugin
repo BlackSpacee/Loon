@@ -1,0 +1,13 @@
+#!name = Musixmatch
+#!desc = Musixmatch解锁
+#!homepage = https://github.com/Marol62926/MarScrpt
+#!author = Marol62926
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Musixmatch.png
+#!date = [2022/10/1]
+
+
+[Script]
+http-response https://apic.musixmatch.com/ws/1.1/config.get script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/musixmatch.js, requires-body=true, tag=musixmatch_4
+
+[MITM]
+hostname = apic.musixmatch.com

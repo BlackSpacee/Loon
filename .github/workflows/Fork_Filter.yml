@@ -1,0 +1,235 @@
+name: Fork Filter lists
+
+on:
+  workflow_dispatch: # 启用手动触发
+  schedule:
+    - cron: "0 */6 * * *" # 每隔6小时执行一次
+
+jobs:
+  Fork-FLITER-list:
+    runs-on: ubuntu-latest
+    env:
+      TZ: "Asia/Shanghai"
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: blackspacee/Loon
+          path: Loon-repo
+
+      - name: Download files to GeoIP
+        run: |
+          mkdir -p Loon-repo/Ruleset/GeoIP
+          curl -L -o Loon-repo/Ruleset/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
+          curl -L -o Loon-repo/Ruleset/GeoIP/Global_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
+          curl -L -o Loon-repo/Ruleset/GeoIP/ChinaIPv4.list "https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/CN-ip-cidr.txt"
+          curl -L -o Loon-repo/Ruleset/GeoIP/ChinaIPv6.list "https://raw.githubusercontent.com/missuo/ASN-China/main/IPv6.China.list"
+
+      - name: Download files to Ruleset
+        run: |
+          # Apple
+          curl -L -o Loon-repo/Ruleset/ApplePush.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
+          curl -L -o Loon-repo/Ruleset/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
+
+          # OpenAI
+          curl -L -o Loon-repo/Ruleset/OpenAI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/OpenAI.list"
+          curl -L -o Loon-repo/Ruleset/ChatGPT_Voice.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"
+
+          # 社交媒体
+          curl -L -o Loon-repo/Ruleset/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
+
+          # 微软
+          curl -L -o Loon-repo/Ruleset/Copilot.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list"
+
+          # 流媒体
+          curl -L -o Loon-repo/Ruleset/Emby.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Emby.list"
+
+          # Talkatone
+          curl -L -o Loon-repo/Ruleset/Talkatone.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Talkatone.list"
+
+          # 国内规则
+          mkdir -p Loon-repo/Ruleset/ChinaDomain
+          curl -L -o Loon-repo/Ruleset/ChinaDomain/ChinaDomain.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+
+          # LAN
+          curl -L -o Loon-repo/Ruleset/LAN "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Lan.list"
+
+          # ASN
+          mkdir -p Loon-repo/Ruleset/ASN
+          curl -L -o Loon-repo/Ruleset/ASN/ASN.Telegram.list "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.Telegram.list"
+          curl -L -o Loon-repo/Ruleset/ASN/ASN.China.list "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+
+          # 广告规则
+          mkdir -p Loon-repo/Ruleset/Advertising
+          curl -L -o Loon-repo/Ruleset/Advertising/Ads_Dlerio.list "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+          curl -L -o Loon-repo/Ruleset/Advertising/AdGuardChinese.list "https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
+          curl -L -o Loon-repo/Ruleset/Advertising/Ads_EasyListChina.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
+          curl -L -o Loon-repo/Ruleset/Advertising/Ads_EasyListPrivacy.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
+          curl -L -o Loon-repo/Ruleset/Advertising/Ads_limbopro.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
+          curl -L -o Loon-repo/Ruleset/Advertising/Ads_anti_AD.list "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt"
+          curl -L -o Loon-repo/Ruleset/Advertising/Ads_AdRules.list "https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules.list"
+
+          # fmz200&wala
+          mkdir -p Loon-repo/Ruleset/fmz200
+          curl -L -o Loon-repo/Ruleset/fmz200/Direct_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
+          curl -L -o Loon-repo/Ruleset/fmz200/Ads_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list"
+          curl -L -o Loon-repo/Ruleset/fmz200/Ads_RuCu6.list "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
+
+          # 神机规则修正
+          curl -L -o Loon-repo/Ruleset/Unbreak.list "https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list"
+
+          # ConnersHua
+          mkdir -p Loon-repo/Ruleset/ConnersHua
+          curl -L -o Loon-repo/Ruleset/ConnersHua/Ads_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
+          curl -L -o Loon-repo/Ruleset/ConnersHua/Hijacking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list"
+          curl -L -o Loon-repo/Ruleset/ConnersHua/Tracking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
+
+      - name: Checkout ios_rule_script Repository
+        uses: actions/checkout@v4
+        with:
+          repository: blackmatrix7/ios_rule_script
+          path: tmp # 临时存放目录
+
+      - name: Copy Selected Folders
+        run: |
+          cp -r tmp/rule/Loon/WeChat Ruleset/
+          cp -r tmp/rule/Loon/Zhihu Ruleset/
+          cp -r tmp/rule/Loon/Speedtest Ruleset/
+
+          cp -r tmp/rule/Loon/Spotify Ruleset/
+          cp -r tmp/rule/Loon/OpenAI Ruleset/
+          cp -r tmp/rule/Loon/Telegram Ruleset/
+          cp -r tmp/rule/Loon/TikTok Ruleset/
+          cp -r tmp/rule/Loon/Netflix Ruleset/
+          cp -r tmp/rule/Loon/PayPal Ruleset/
+          cp -r tmp/rule/Loon/Cloudflare Ruleset/
+          cp -r tmp/rule/Loon/Twitter Ruleset/
+          cp -r tmp/rule/Loon/Instagram Ruleset/
+          cp -r tmp/rule/Loon/Facebook Ruleset/
+
+          cp -r tmp/rule/Loon/GitHub Ruleset/
+          cp -r tmp/rule/Loon/OneDrive Ruleset/
+          cp -r tmp/rule/Loon/Bing Ruleset/
+          cp -r tmp/rule/Loon/Microsoft Ruleset/
+
+          cp -r tmp/rule/Loon/YouTube Ruleset/
+          cp -r tmp/rule/Loon/Google Ruleset/
+
+          cp -r tmp/rule/Loon/Emby Ruleset/
+
+          cp -r tmp/rule/Loon/AppleID Ruleset/
+          cp -r tmp/rule/Loon/AppStore Ruleset/
+          cp -r tmp/rule/Loon/AppleMusic Ruleset/
+          cp -r tmp/rule/Loon/iCloud Ruleset/
+          cp -r tmp/rule/Loon/TestFlight Ruleset/
+          cp -r tmp/rule/Loon/AppleMail Ruleset/
+          cp -r tmp/rule/Loon/Apple Ruleset/
+
+          cp -r tmp/rule/Loon/GlobalMedia Ruleset/
+        shell: bash
+
+      - name: Move ios_rule_script content to Loon-repo/Ruleset
+        run: |
+          rsync -a --exclude 'README.md' Ruleset/* Loon-repo/Ruleset/
+        shell: bash
+
+      # 适配 nice和wala  Loon 规则
+      - name: Edit Ruleset/fmz200&wala
+        run: |
+          cd Loon-repo/Ruleset/fmz200
+          for file in *.list; do
+            if [ -f "$file" ]; then
+            # 修改，& ; 以及大小写
+            sed -i -e 's/, /,/g' -e 's/;/# /g' -e 's/host,/HOST,/g' -e 's/host-/HOST-/g'  -e 's/suffix/SUFFIX/g' -e 's/-keyword/-KEYWORD/g' -e 's/,reject/,REJECT/g' -e 's/ip-cidr/IP-CIDR/g' -e 's/geoip/GEOIP/g' "$file"
+            # 删除不必要的部分
+            sed -i 's/,REJECT//g' "$file"
+            sed -i 's/,direct//g' "$file"
+            # 删除extended-matching
+            sed -i 's/,extended-matching//g' "$file"
+            # 修改HOST为DOMAIN
+            sed -i -e 's/HOST,/DOMAIN,/g' -e 's/HOST-/DOMAIN-/g' "$file"
+            # 修改IP6-CIDR为IP-CIDR6
+            sed -i 's/IP6-CIDR,/IP-CIDR6,/g' "$file"
+            # 注释不支持的规则
+            sed -i -e '/\(OR\|AND\|NOT\|PROCESS-NAME\),/ s/^/#/' "$file"
+            # 如果包含IP-CIDR且不包含,no-resolve 则添加,no-resolve
+            awk '/^IP-CIDR/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
+          else
+            echo "$file not found."
+          fi
+          done
+          
+      # 适配 AdGuard Loon 规则
+      - name: Edit Ruleset/AdGuardChinese.list
+        run: |
+          cd Loon-repo/Ruleset/Advertising
+          for file in AdGuardChinese.list; do
+            if [ -f "$file" ]; then
+            # 将每一行的第一个.替换为 DOMAIN-SUFFIX,
+            sed -i 's/^\./DOMAIN-SUFFIX,/g' "$file"
+          else
+              echo "$file not found."
+            fi
+          done
+
+        # 追加规则
+      - name: Output Direct.list
+        run: |
+          mkdir -p Loon-repo/Ruleset/Own/
+          touch Loon-repo/Ruleset/Own/Direct.list
+
+          if [ -f "Loon-repo/Ruleset/Own/Direct.list" ] ; then
+            # 清空 Direct.list 文件
+            > Loon-repo/Ruleset/Own/Direct.list
+
+            cat Loon-repo/Ruleset/Unbreak.list >> Loon-repo/Ruleset/Own/Direct.list
+            echo "  " >> Loon-repo/Ruleset/Own/Direct.list    # 添加两行空格
+            cat Loon-repo/Ruleset/fmz200/Direct_fmz200.list >> Loon-repo/Ruleset/Own/Direct.list
+
+            # 使用awk进行去重, 保留注释行, 方便排查问题和反馈.
+            awk '!seen[$0]++' Loon-repo/Ruleset/Own/Direct.list > tmpfile && mv tmpfile Loon-repo/Ruleset/Own/Direct.list
+          else
+            echo "$file not found."
+          fi
+
+      - name: output Reject.list
+        run: |
+          touch Loon-repo/Ruleset/Own/Reject.list
+
+          if [ -f "Loon-repo/Ruleset/Own/Reject.list" ] ; then
+              # 清空 Reject.list 文件
+              > Loon-repo/Ruleset/Own/Reject.list
+
+            cat Loon-repo/Ruleset/fmz200/Ads_RuCu6.list >> Loon-repo/Ruleset/Own/Reject.list
+            echo "##########################" >> Loon-repo/Ruleset/Own/Reject.list
+            cat Loon-repo/Ruleset/ConnersHua/Ads_ConnersHua.list >> Loon-repo/Ruleset/Own/Reject.list
+            echo "##########################" >> Loon-repo/Ruleset/Own/Reject.list
+            cat Loon-repo/Ruleset/ConnersHua/Hijacking_ConnersHua.list >> Loon-repo/Ruleset/Own/Reject.list
+            echo "  " >> Loon-repo/Ruleset/Own/Reject.list
+            cat Loon-repo/Ruleset/ConnersHua/Tracking_ConnersHua.list >> Loon-repo/Ruleset/Own/Reject.list
+
+            # 使用awk进行去重, 保留注释行, 方便排查问题和反馈.
+            awk '!seen[$0]++' Loon-repo/Ruleset/Own/Reject.list > tmpfile && mv tmpfile Loon-repo/Ruleset/Own/Reject.list
+          else
+            echo "$file not found."
+          fi
+
+      - name: Commit and Push Changes
+        run: |
+          cd Loon-repo
+          if [[ -n $(git status -s) ]]; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add Ruleset/
+            git commit -m "Auto Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
+            git push origin HEAD
+          else
+            echo "No changes to commit."
+          fi
+
+      - name: Cleanup Workflow
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          retain_days: 0
+          keep_minimum_runs: 1

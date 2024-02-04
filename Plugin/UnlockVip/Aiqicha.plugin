@@ -1,0 +1,13 @@
+#!name = 爱企查
+#!desc = 爱企查VIP
+#!author = litieyin
+#!homepage = https://github.com/litieyin/AD_VIP/tree/main/Script
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Aiqicha.png
+#!date = [2022/12/9]
+
+
+[Script]
+http-response ^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/aiqicha.js
+
+[MITM]
+hostname = aiqicha.baidu.com

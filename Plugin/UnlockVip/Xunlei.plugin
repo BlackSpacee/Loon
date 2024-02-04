@@ -1,0 +1,13 @@
+#!name = 迅雷
+#!desc = 迅雷解锁会员
+#!author = @89996462
+#!homepage = https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xunlei.js
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Xunlei.png
+#!date = [2022/10/5]
+
+
+[Script]
+http-response https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xunlei.js,requires-body=true
+
+[MITM]
+hostname = xluser-ssl.xunlei.com

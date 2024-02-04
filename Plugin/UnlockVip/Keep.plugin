@@ -1,0 +1,13 @@
+#!name = Keep
+#!desc = Keep解锁会员
+#!author = 89996462
+#!homepage = https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/keep.js
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Keep.png
+#!date = [2022/10/22]
+
+
+[Script]
+http-response ^https:\/\/api\.gotokeep\.com requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/keep.js
+
+[MITM] 
+hostname = api.gotokeep.com

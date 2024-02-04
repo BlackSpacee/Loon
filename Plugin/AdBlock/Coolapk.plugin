@@ -1,0 +1,32 @@
+#!name = 酷安
+#!desc= 酷安去广告&推广
+#!author = @ddgksf2013
+#!homepage = https://raw.githubusercontent.com/ddgksf2013/Scripts/master/coolapk.js
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Ku_an.png
+#!date = [2023/8/8]
+
+
+[Rewrite]
+# > 酷安_屏蔽热词@ddgksf2013
+^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch - reject-dict
+
+
+[Script]
+# > 酷安_开屏广告@ddgksf2013
+http-response ^https?:\/\/api.coolapk.com\/v6\/main\/init script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_16
+
+# > 酷安_推广广告@ddgksf2013
+http-response ^https?:\/\/api.coolapk.com\/v6\/dataList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_18
+
+# > 酷安_首页广告@ddgksf2013
+http-response ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8 script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_20
+
+# > 酷安_评论广告@ddgksf2013
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_22
+
+# > 酷安_商品推广@ddgksf2013
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_24
+
+
+[MITM]
+hostname = api.coolapk.com

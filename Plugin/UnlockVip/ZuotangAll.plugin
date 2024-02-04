@@ -1,0 +1,13 @@
+#!name = 佐糖
+#!desc = 佐糖全家桶解锁会员
+#!homepage = https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zt.js
+#!author = @89996462
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Zuotang.png
+#!date = [2022/11/14]
+
+
+[Script]
+http-response ^https?:\/\/.*\.(aoscdn\.com|apsapp\.cn) script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zt.js, requires-body=true, timeout=6000 ,tag=zt_13
+
+[MITM]
+hostname = *.aoscdn.com,*.apsapp.cn

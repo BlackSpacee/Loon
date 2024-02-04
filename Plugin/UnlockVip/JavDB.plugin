@@ -1,0 +1,17 @@
+#!name = JavDB
+#!desc = JavDB 1.9.17 解锁VIP
+#!homepage = https://github.com/chxm1023/Rewrite/tree/main
+#!openUrl = https://jav522.app/
+#!author = @yqc_007 @chxm1023
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Javdb.png
+#!date = [2023/12/3]
+
+
+[Script]
+http-response ^https?:\/\/api\.hechuangxinxi\.xyz\/api\/v\d\/(users|startup|ads) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/JavDB.js, requires-body=true, timeout=60, tag=JavDB
+
+http-request ^https?:\/\/api\.hechuangxinxi\.xyz\/api\/v\d\/(movies\/.*\/play|startup) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/JavDB.js, timeout=60, tag=JavDB
+
+
+[MITM]
+hostname = api.hechuangxinxi.xyz

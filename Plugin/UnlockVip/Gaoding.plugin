@@ -1,0 +1,14 @@
+#!name = 稿定设计
+#!desc = 去除海报保存水印等
+#!homepage = 
+#!openUrl = 
+#!author = @ios151
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Gaoding.png
+#!date = [2024/1/7]
+
+
+[Script]
+http-response ^https:\/\/qiye\.gaoding\.com\/api\/(structure\/company\/current|ccm\/editors\/risk_materials) script-path = https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/JavaScript/UnlockVip/Gaoding.js, requires-body=true, timeout=60, tag=稿定
+
+[MITM]
+hostname = qiye.gaoding.com

@@ -1,0 +1,13 @@
+#!name = 喜马拉雅签到&Cookie
+#!author = @ClydeTime
+#!homepage = https://github.com/ClydeTime/Surge/tree/main/Script/Task
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Ximalaya.png
+#!date = [2023/11/3]
+
+
+[Script]
+http-request ^https?:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/ script-path = https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js,tag=喜马拉雅Cookie
+cron "35 1 * * *" script-path = https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js, timeout=60, tag=喜马拉雅签到任务
+
+[MITM]
+hostname = xmc.ximalaya.com

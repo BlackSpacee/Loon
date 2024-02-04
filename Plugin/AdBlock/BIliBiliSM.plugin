@@ -1,0 +1,11 @@
+#!name = 哔哩哔哩精简占用
+#!desc = 精简占用(需配合分流使用,卸载重装)
+#!author = @LeLeBay
+#!homepage = https://raw.githubusercontent.com/LeLeBay/rewrinte/main/bilibiliX.js
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/SoftWare/BiliBiliMini.png
+#!date = [2023/10/24]
+
+
+[Rewrite]
+(?=resource\?resourceUrl|upos\-sz\-staticcos) - reject
+(?=.*(hdslb\.com.*(\.zip|\.mp4)))^((?!(hdslb\.com\/bfs\/app-static\/)).)*$ - reject

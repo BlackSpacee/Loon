@@ -1,0 +1,18 @@
+#!name = 白描
+#!desc = 白描黄金会员
+#!homepage = https://github.com/yqc007/QuantumultX/tree/master
+#!author = Hausd0rff
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Baimiao.png
+#!date = [2023/6/27]
+
+
+[URL Rewrite]
+
+^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/c(heckLoginClient|leanAccount) - reject-array
+
+[Script]
+# > 白描解锁黄金会员
+http-response ^https?:\/\/baimiao\.uzero\.cn\/api\/v2\.user\/appLaunchWithUser script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/BaiMiaoGoldVipCrack.js, requires-body=true, timeout=60, tag=BaiMiaoGoldVipCrack_11
+
+[MITM]
+hostname = baimiao.uzero.cn

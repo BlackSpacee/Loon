@@ -1,0 +1,13 @@
+#!name = 扫描全能王
+#!desc = 扫描全能王解锁黄金会员
+#!homepage = https://github.com/chxm1023/Rewrite/tree/main
+#!author = chxm1023
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Saomiao.png
+#!date = [2023/8/19]
+
+
+[Script]
+http-response ^https:\/\/.*\.(intsig\.net|camscanner\.com) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/CamScanner.js, requires-body=true ,tag=CamScanner_8
+
+[MITM]
+hostname = *.camscanner.com,*.intsig.net

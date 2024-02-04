@@ -1,0 +1,14 @@
+#!name = Picsew
+#!desc = Picsew滚动截图+解锁订阅
+#!openUrl = 
+#!homepage = https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Picsew.js
+#!author = @89996462
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Picsew.png
+#!date = [2022/10/8]
+
+
+[Script]
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Picsew.js, requires-body=true, timeout=60, tag=Picsew
+
+[MITM]
+hostname = buy.itunes.apple.com

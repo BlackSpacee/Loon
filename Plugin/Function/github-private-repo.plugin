@@ -1,0 +1,11 @@
+#!name = GitHub Private Access
+#!desc = GitHub 访问私有仓库
+#!author = @Peng-YM
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/SoftWare/GitHub_1.png
+#!homepage = https://t.me/cool_scripts/147
+
+[MITM]
+hostname = raw.githubusercontent.com, gist.githubusercontent.com
+
+[Script]     
+http-request ^https?:\/\/(raw|gist)\.githubusercontent\.com\/BlackSpacee\/Scripts\/ requires-body=0, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/GithubPrivate/github-private-repo.js, tag=Github Private

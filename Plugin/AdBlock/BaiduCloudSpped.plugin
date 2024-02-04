@@ -1,0 +1,25 @@
+#!name = 百度云
+#!desc = 百度云倍速播放
+#!homepage = https://github.com/NobyDa/Script/tree/master/Surge/JS
+#!author = @NobyDa
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/BaiduCloud.png
+#!date = [2023/1/16]
+
+
+[Rewrite]
+# > 百度网盘_设置信息流@ddgksf2013
+^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list - reject-200
+# > 百度网盘_通用广告@ddgksf2013
+^https?:\/\/pan\.baidu\.com\/rest\/.*\/pcs\/ad - reject-200
+# > 百度网盘_活动推广@ddgksf2013
+^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry - reject-200
+
+[Script]
+# > 百度网盘_开屏广告@ddgksf2013
+http-response ^https?:\/\/pan\.baidu\.com\/api\/getsyscfg script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=true, timeout=60, tag=baiduCloud.vip
+
+# > 百度网盘_会员权益@NobyDa
+http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path = https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js, requires-body=true, max-size=0
+
+[MITM]
+hostname = %APPEND% pan.baidu.com

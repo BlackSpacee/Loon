@@ -1,0 +1,14 @@
+#!name = 傲软抠图
+#!desc = 傲软抠图会员 需登陆账号
+#!homepage = https://github.com/ddgksf2013/MoYu
+#!author = @ddgksf2013
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Aoruankoutu.png
+#!date = [2023/11/30]
+
+
+[Script]
+# ～ 傲软抠图解锁会员权限（2023-11-30）@ddgksf2013
+http-response ^https?:\/\/.*aoscdn\.com\/base\/vip\/v\d\/vips script-path=https://raw.githubusercontent.com/ddgksf2013/MoYu/master/ApowersoftProCrack.js, requires-body=true, timeout=60, tag=ApowersoftProCrack_13
+
+[MITM]
+hostname = *.aoscdn.com

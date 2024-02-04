@@ -1,0 +1,17 @@
+#!name = 555电影
+#!desc = 555电影-去广告净化
+#!openUrl = https://555dyy.top
+#!homepage = https://github.com/chxm1023/Advertising
+#!author = chxm1023
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/555.png
+#!date = [2023/9/9]
+
+
+[Rewrite]
+^https?:\/\/vpic\.cms\.qq\.com\/nj_vpic\/.+ - reject
+
+[Script]
+http-response ^https?:\/\/.*\.(weilai555\.com:1000|ecoliving168\.com)\/api\/v\d\/movie\/(index_recommend.+|detail) script-path=https://raw.githubusercontent.com/chxm1023/Advertising/main/555ad.js, requires-body=true
+
+[MITM]
+hostname =  a.weilai555.com,app-v1.ecoliving168.com,vpic.cms.qq.com

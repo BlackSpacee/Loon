@@ -1,0 +1,14 @@
+#!name = 极简汇率解锁
+#!desc = 非一次性解锁,每次使用前需要先启用此插件,无需点击[恢复购买]按钮即可解锁
+#!homepage = https://github.com/chxm1023/Rewrite/tree/main
+#!openUrl = https://too.st/60a
+#!author = @chxm1023
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/JiJianhuilv.png
+#!date = [2023/10/23]
+
+
+[Script]
+http-response ^https?:\/\/(xremit\.xcurrency|explorer.tratao)\.com\/api\/client\/xtool\/vip script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/jijianhuilv.js, requires-body=true, timeout=60, tag=jijianhuilv
+
+[MITM]
+hostname = xremit.xcurrency.com, explorer.tratao.com

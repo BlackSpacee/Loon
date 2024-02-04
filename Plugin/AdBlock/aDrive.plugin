@@ -1,0 +1,13 @@
+#!name = 阿里云盘
+#!desc = 阿里云盘解锁净化VIP倍速
+#!homepage = https://github.com/chxm1023/Rewrite/tree/main
+#!author = chxm1023
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/AliYunDrive_April.png
+#!date = [2013/8/19]
+
+
+[Script]
+http-response ^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js, requires-body=true
+
+[MITM]
+hostname = *.aliyundrive.com,*.alipan.com

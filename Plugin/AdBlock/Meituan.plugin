@@ -1,0 +1,13 @@
+#!name = 美团
+#!desc = 去除美团广告
+#!homepage = https://github.com/bai1zi/shadowrocket-surge-loon-qx
+#!author = @bai1zi
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Meituan.png
+#!date = [2022/9/14]
+
+
+[Rule]
+URL-REGEX,^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4),REJECT
+
+[MITM]
+hostname = flowplus.meituan.net
