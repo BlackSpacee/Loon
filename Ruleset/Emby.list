@@ -1,6 +1,6 @@
 # 基于 https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list 修改
 #
-# 2024-02-04 16:03
+# 2024-02-09 16:18
 
 
 ##### A #####
@@ -44,6 +44,13 @@ DOMAIN-SUFFIX,emby.ssltd.xyz
 
 # 花云
 DOMAIN-SUFFIX,emby.flowercloud
+
+# 黑猫影视EMBY
+DOMAIN-SUFFIX,uuuoo.cc
+DOMAIN-SUFFIX,emby.bid
+DOMAIN-SUFFIX,emby.date
+DOMAIN-SUFFIX,emby.loan
+DOMAIN-SUFFIX,emby.trade
 
 ##### I #####
 
