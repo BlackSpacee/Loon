@@ -1,6 +1,6 @@
 # 基于 https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list 修改
 #
-# 2024-02-09 16:18
+# 2024-02-10 17:34
 
 
 ##### A #####
@@ -71,6 +71,9 @@ DOMAIN-SUFFIX,cf1.jmsooo.com
 # 剧狗
 DOMAIN-SUFFIX,ju.dog
 IP-CIDR,202.61.255.248/32,no-resolve
+
+# 江湖
+DOMAIN-SUFFIX,reddust.link
 
 ##### K #####
 
