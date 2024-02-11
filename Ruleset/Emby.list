@@ -1,6 +1,6 @@
 # 基于 https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list 修改
 #
-# 2024-02-10 17:34
+# 2024-02-11 11:12
 
 
 ##### A #####
@@ -166,6 +166,9 @@ DOMAIN-SUFFIX,post.cn2gias.uk
 
 # TreeDiagram
 DOMAIN-SUFFIX,123456.al
+
+# 太空人
+DOMAIN-SUFFIX,tkremby.xyz
 
 ##### U #####
 
