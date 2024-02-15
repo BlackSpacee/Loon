@@ -1,6 +1,6 @@
 # 基于 https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list 修改
 #
-# 2024-02-15 14:32
+# 2024-02-15 21:49
 
 
 ##### A #####
@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,porn.aca.best
 ##### C #####
 
 # ccemby
+DOMAIN,cc.coemn.com
 DOMAIN-SUFFIX,cc.ccemby.tk
 DOMAIN-SUFFIX,carryz.net
 
