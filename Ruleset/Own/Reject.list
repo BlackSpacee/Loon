@@ -1,4 +1,4 @@
-# 2024-02-08 08:45
+# 2024-02-15 10:45
 
 # ======= A ======= #
 # 阿里巴巴
@@ -58,6 +58,7 @@ DOMAIN,adttrackingprd.hwwt8.com
 # Foreca & Google
 DOMAIN,pagead2.googlesyndication.com
 DOMAIN,www.googleadservices.com
+DOMAIN-SUFFIX,adservice.google.com
 DOMAIN-KEYWORD,adservice.google.com
 DOMAIN-KEYWORD,ads.g.doubleclick
 # ======= G ======= #
