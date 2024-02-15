@@ -1,6 +1,6 @@
 # 基于 https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list 修改
 #
-# 2024-02-11 11:12
+# 2024-02-15 14:32
 
 
 ##### A #####
@@ -105,7 +105,7 @@ DOMAIN-SUFFIX,ntrrr.am.sb
 DOMAIN-SUFFIX,emby.nexitally.com
 
 # Nebula
-DOMAIN-SUFFIX.nebula-emby.com
+DOMAIN-SUFFIX,nebula-emby.com
 
 ##### O #####
 
