@@ -1,4 +1,4 @@
-# 2024-02-15 10:45
+# 2024-02-15 11:35
 
 # ======= A ======= #
 # 阿里巴巴
@@ -54,13 +54,6 @@ DOMAIN,md-i-s.apptimize.com
 # ======= D ======= #
 # DNS 无响应
 DOMAIN,adttrackingprd.hwwt8.com
-# ======= F ======= #
-# Foreca & Google
-DOMAIN,pagead2.googlesyndication.com
-DOMAIN,www.googleadservices.com
-DOMAIN-SUFFIX,adservice.google.com
-DOMAIN-KEYWORD,adservice.google.com
-DOMAIN-KEYWORD,ads.g.doubleclick
 # ======= G ======= #
 # 高德地图
 DOMAIN,amap-aos-info-nogw.amap.com
@@ -75,8 +68,13 @@ DOMAIN,ad.zijieapi.com
 DOMAIN,i.snssdk.com
 DOMAIN,is.snssdk.com
 DOMAIN,open.e.kuaishou.com
+DOMAIN,pagead2.googlesyndication-cn.com
+DOMAIN,pagead2.googlesyndication.com
+DOMAIN,www.googleadservices.com
+DOMAIN-SUFFIX,adservice.google.com
 DOMAIN-SUFFIX,miaozhen.com
 DOMAIN-KEYWORD,-ad-sign.byteimg.com
+DOMAIN-KEYWORD,ads.g.doubleclick
 DOMAIN-KEYWORD,asiad.byteactivity
 DOMAIN-KEYWORD,pangolin-sdk-toutiao
 DOMAIN-KEYWORD,pangolin.snssdk.com
