@@ -1,4 +1,4 @@
-# 2024-02-15 11:35
+# 2024-02-19 10:10
 
 # ======= A ======= #
 # 阿里巴巴
@@ -60,7 +60,6 @@ DOMAIN,amap-aos-info-nogw.amap.com
 DOMAIN,awaken.amap.com
 DOMAIN,free-aos-cdn-image.amap.com
 # 工商银行
-DOMAIN,image.mybank.icbc.com.cn
 DOMAIN,pageviewp.icbc.com.cn
 DOMAIN-SUFFIX,mall.icbc.com.cn
 # 广告联盟
@@ -68,10 +67,13 @@ DOMAIN,ad.zijieapi.com
 DOMAIN,i.snssdk.com
 DOMAIN,is.snssdk.com
 DOMAIN,open.e.kuaishou.com
+DOMAIN,open.kuaishou.com
 DOMAIN,pagead2.googlesyndication-cn.com
 DOMAIN,pagead2.googlesyndication.com
 DOMAIN,www.googleadservices.com
+DOMAIN-SUFFIX,ads.linkedin.com
 DOMAIN-SUFFIX,adservice.google.com
+DOMAIN-SUFFIX,kuaishouzt.com
 DOMAIN-SUFFIX,miaozhen.com
 DOMAIN-KEYWORD,-ad-sign.byteimg.com
 DOMAIN-KEYWORD,ads.g.doubleclick
@@ -121,12 +123,9 @@ DOMAIN,rprain.log.mgtv.com
 DOMAIN,vip.bz.mgtv.com
 DOMAIN-SUFFIX,da.mgtv.com
 # 美团
-DOMAIN,al-log.d.meituan.net
-DOMAIN,babel-statistics-android.d.meituan.net
 DOMAIN,maplocatesdksnapshot.d.meituan.net
 DOMAIN,metrics-picture.d.meituan.net
-DOMAIN,open.kuaishouzt.com
-DOMAIN,route-stats.d.meituan.net
+IP-CIDR,103.37.155.60/32,no-resolve
 # 美颜相机
 DOMAIN,aaid.uyunad.com
 DOMAIN,adui.tg.meitu.com
@@ -1413,7 +1412,6 @@ DOMAIN-SUFFIX,woopra.com
 DOMAIN-SUFFIX,wootric.com
 DOMAIN-SUFFIX,wowanalytics.co.uk
 DOMAIN-SUFFIX,zoomanalytics.co
-DOMAIN-SUFFIX,ads.linkedin.com
 DOMAIN,analytics.slashdotmedia.com
 DOMAIN,zgsdk.zhugeio.com
 # > 51.LA
