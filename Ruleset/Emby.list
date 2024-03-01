@@ -1,6 +1,6 @@
 
 # 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
-# 最后更新时间： 2024-02-15 21:49
+# 最后更新时间： 2024-03-01 22:44
 
 
 ##### A #####
@@ -124,9 +124,7 @@ DOMAIN-SUFFIX,pilipiliultra.com
 
 # pornemby
 DOMAIN-SUFFIX,pornemby.club
-DOMAIN-SUFFIX,s.ii00.cc
-DOMAIN-SUFFIX,us.ii00.cc
-DOMAIN-SUFFIX,jp.ii00.cc
+DOMAIN-SUFFIX,ii00.cc
 
 # polo
 DOMAIN-SUFFIX,poloemby.xyz
