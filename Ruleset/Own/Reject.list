@@ -1,4 +1,4 @@
-# 2024-03-01 09:05
+# 2024-03-17 06:05
 
 # ======= A ======= #
 # 阿里巴巴
@@ -57,7 +57,6 @@ DOMAIN,adttrackingprd.hwwt8.com
 # ======= G ======= #
 # 高德地图
 DOMAIN,amap-aos-info-nogw.amap.com
-DOMAIN,free-aos-cdn-image.amap.com
 # 工商银行
 DOMAIN,pageviewp.icbc.com.cn
 DOMAIN-SUFFIX,mall.icbc.com.cn
@@ -807,19 +806,17 @@ DOMAIN,log.51wnl-cq.com
 DOMAIN,r.51wnl-cq.com
 # (A)
 # > Apple
-DOMAIN-SUFFIX,iadsdk.apple.comX
 DOMAIN-SUFFIX,ads.internal.unity3d.com
 DOMAIN-SUFFIX,ads.prd.ie.internal.unity3d.com
 DOMAIN-SUFFIX,unityads.unity3d.com
 # --- (Alibaba) ---
 DOMAIN,tunion-api.m.taobao.com
 # > YOUKU
-DOMAIN-SUFFIX,ad.youku.com,REJECT
+DOMAIN-SUFFIX,ad.youku.com
 DOMAIN-SUFFIX,atm.youku.com
 DOMAIN,ad.mobile.youku.com
 DOMAIN,adx.op.cp18.ott.cibntv.net
 DOMAIN,pl.cp31.ott.cibntv.net
-DOMAIN,ykad-data.youku.com,REJECT
 # > AMap
 DOMAIN,optimus-ads.amap.com
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com
