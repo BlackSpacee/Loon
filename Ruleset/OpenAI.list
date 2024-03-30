@@ -1,4 +1,4 @@
-# 2024-03-02 19:41:41
+# 2024-03-30 18:38:16
 DOMAIN, api.statsig.com
 DOMAIN, browser-intake-datadoghq.com
 DOMAIN, cdn.openai.com
@@ -13,7 +13,6 @@ DOMAIN, production-openaicom-storage.azureedge.net
 DOMAIN, static.cloudflareinsights.com
 DOMAIN-SUFFIX, algolia.net
 DOMAIN-SUFFIX, auth0.com
-DOMAIN-SUFFIX, cdn.cloudflare.net
 DOMAIN-SUFFIX, chatgpt.com
 DOMAIN-SUFFIX, challenges.cloudflare.com
 DOMAIN-SUFFIX, client-api.arkoselabs.com
