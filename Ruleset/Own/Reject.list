@@ -1,4 +1,4 @@
-# 2024-04-07 22:30
+# 2024-04-13 17:00
 
 # ======= A ======= #
 # 阿里巴巴
@@ -181,8 +181,6 @@ DOMAIN-SUFFIX,163jiasu.com
 DOMAIN,huodong.weibo.cn
 DOMAIN-SUFFIX,biz.weibo.com
 # 微信
-DOMAIN,finderks.video.qq.com
-DOMAIN,finderv1.video.qq.com
 DOMAIN,wxsnsdy.wxs.qq.com
 DOMAIN,wxsnsdythumb.wxs.qq.com
 # ======= X ======= #
