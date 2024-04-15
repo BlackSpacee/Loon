@@ -1,4 +1,4 @@
-# 2024-03-30 18:38:16
+# 2024-04-15 10:00:44
 DOMAIN, api.statsig.com
 DOMAIN, browser-intake-datadoghq.com
 DOMAIN, cdn.openai.com
@@ -28,7 +28,6 @@ DOMAIN-SUFFIX, observeit.net
 DOMAIN-SUFFIX, openai.com
 DOMAIN-SUFFIX, openaiapi-site.azureedge.net
 DOMAIN-SUFFIX, openaicom.imgix.net
-DOMAIN-SUFFIX, poe.com
 DOMAIN-SUFFIX, segment.io
 DOMAIN-SUFFIX, sentry.io
 DOMAIN-SUFFIX, stripe.com
