@@ -33,13 +33,12 @@ jobs:
 
           # OpenAI
           curl -L -o Loon-repo/Ruleset/OpenAI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/OpenAI.list"
-          curl -L -o Loon-repo/Ruleset/ChatGPT_Voice.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"
+
+          # AI合集 (ChatGPT, Copilot, Gemini, Claude...)
+          curl -L -o Loon-repo/Ruleset/AI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
 
           # 社交媒体
           curl -L -o Loon-repo/Ruleset/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
-
-          # 微软
-          curl -L -o Loon-repo/Ruleset/Copilot.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list"
 
           # 流媒体
           curl -L -o Loon-repo/Ruleset/Emby.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Emby.list"
@@ -78,7 +77,7 @@ jobs:
           # 神机规则修正
           curl -L -o Loon-repo/Ruleset/Unbreak.list "https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list"
 
-          # ConnersHua
+          # 神机 ConnersHua
           mkdir -p Loon-repo/Ruleset/ConnersHua
           curl -L -o Loon-repo/Ruleset/ConnersHua/Ads_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
           curl -L -o Loon-repo/Ruleset/ConnersHua/Hijacking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list"
@@ -96,26 +95,36 @@ jobs:
           cp -r tmp/rule/Loon/Zhihu Ruleset/
           cp -r tmp/rule/Loon/Speedtest Ruleset/
 
-          cp -r tmp/rule/Loon/Spotify Ruleset/
           cp -r tmp/rule/Loon/OpenAI Ruleset/
-          cp -r tmp/rule/Loon/Telegram Ruleset/
+
+          cp -r tmp/rule/Loon/Spotify Ruleset/
           cp -r tmp/rule/Loon/TikTok Ruleset/
           cp -r tmp/rule/Loon/Netflix Ruleset/
-          cp -r tmp/rule/Loon/PayPal Ruleset/
+          cp -r tmp/rule/Loon/HBO Ruleset/
+          cp -r tmp/rule/Loon/Disney Ruleset/
+          cp -r tmp/rule/Loon/PrimeVideo Ruleset/
+          cp -r tmp/rule/Loon/Emby Ruleset/
+          cp -r tmp/rule/Loon/GlobalMedia Ruleset/
+
           cp -r tmp/rule/Loon/Cloudflare Ruleset/
+          cp -r tmp/rule/Loon/Oracle Ruleset/
+          cp -r tmp/rule/Loon/PayPal Ruleset/
+
+          cp -r tmp/rule/Loon/Telegram Ruleset/
           cp -r tmp/rule/Loon/Twitter Ruleset/
           cp -r tmp/rule/Loon/Instagram Ruleset/
           cp -r tmp/rule/Loon/Facebook Ruleset/
 
+          cp -r tmp/rule/Loon/Copilot Ruleset/
           cp -r tmp/rule/Loon/GitHub Ruleset/
           cp -r tmp/rule/Loon/OneDrive Ruleset/
           cp -r tmp/rule/Loon/Bing Ruleset/
           cp -r tmp/rule/Loon/Microsoft Ruleset/
 
+          cp -r tmp/rule/Loon/GoogleVoice Ruleset/
+          cp -r tmp/rule/Loon/Gemini Ruleset/
           cp -r tmp/rule/Loon/YouTube Ruleset/
           cp -r tmp/rule/Loon/Google Ruleset/
-
-          cp -r tmp/rule/Loon/Emby Ruleset/
 
           cp -r tmp/rule/Loon/AppleID Ruleset/
           cp -r tmp/rule/Loon/AppStore Ruleset/
@@ -125,7 +134,6 @@ jobs:
           cp -r tmp/rule/Loon/AppleMail Ruleset/
           cp -r tmp/rule/Loon/Apple Ruleset/
 
-          cp -r tmp/rule/Loon/GlobalMedia Ruleset/
         shell: bash
 
       - name: Move ios_rule_script content to Loon-repo/Ruleset
