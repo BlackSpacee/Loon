@@ -1,6 +1,6 @@
 
 # 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
-# 最后更新时间： 2024-03-01 22:44
+# 最后更新时间： 2024-04-29 11:47
 
 
 ##### A #####
@@ -90,6 +90,7 @@ DOMAIN-SUFFIX,emby.lcloud.wiki
 
 # MisakaF
 DOMAIN-SUFFIX,misakaf.org
+DOMAIN-SUFFIX,cloudfront.net
 
 # mjjemby
 DOMAIN-SUFFIX,mjjemby.org
