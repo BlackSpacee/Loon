@@ -1,10 +1,11 @@
-# 2024-05-02 14:00
+# 2024-05-18 12:40
 
 # ======= A ======= #
 # 阿里巴巴
-DOMAIN,ossgw.alicdn.com
+DOMAIN,dns.alidns.com
 DOMAIN,ems.youku.com
 DOMAIN,hudong.alicdn.com
+DOMAIN,ossgw.alicdn.com
 DOMAIN-SUFFIX,ut.taobao.com
 # 阿里云盘
 IP-CIDR,203.107.1.1/24,no-resolve
@@ -76,11 +77,15 @@ DOMAIN,pagead2.googlesyndication.com
 DOMAIN,ws.tapjoyads.com
 DOMAIN,www.googleadservices.com
 DOMAIN-SUFFIX,ads.linkedin.com
+DOMAIN-SUFFIX,ads.vungle.com
 DOMAIN-SUFFIX,adservice.google.com
+DOMAIN-SUFFIX,applovin.com
+DOMAIN-SUFFIX,applvn.com
 DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-SUFFIX,kuaishouzt.com
 DOMAIN-SUFFIX,miaozhen.com
+DOMAIN-SUFFIX,unityads.unity3d.com
 DOMAIN-KEYWORD,-ad-sign.byteimg.com
 DOMAIN-KEYWORD,ads.g.doubleclick
 DOMAIN-KEYWORD,asiad.byteactivity
