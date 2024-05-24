@@ -1,4 +1,4 @@
-# 2024-05-22 22:21:14
+# 2024-05-24 16:42:29
 # ChatGPT
 AND, ((DOMAIN-KEYWORD, chatgpt-async-webps-prod-eastus-), (DOMAIN-KEYWORD, .webpubsub.azure.com))
 DOMAIN, chat.openai.com.cdn.cloudflare.net
@@ -25,6 +25,7 @@ DOMAIN, bard.google.com
 DOMAIN, gemini.google.com
 DOMAIN, generativelanguage.googleapis.com
 DOMAIN, ai.google.dev
+DOMAIN, aida.googleapis.com
 DOMAIN, aistudio.google.com
 DOMAIN, alkalimakersuite-pa.clients6.google.com
 DOMAIN, makersuite.google.com
@@ -37,6 +38,7 @@ IP-CIDR6, 2607:6bc0::/48, no-resolve
 
 # JetBrains AI
 DOMAIN-SUFFIX, grazie.ai
+DOMAIN-SUFFIX, grazie.aws.intellij.net
 
 # Meta
 DOMAIN, imagine.meta.com
