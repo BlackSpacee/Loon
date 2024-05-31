@@ -103,12 +103,13 @@ jobs:
           cp -r tmp/rule/Loon/HBO Ruleset/
           cp -r tmp/rule/Loon/Disney Ruleset/
           cp -r tmp/rule/Loon/PrimeVideo Ruleset/
-          cp -r tmp/rule/Loon/Emby Ruleset/
           cp -r tmp/rule/Loon/GlobalMedia Ruleset/
 
           cp -r tmp/rule/Loon/Cloudflare Ruleset/
           cp -r tmp/rule/Loon/Oracle Ruleset/
           cp -r tmp/rule/Loon/PayPal Ruleset/
+          cp -r tmp/rule/Loon/Binance Ruleset/
+          cp -r tmp/rule/Loon/OKX Ruleset/
 
           cp -r tmp/rule/Loon/Telegram Ruleset/
           cp -r tmp/rule/Loon/Twitter Ruleset/

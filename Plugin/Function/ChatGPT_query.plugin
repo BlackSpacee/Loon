@@ -1,0 +1,11 @@
+#!name = ChatGPT查询
+#!desc = 检测ChatGPT是否原生解锁
+#!openUrl = https://github.com/MCdasheng/Loon
+#!author = @MCdasheng
+#!homepage = https://github.com/MCdasheng
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/SoftWare/OpenAI.png
+#!date = [2024/01/22]
+
+
+[Script]
+generic script-path=https://raw.githubusercontent.com/MCdasheng/Loon/main/Streaming/ChatGPT.js, timeout=10, tag=ChatGPT查询, img-url=globe.americas

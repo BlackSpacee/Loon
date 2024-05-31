@@ -3,7 +3,7 @@
 #!homepage = https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Cainiao.conf
 #!author = @ddgksf2013
 #!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Cainiao.png
-#!date = [2023/12/26]
+#!date = [2024/3/20]
 
 
 [Rewrite]
@@ -11,7 +11,9 @@
 ^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(show|mshow)\.cn\/ - reject-200
 # > 菜鸟裹裹_支付宝小程序_通用广告请求@ddgksf2013
 ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.show - reject-200
-# > 菜鸟裹裹_支付宝小程序_底部商品推广@ddgksf2013
+# > 菜鸟裹裹_支付宝小程序_底部商品推广新@ddgksf2013
+^https?:\/\/acs4miniapp-inner\.m\.taobao\.com\/gw\/mtop\.alimama\.abyss\.unionpage\.get - reject-200
+# > 菜鸟裹裹_支付宝小程序_底部商品推广旧@ddgksf2013
 ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad - reject-200
 # > 菜鸟裹裹_支付宝小程序_匿名选择@ddgksf2013
 ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.consultmerge - reject-200
@@ -36,4 +38,4 @@ http-response ^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nb
 http-response ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/cainiao_json.js, requires-body=true, timeout=60, tag=cainiao_json
 
 [MITM]
-hostname = cn-acs.m.cainiao.com, guide-acs.m.taobao.com
+hostname = cn-acs.m.cainiao.com, guide-acs.m.taobao.com, acs4miniapp-inner.m.taobao.com

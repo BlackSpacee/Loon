@@ -1,0 +1,14 @@
+#!name = AdBlockerPro
+#!desc = AdBlockerPro for Safari浏览器的广告拦截器
+#!openUrl = 
+#!homepage = https://raw.githubusercontent.com/Yu9191/Rewrite/main/adblockpro.js
+#!author = @Yu9191
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/AdBlock_Pro.png
+#!date = [2023/9/9]
+
+
+[Script]
+http-response ^https:\/\/api\.adblockpro\.app\/verify script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/adblockpro.js, requires-body=true, timeout=60, tag=AdBlock_Pro
+
+[MITM]
+hostname = api.adblockpro.app

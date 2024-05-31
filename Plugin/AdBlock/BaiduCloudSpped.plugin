@@ -19,7 +19,7 @@
 http-response ^https?:\/\/pan\.baidu\.com\/api\/getsyscfg script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js, requires-body=true, timeout=60, tag=baiduCloud.vip
 
 # > 百度网盘_会员权益@NobyDa
-http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user script-path = https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js, requires-body=true, max-size=0
+http-response https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/membership\/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
 
 [MITM]
-hostname = %APPEND% pan.baidu.com
+hostname = pan.baidu.com

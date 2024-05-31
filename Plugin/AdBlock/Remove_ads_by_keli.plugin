@@ -4,20 +4,23 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-01-15 23:22:24
+#!date = 2024-05-24 17:07:17
 
 [Rule]
-# 字节跳动 - 广告服务商
-DOMAIN, ad.zijieapi.com, REJECT
-DOMAIN, i.snssdk.com, REJECT
-DOMAIN, is.snssdk.com, REJECT
-DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
-DOMAIN-KEYWORD, -tos.pstatp.com, REJECT-DROP
-DOMAIN-KEYWORD, asiad.byteactivity, REJECT
-DOMAIN-KEYWORD, pangolin.snssdk.com, REJECT
-DOMAIN-KEYWORD, pangolin-sdk-toutiao, REJECT
-DOMAIN-KEYWORD, pglstatp-toutiao, REJECT
-DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
+# 广告联盟放行
+URL-REGEX, ^https:\/\/(api-access\.pangolin-sdk-toutiao(\d|-b)?|is\.snssdk)\.com\/api\/ad\/union\/sdk\/get_ads, DIRECT // 放行此条以确保字节跳动去广告脚本的正常执行
+URL-REGEX, ^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$, DIRECT // 放行此条以确保快手联盟去广告脚本的正常执行
+URL-REGEX, ^https:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg\?, DIRECT // 放行此条以确保腾讯优量汇去广告脚本的正常执行
+
+# 字节跳动广告
+AND, ((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, normal), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
+AND, ((DOMAIN-KEYWORD, minigame), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, tnc), (AND, ((OR, ((DOMAIN-KEYWORD, -bjlgy), (DOMAIN-KEYWORD, -alisc), (DOMAIN-KEYWORD, -aliec))), (OR, ((DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, zijieapi.com)))))), REJECT
+AND, ((DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao), (DOMAIN-SUFFIX, .com)), REJECT
+DOMAIN, toblog.ctobsnssdk.com, REJECT
+DOMAIN, mssdk-bu.bytedance.com, REJECT
+DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com, REJECT
 
 # 快手联盟 - 广告服务商
 DOMAIN, open.e.kuaishou.com, REJECT
@@ -41,8 +44,6 @@ DOMAIN-SUFFIX, union.baidu.cn, REJECT
 DOMAIN-SUFFIX, union.baidu.com, REJECT
 
 # 腾讯优量汇 - 广告服务商
-
-DOMAIN, mazu.m.qq.com, REJECT
 DOMAIN, sdk.e.qq.com, REJECT
 # DOMAIN-SUFFIX, gdt.qq.com, REJECT
 
@@ -62,14 +63,15 @@ DOMAIN, info6.video.qq.com, REJECT
 DOMAIN, ios.video.mpush.qq.com, REJECT
 DOMAIN, otheve.beacon.qq.com, REJECT
 DOMAIN, pgdt.gtimg.cn, REJECT
+DOMAIN, tmead.y.qq.com, REJECT-NO-DROP
+DOMAIN, tmeadbak.y.qq.com, REJECT
+DOMAIN, tmeadcomm.y.qq.com, REJECT
 DOMAIN, tpns.qq.com, REJECT
-DOMAIN, vv.video.qq.com, REJECT
-DOMAIN, vv6.video.qq.com, REJECT
 DOMAIN-SUFFIX, gdt.qq.com, REJECT
 DOMAIN-SUFFIX, l.qq.com, REJECT
 DOMAIN-KEYWORD, trace.qq.com, REJECT
 DOMAIN-KEYWORD, trace.video.qq.com, REJECT
-IP-CIDR, 47.110.187.87/32, REJECT
+IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
 
 # 手机QQ
 DOMAIN, adsmind.gdtimg.com, REJECT
@@ -110,15 +112,18 @@ DOMAIN, data.mistat.xiaomi.com, REJECT
 DOMAIN, tracking.intl.miui.com, REJECT
 # 米家
 DOMAIN, sdkconfig.ad.xiaomi.com, REJECT
-# TubeMax搜索栏广告
-DOMAIN-SUFFIX, applovin.com, REJECT
 
 # 通用广告
 DOMAIN-SUFFIX, doubleclick-cn.net, REJECT
 DOMAIN-SUFFIX, doubleclick.net, REJECT
 
+# 虎牙直播开屏广告
+DOMAIN, business.msstatic.com, REJECT
+DOMAIN-SUFFIX, v1d.szbdyd.com, REJECT
+URL-REGEX, ^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$, REJECT
+
 # 中国移动
-IP-CIDR, 120.240.95.37/32, REJECT
+IP-CIDR, 120.240.95.37/32, REJECT, no-resolve
 
 # 中国联通
 DOMAIN-SUFFIX, m1.ad.10010.com, REJECT
@@ -128,27 +133,12 @@ DOMAIN, ad.21cn.com, REJECT
 DOMAIN, ad.k.21cn.com, REJECT
 DOMAIN, admarket.21cn.com, REJECT
 DOMAIN, adshows.21cn.com, REJECT
-IP-CIDR, 122.229.8.47/32, REJECT
-IP-CIDR, 122.229.29.89/32, REJECT
+IP-CIDR, 122.229.8.47/32, REJECT, no-resolve
+IP-CIDR, 122.229.29.89/32, REJECT, no-resolve
 
 # 京东
 # 弃用地址
 DOMAIN, waapdg.jd.com, REJECT
-
-# 小象买菜 - 兜底TCP请求下发广告
-IP-CIDR, 101.50.8.64/32, REJECT, no-resolve
-IP-CIDR, 101.50.8.75/32, REJECT, no-resolve
-IP-CIDR, 103.37.152.161/32, REJECT, no-resolve
-IP-CIDR, 103.37.152.162/32, REJECT, no-resolve
-IP-CIDR, 103.63.160.64/32, REJECT, no-resolve
-IP-CIDR, 119.29.48.215/32, REJECT, no-resolve
-IP-CIDR, 119.29.48.215/32, REJECT, no-resolve
-IP-CIDR, 202.90.110.8/32, REJECT, no-resolve
-IP-CIDR, 203.76.217.241/32, REJECT, no-resolve
-IP-CIDR, 203.76.217.243/32, REJECT, no-resolve
-IP-CIDR, 203.76.217.37/32, REJECT, no-resolve
-IP-CIDR6, 2405:1480:3000:303f::303f/128, REJECT, no-resolve
-
 
 [Rewrite]
 # 摩托范弹窗广告
@@ -216,9 +206,11 @@ IP-CIDR6, 2405:1480:3000:303f::303f/128, REJECT, no-resolve
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome reject
 
 # QQ
-# 钱包推广 m.qianbao.qq.com
-^https?:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\?invisible reject
-^https?:\/\/m\.qianbao\.qq\.com\/pages\/walletHome\?invisible reject
+# QQ钱包广告 //m.qianbao.qq.com
+^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\? reject-dict
+^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\? reject-dict
+# QQ钱包公益广告
+^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getFootData\? reject-dict
 
 # 猫耳FM - 开屏广告 app.missevan.com
 ^https:\/\/app\.missevan\.com\/site\/launch\? reject
@@ -252,13 +244,11 @@ IP-CIDR6, 2405:1480:3000:303f::303f/128, REJECT, no-resolve
 ^https:\/\/dict\.youdao\.com\/dictusertask\/system reject-dict
 
 # 中国移动 - 开屏广告 //client.app.coc.10086.cn
-^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit reject
-^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/explorePage\/getAdverList reject
-# 多个悬浮窗 感谢#热心网友分享
+^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(explorePage\/getAdverList|init\/startInit) reject
 ^https:\/\/(client\.app\.coc|h\.app\.coc|app)\.10086\.cn\/biz-orange\/DN\/emotionMarket reject
 
-# 广东移动 //gd.10086.cn
-^https?:\/\/gd\.10086\.cn\/gmccapp\/serv\/\?servicename=GMCCAPP_704_002_001_001 reject-200
+# 广东移动去开屏
+^https:\/\/service\.gd\.10086\.cn\/gdcmc\/reso\/d\/ts-area\/10011001-1246\.json reject-dict
 
 # 山东移动 //m.sd.10086.cn
 https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome\.do reject-dict
@@ -279,9 +269,6 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome\.do reject-d
 # 网易大神 god.gameyw.netease.com @可莉🅥
 ^https:\/\/god\.gameyw\.netease\.com\/v1\/ad reject
 
-# 手机QQ
-^https:\/\/v6ii\.gdt\.qq\.com\/api\/gdt\.display\.QQAdService\.GetAds reject-dict
-
 # 埋堆堆 @Kuraki //sfo.mddcloud.com.cn, mob.mddcloud.com.cn, toblog.ctobsnssdk.com, t-dsp.pinduoduo.com, mobads-pre-config.cdn.bcebos.com, sdk1xyajs.data.kuiniuca.com, conf-darwin.xycdn.com, *.ubixioe.com
 ^https?:\/\/mob\.mddcloud\.com\.cn\/adApi\/advert\/(first|third)part\/advertList reject-dict
 ^https?:\/\/t-dsp\.pinduoduo\.com reject-200
@@ -295,19 +282,31 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome\.do reject-d
 # 威锋 - 开屏广告
 ^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/yesList reject
 
-# 小象超市 - 开屏广告
-^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/splash reject-dict
-# 小象超市 - 首页领券悬浮红包
-^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/bubble\/operate\/info reject-dict
-
 # 闲鱼 - 开屏广告
 ^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/ reject-dict
 # 闲鱼 - 底部浮层发布球
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.get\/ reject-dict
 
+# 创客贴设计 - 开屏广告
+^https:\/\/gw\.chuangkit\.com\/team\/app\/common\/ad\/ reject-dict
+
+# 稿定设计 - 开屏广告
+^https:\/\/qiye\.gaoding\.com\/api\/v3\/oc\/v2\/delivery-pits\/ios-splash\/ reject-dict
+
+# 字节跳动广告
+^https:\/\/api-access\.pangolin-sdk-toutiao(\d|-b)?\.com\/api\/ad\/union\/sdk\/(settings|stats)\/ reject
+^https:\/\/ether-pack\.pangolin-sdk-toutiao\.com\/union\/endcard\/ reject
+^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
+^https:\/\/lf3-analytics\.bytescm\.com\/obj\/adjssdk\/ reject
+^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
+
 [Script]
-# 快手联盟、腾讯优量汇、字节跳动穿山甲
-http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除广告联盟广告
+# 字节跳动穿山甲
+http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao(\d|-b)?|is\.snssdk)\.com\/api\/ad\/union\/sdk\/get_ads script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除字节跳动广告
+# 快手联盟
+http-response ^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除快手联盟广告
+# 腾讯优量汇
+http-response ^https:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除腾讯优量汇广告
 
 #向日葵 #开屏广告 #主机名client-api-v2.oray.com
 ^https:\/\/client-api-v2\.oray\.com\/materials\/SLCC_IOS_STARTUP reject-dict
@@ -316,5 +315,8 @@ http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\
 #向日葵 #发现页广告
 ^https:\/\/client-api-v2\.oray\.com\/materials\/SUNLOGIN_CLIENT_IOS_PROMOTION reject-dict
 
+# 10099
+^https:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage reject
+
 [Mitm]
-hostname = api-access.pangolin-sdk-toutiao.com, api.mh.163.com, p.du.163.com, api.m.mi.com, *.huami.com, api.jr.mi.com, home.mi.com, shopapi.io.mi.com, img.dailmo.com, img.allahall.com, app.zhoudamozi.com, api.pinduoduo.com, api.yangkeduo.com, gw.alicdn.com, acs.m.taobao.com, ccmsupport-sz.tenpay.com, m.qianbao.qq.com, app.missevan.com, api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com, hfapp-service.qweather.net, home.umetrip.com, umerp.umetrip.com, us.l.qq.com, dict.youdao.com, api-overmind.youdao.com, cdke.youdao.com, acs.m.taobao.com, guide-acs.m.taobao.com, gw.alicdn.com, heic.alicdn.com, client.app.coc.10086.cn, gd.10086.cn, m.sd.10086.cn, gx.10086.cn, api.ahmobile.cn, wap.js.10086.cn, god.gameyw.netease.com, v6ii.gdt.qq.com, client-api-v2.oray.com, sfo.mddcloud.com.cn, mob.mddcloud.com.cn, toblog.ctobsnssdk.com, t-dsp.pinduoduo.com, mobads-pre-config.cdn.bcebos.com, sdk1xyajs.data.kuiniuca.com, conf-darwin.xycdn.com, *.ubixioe.com, mercury-gateway.ixiaochuan.cn, api.wfdata.club, mall.meituan.com, iyes.youku.com, acs.m.goofish.com, portal-portm.meituan.com
+hostname = *.huami.com, *.ubixioe.com, acs.m.goofish.com, acs.m.taobao.com, api-access.pangolin-sdk-toutiao*.com, api-overmind.youdao.com, api.ahmobile.cn, api.jr.mi.com, api.m.mi.com, api.mh.163.com, api.pinduoduo.com, api.wfdata.club, api.yangkeduo.com, app.10099.com.cn, app.missevan.com, app.zhoudamozi.com, ccmsupport-sz.tenpay.com, cdke.youdao.com, client-api-v2.oray.com, client.app.coc.10086.cn, conf-darwin.xycdn.com, dict.youdao.com, god.gameyw.netease.com, guide-acs.m.taobao.com, gw.alicdn.com, gw.chuangkit.com, gx.10086.cn, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, home.umetrip.com, img.allahall.com, img.dailmo.com, is.snssdk.com, iyes.youku.com, m.qianbao.qq.com, m.sd.10086.cn, mall.meituan.com, mercury-gateway.ixiaochuan.cn, mi.gdt.qq.com, mob.mddcloud.com.cn, mobads-pre-config.cdn.bcebos.com, open.e.kuaishou.com, p.du.163.com, portal-portm.meituan.com, qiye.gaoding.com, sdk1xyajs.data.kuiniuca.com, service.gd.10086.cn, sfo.mddcloud.com.cn, shopapi.io.mi.com, t-dsp.pinduoduo.com, toblog.ctobsnssdk.com, umerp.umetrip.com, us.l.qq.com, v6ii.gdt.qq.com, wap.js.10086.cn, sf3-fe-tos.pglstatp-toutiao.com, ether-pack.pangolin-sdk-toutiao.com, lf3-analytics.bytescm.com

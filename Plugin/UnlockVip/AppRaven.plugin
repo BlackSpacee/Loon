@@ -1,0 +1,13 @@
+#!name = AppRaven
+#!desc = AppRaven 解锁
+#!homepage = https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js
+#!author = @David @iOS151
+#!icon = https://img.blankspace.dedyn.io/file/3ad0cf76831fb49d0c4d3.jpg
+#!date = [2024/2/26]
+
+
+[Script]
+http-response https://appraven.net/appraven/graphql script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/AppRaven.js, requires-body=true, timeout=60, tag=AppRaven
+
+[MITM]
+hostname = appraven.net

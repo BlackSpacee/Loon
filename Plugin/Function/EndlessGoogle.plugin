@@ -7,7 +7,7 @@
 
 
 [Script]
-http-response ^https?:\/\/www\.google\..*\/search script-path = https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/JavaScript/Function/EndlessGoogle.js, requires-body=true, tag=endlessgoogle_9
+http-response ^https?:\/\/www\.google\..*\/search script-path = https://raw.githubusercontent.com/BlackSpacee/Loon/main/Script/JavaScript/Function/EndlessGoogle.js, requires-body=true, tag=谷歌搜索自动翻页
 
 [MITM]
 hostname = www.google.*

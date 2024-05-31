@@ -1,66 +1,63 @@
 #!name = 喜马拉雅净化
-#!desc = 如果广告仍然存在，请清除缓存或卸载应用重新安装
-#!author = @ddgksf2013
-#!homepage = https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Ximalaya.conf
+#!desc = 去广告、修改会员标识（完全自慰）、限时破解会员
+#!author = @ClydeTime
+#!homepage = https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/XMLY/xmly.sgmodule
 #!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/Apps/Ximalaya.png
-#!date = [2023/10/29]
+#!date = [2024/05/16]
+
+[Rule]
+DOMAIN,gslbali.ximalaya.com,REJECT
+DOMAIN,gslbtx.ximalaya.com,REJECT
 
 [Rewrite]
-
-# ～ XiMaLaYa_喜马拉雅_修复轮播Ad失效Bug@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/discovery-feed\/focus\/queryF - reject
-# ～ XiMaLaYa_喜马拉雅_播放页_Live@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/mobile-playpage\/view\/ - reject
-# ～ XiMaLaYa_喜马拉雅_MyInfo红点提醒@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/chaos-notice-web\/v1\/message\/preview\/list - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽大红包Tips@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/social-web\/bottomTabs\/dynamicEntrance\/status - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽gif弹窗Ad@ddgksf2013
+^https?:\/\/xdcs-collector(hera)?\.ximalaya\.com\/(api|nyx)\/v1 - reject
+#播放页Live
+^https?:\/\/.*\.ximalaya\.com\/mobile-playpage\/view\/ - reject
+#MyInfo红点提醒
+^https?:\/\/.*\.ximalaya\.com\/chaos-notice-web\/v1\/message\/preview\/list - reject
+#大红包Tips
+^https?:\/\/.*\.ximalaya\.com\/social-web\/bottomTabs\/dynamicEntrance\/status - reject
+#屏蔽gif弹窗Ad
 ^https?:\/\/.*\.xmcdn\.com\/\w{8}\/\w{4}-\w{16}\/.+gif$ - reject
-# ～ XiMaLaYa_喜马拉雅_gslb@ddgksf2013
-^https?:\/\/gslb.*\.xima.*\.com\/ - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽Aged请求@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/(dog-portal\/checkOld|(child-mobile\/child|aged-mobile\/aged)\/mode\/query) - reject
-# ～ XiMaLaYa_喜马拉雅_部分Tab弹窗@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/discovery-feed\/isShowUserGiftPendant - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽红点提示@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/mobile-user\/unread - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽minor请求@ddgksf2013
-^https?:\/\/.*\.xima.*\.com/mobile-user/minorProtection/pop - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽隐私搜集@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/collector\/xl\/v\d - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽版本更新@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/butler-portal\/versionCheck - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽开屏广告@ddgksf2013
-^https?:\/\/(adse\.wsa|adse|adbehavior|xdcs-collector)\.xima.*\.com\/.* - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽位置请求@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/mobile\/discovery\/v\d\/location - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽热搜词@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/hotWord - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽搜索框定时_Ad@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/(hub)?guideWord - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽实时Ad请求@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/api\/v\d\/adRealTime - reject
-# ～ XiMaLaYa_喜马拉雅_屏蔽ting_Ad@ddgksf2013
-^https?:\/\/.*\.xima.*\.com\/ting\/(loading|feed|home)? - reject
+#屏蔽Aged请求
+^https?:\/\/.*\.ximalaya\.com\/(dog-portal\/checkOld|(child-mobile\/child|aged-mobile\/aged)\/mode\/query) - reject
+#部分Tab弹窗
+^https?:\/\/.*\.ximalaya\.com\/discovery-feed\/isShowUserGiftPendant - reject
+#屏蔽消息红点提示
+^https?:\/\/.*\.ximalaya\.com\/mobile-user\/unread - reject
+#屏蔽minor请求
+^https?:\/\/.*\.ximalaya\.com\/mobile-user\/minorProtection\/pop - reject
+#屏蔽隐私搜集
+^https?:\/\/.*\.ximalaya\.com\/collector\/xl\/v\d - reject
+#屏蔽版本更新
+^https?:\/\/.*\.ximalaya\.com\/butler-portal\/versionCheck - reject
+#屏蔽开屏广告
+^https?:\/\/(adse\.wsa|adse|adbehavior)\.ximalaya\.com\/.* - reject
+#屏蔽位置请求
+^https?:\/\/.*\.ximalaya\.com\/mobile\/discovery\/v\d\/location - reject
+#屏蔽实时Ad请求
+^https?:\/\/.*\.ximalaya\.com\/api\/v\d\/adRealTime - reject
+#屏蔽ting_Ad
+^https?:\/\/.*\.ximalaya\.com\/ting\/(loading|feed|home)? - reject
+#修复轮播Ad失效Bug
+^https?:\/\/.*\.ximalaya\.com\/discovery-feed\/focus\/queryF - reject
+^https?:\/\.*linkeye-cloud\/checkIP - reject
+^https?:\/\/www\.taobao\.com\/help\/getip\.php - reject
+^https?:\/\.*audid-api\.taobao\.com - reject
+^https?:\/\/passport(ws)?\.ximalaya\.com\/user-http-app\/v1\/token\/refresh - reject
 
 [Script]
+http-response ^https?:\/\/(mobile(hera)?|m(ob)?wsa|m)\.ximalaya\.com\/mobile(-user\/v\d\/homePage|-playpage\/(track\/v\d\/baseInfo|playpage\/(tabs\/v\d|recommend(\/resource\/allocation|ContentV\d)))|\/(album\/paid\/info|playlist\/album\/new)|\/v\d\/album\/track) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/XMLY/xmly.js, requires-body=true, tag=专辑音频
 
-# ～ XiMaLaYa_喜马拉雅_首页顶部去除直播@ddgksf2013
-http-response ^https?:\/\/.*\.xima.*\.com\/discovery-category\/customCategories script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js, requires-body=true, timeout=60 ,tag=ximalaya_json_18
+http-response ^https?:\/\/(mobile(hera)?|m(ob)?wsa|m)\.ximalaya\.com\/business-vip-(presale-mobile-web\/page|level-h5-web\/api\/(gift\/detail|profile)|welfare-mobile-web\/welfare\/module\/exclusive\/list) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/XMLY/xmly.js, requires-body=true, tag=会员页
 
-# ～ XiMaLaYa_喜马拉雅_屏蔽首页横幅_Ad@ddgksf2013
-http-response ^https?:\/\/.*\.xima.*\.com\/focus-mobile\/focusPic script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js, requires-body=true, timeout=60 ,tag=ximalaya_json_56
+http-response ^https?:\/\/(mobile(hera)?|m(ob)?wsa|m)\.ximalaya\.com\/discovery-(category\/customCategories|feed\/v\d\/(freeListenTab\/queryCardList|mix)|ranking-web\/v\d\/ranking\/concreteRankList) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/XMLY/xmly.js, requires-body=true, tag=发现页
 
-# ～ XiMaLaYa_喜马拉雅_屏蔽首页动态_Ad@ddgksf2013
-http-response ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/v\d\/mix script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js, requires-body=true, timeout=60 ,tag=ximalaya_json_58
+http-response ^https?:\/\/(mobile(hera)?|m(ob)?wsa|m)\.ximalaya\.com\/(browsing-history-business\/browsing\/history\/query|focus-mobile\/focusPic\/info|nyx\/history\/query\/(detail|id\/list)|product\/detail\/v\d\/basicInfo\/dynamic|subscribe\/v\d\/subscribe\/comprehensive\/rank|vip\/(feed\/v1\/mix|v\d\/recommand)) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/XMLY/xmly.js, requires-body=true, tag=杂项
 
-# ～ XiMaLaYa_喜马拉雅_屏蔽Tab页滚动_Ad@ddgksf2013
-http-response ^https?:\/\/.*\.xima.*\.com\/discovery-category\/v\d/category script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js, requires-body=true, timeout=60 ,tag=ximalaya_json_60
+http-response ^https?:\/\/search(wsa)?\.ximalaya\.com\/(hub\/)?(guideWordV\d|hotWord(V\d|Billboard\/card)) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/XMLY/xmly.js, requires-body=true, tag=搜索推荐
 
-# ～ XiMaLaYa_喜马拉雅_去除我的页面Ad_Tag@ddgksf2013
-http-response ^https?:\/\/.*\.xima.*\.com\/mobile-user\/v\d\/homePage script-path=https://github.com/ddgksf2013/Scripts/raw/master/ximalaya_json.js, requires-body=true, timeout=60 ,tag=ximalaya_json_62
+http-request ^https?:\/\/(mobile(hera)?|m(ob)?wsa)\.ximalaya\.com\/(mobile-playpage\/track|mobile\/quickplay) script-path=https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/XMLY/xmly_ck.js, tag=解锁会员
 
 [MITM]
-
-hostname = *.xima*.*,*.xmcdn.*
+hostname = *.ximalaya.com, 47.100.227.85, 61.164.145.12, 61.172.194.185, 61.172.194.186, 106.41.204.126, 112.80.180.72, 112.98.170.228, 112.99.146.108, 114.80.99.*, 118.25.119.177, 180.153.140.*, 180.153.250.*, 180.153.255.*

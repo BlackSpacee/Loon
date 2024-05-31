@@ -1,0 +1,11 @@
+#!name = Spotify家庭查询
+#!desc = 检测Spotify注册及家庭组包月价格
+#!openUrl = https://github.com/MCdasheng/Loon
+#!author = @MCdasheng
+#!homepage = https://github.com/MCdasheng
+#!icon = https://raw.githubusercontent.com/BlackSpacee/icon/main/SoftWare/Spotify.png
+#!date = [2024/04/05]
+
+
+[Script]
+generic script-path=https://raw.githubusercontent.com/MCdasheng/Loon/main/Streaming/Spotify.js, timeout=10, tag=Spotify家庭查询, img-url=music.note.house
