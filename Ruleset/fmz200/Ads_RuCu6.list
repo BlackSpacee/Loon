@@ -1,4 +1,4 @@
-# 2024-05-31 17:35
+# 2024-06-01 07:00
 
 # ======= A ======= #
 # 阿里巴巴
@@ -218,10 +218,10 @@ DOMAIN,sdkconfig.ad.xiaomi.com
 
 # ======= Y ======= #
 # 移花宫
-DOMAIN,3117kc.saigmpl.com
-DOMAIN,314240585f1fb7266kcc.fwxhvvd.com
-DOMAIN,314240585f1fb7266kg.oiocklg.com
 DOMAIN,tong.8888888888.bid
+DOMAIN-KEYWORD,kc.saigmpl.com
+DOMAIN-KEYWORD,kcc.fwxhvvd.com
+DOMAIN-KEYWORD,kg.oiocklg.com
 # 优酷 & 菜鸟
 # DOMAIN,acs.youku.com
 DOMAIN,acs4baichuan.m.taobao.com
