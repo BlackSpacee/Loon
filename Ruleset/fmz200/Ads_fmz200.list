@@ -5,7 +5,7 @@
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/NaiSi_01.png
 #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/fenliu.list
 #!tg-group=https://t.me/lanjieguanggao
-#!date=2024-06-13 21:00:00
+#!date=2024-06-16 00:10:00
 #!support=约9392行
 #!proxy-select=reject
 #############################################
@@ -22,14 +22,15 @@
 # >>>>>>>>>>>>>>> ✅ # ✅ <<<<<<<<<<<<<<
 # > 广告联盟
 DOMAIN-SUFFIX,miaozhen.com
-DOMAIN-KEYWORD,ad-sign.byteimg.com
-DOMAIN-KEYWORD,tos.pstatp.com
+DOMAIN-SUFFIX,ad-sign.byteimg.com
+DOMAIN-SUFFIX,tos.pstatp.com
 DOMAIN-KEYWORD,asiad.byteactivity
 DOMAIN-KEYWORD,pangolin-sdk-toutiao
-DOMAIN-KEYWORD,pangolin.snssdk.com
 DOMAIN-KEYWORD,pglstatp-toutiao
-DOMAIN-KEYWORD,video-cn.snssdk.com
-
+DOMAIN-SUFFIX,pangolin.snssdk.com
+DOMAIN-SUFFIX,video-cn.snssdk.com
+DOMAIN-SUFFIX,getui.com
+DOMAIN-SUFFIX,igexin.com
 # > 收集用户隐私联盟，若有问题自行设置白名单
 DOMAIN-KEYWORD,volc
 
@@ -792,14 +793,15 @@ DOMAIN,adui.tg.meitu.com
 DOMAIN,aaid.uyunad.com
 
 # > 买单吧
-DOMAIN-KEYWORD,c-hzgt2.getui.com
+DOMAIN-SUFFIX,c-hzgt2.getui.com
+DOMAIN-SUFFIX,c-hzgt2.getui.com
+DOMAIN-SUFFIX,gs.getui.com
 
 # > 民生银行
 DOMAIN-KEYWORD,cm-10-134.getui.com
 DOMAIN-KEYWORD,sdk.open.talk.getui.com
 DOMAIN-KEYWORD,cm-10-35.getui.com
 DOMAIN-KEYWORD,c-hzgt2.getui.com
-DOMAIN-SUFFIX,sdk.open.talk.igexin.com
 
 # > 墨迹天气
 DOMAIN-KEYWORD,fds.api.moji.com
@@ -1553,11 +1555,11 @@ DOMAIN,saxn.sina.com.cn
 # >>>>>>>>>>>>>>> ✅ Y ✅ <<<<<<<<<<<<<<
 # > 云闪付
 DOMAIN,ads.95516.com
+DOMAIN,tysdk.95516.com
 DOMAIN,cm-10-138.getui.com
 DOMAIN,sdk.open.talk.getui.net
 DOMAIN,sdk-conf.getui.com
 DOMAIN,switch.cup.com.cn
-DOMAIN,tysdk.95516.com
 
 # > 雅虎
 DOMAIN-SUFFIX,adserver.yahoo.com
@@ -3872,7 +3874,6 @@ DOMAIN-SUFFIX,idcqi.com
 DOMAIN-SUFFIX,idianfang.com
 DOMAIN-SUFFIX,ie8eamus.com
 DOMAIN-SUFFIX,if1512.com
-DOMAIN-SUFFIX,igexin.com
 DOMAIN-SUFFIX,ihualun.com
 DOMAIN-SUFFIX,ihuanmei.com
 DOMAIN-SUFFIX,iiad.com
@@ -6185,8 +6186,6 @@ DOMAIN-SUFFIX,stjzh.gdtarget.com
 DOMAIN-SUFFIX,dspmy.ge95.com
 DOMAIN-SUFFIX,image.gentags.com
 DOMAIN-SUFFIX,sdk.open.talk.gepush.com
-DOMAIN-SUFFIX,c-hzgt2.getui.com
-DOMAIN-SUFFIX,gs.getui.com
 DOMAIN-SUFFIX,js.gewuwen.com
 DOMAIN-SUFFIX,json.gewuwen.com
 DOMAIN-SUFFIX,biz.gexing.com
@@ -6480,13 +6479,14 @@ DOMAIN-SUFFIX,api.newad.ifeng.com
 DOMAIN-SUFFIX,cz.ifeng0.com
 DOMAIN-SUFFIX,c0.ifengimg.com
 DOMAIN-SUFFIX,c1.ifengimg.com
-DOMAIN-SUFFIX,sdk.open.amp.igexin.com
-DOMAIN-SUFFIX,sdk.conf.igexin.com
 DOMAIN-SUFFIX,api.gi.igexin.com
-DOMAIN-SUFFIX,sdk.open.lbs.igexin.com
-DOMAIN-SUFFIX,talk.nz.igexin.com
-DOMAIN-SUFFIX,sdk.open.phone.igexin.com
 DOMAIN-SUFFIX,api.y.igexin.com
+DOMAIN-SUFFIX,talk.nz.igexin.com
+DOMAIN-SUFFIX,sdk.open.lbs.igexin.com
+DOMAIN-SUFFIX,sdk.open.amp.igexin.com
+DOMAIN-SUFFIX,sdk.open.phone.igexin.com
+DOMAIN-SUFFIX,sdk.open.talk.igexin.com
+DOMAIN-SUFFIX,sdk.conf.igexin.com
 DOMAIN-SUFFIX,fimserve.ign.com
 DOMAIN-SUFFIX,prerollads.ign.com
 DOMAIN-SUFFIX,unicast.ign.com
