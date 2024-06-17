@@ -2,10 +2,10 @@
 #!desc=(F)针对部分APP和小程序广告进行拦截，某些APP要清除缓存或者重新安装APP，拦截广告才会生效！
 #!author=fmz200
 #!homepage=https://github.com/fmz200/wool_scripts
-#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/NaiSi_01.png
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/gif/naisi-01.gif
 #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/fenliu.list
 #!tg-group=https://t.me/lanjieguanggao
-#!date=2024-06-16 20:10:00
+#!date=2024-06-17 22:10:00
 #!support=约9392行
 #!proxy-select=reject
 #############################################
@@ -927,7 +927,25 @@ DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao.com
 
 # >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
 # > QQ音乐
+DOMAIN,adstats.tencentmusic.com
+DOMAIN,ad.tencentmusic.com
+DOMAIN,adcdn.tencentmusic.com
+DOMAIN,adcdn6.tencentmusic.com
+DOMAIN,adexpo.tencentmusic.com
+DOMAIN,adclick.tencentmusic.com
+DOMAIN,otheve.beacon.qq.com
+DOMAIN,monitor.music.qq.com
+DOMAIN,stat.y.qq.com
+DOMAIN,tmead.y.qq.com
+DOMAIN,oth.str.mdt.qq.com
+DOMAIN,h.trace.qq.com
+DOMAIN,sdk.e.qq.com
+DOMAIN,p.l.qq.com
 DOMAIN,us.l.qq.com
+DOMAIN,tangram.e.qq.com
+DOMAIN,tmeadbak.y.qq.com
+DOMAIN-SUFFIX,imtmp.net
+
 
 # > 蜻蜓FM
 DOMAIN,ad.qingting.fm
