@@ -1,1 +1,93 @@
-<!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;max-width:60rem;padding-left:1.5rem}@media (width <= 720px){.main-content{margin-top:4rem}}.h2{font-size:1.5rem;font-weight:500;line-height:2.25rem}@media (width <= 720px){.h2{font-size:1.25rem;line-height:1.5rem}}#challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);background-repeat:no-repeat;background-size:contain;padding-left:34px}@media (prefers-color-scheme:dark){body{background-color:#222;color:#d9d9d9}}</style><meta http-equiv="refresh" content="360"></head><body><div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt={cvId: '3',cZone: "gitlab.com",cType: 'managed',cRay: '94dd82c8ec446083',cH: '9UrZLo1CMaFQoXA7sQ.A2uoKL1JM4ykkWF.PXtUNgfs-1749607184-1.2.1.1-oXEB9qhLLcFi5NsBaSDuWEDG4zDKHUXYsxjaWP2sFeSNlxV6a6cEIZ.STb8.9YFJ',cUPMDTk: "\/users\/sign_in?__cf_chl_tk=bOgIt4ZYMyK.C4U8_3KCmy6eHS3aheYsern4De22MSY-1749607184-1.0.1.1-42u9FmgyP.kOIMofQBiInFHyJwokOSL0_nK.IHXd4ag",cFPWv: 'b',cITimeS: '1749607184',cTplC: 0,cTplV: 5,cTplB: 'cf',fa: "\/users\/sign_in?__cf_chl_f_tk=bOgIt4ZYMyK.C4U8_3KCmy6eHS3aheYsern4De22MSY-1749607184-1.0.1.1-42u9FmgyP.kOIMofQBiInFHyJwokOSL0_nK.IHXd4ag",md: "VEq9_A6IZs1AlFKRcP_4OzzK_xIIYlZcV2hCcCJePNE-1749607184-1.2.1.1-eJj5K57YfxOCgh54cVcAUnvlDtdoT4QmOUlJ5mrp4sFmG48GirsQ2Rk9GHveCTPL_fPKr7.gKAFrhbOps16uuQyki0PaejsGy7brKDqumlHG4sBLs__SD1VUY62hfO2yHzRjEQ8OZazMV.dKhLTbqW7.g7Y2nVpYvlxzzl_CuvClb7kGYOpO76fKPFp190Bt7YU2XXaBvReWlZb7T0xx9X1jTL4bUbWoKAMM84FVeJKoMI3OM_kxMi_RrJOHeuKQGIHTH0V8TMf3R4u_F3f7.0QpVfw1SZZVsPzhN8hEWz3z7PtXn8chTIxOSr2soEjSY2ZtPmDk4bCu8BKhxyRqifneblXxOoWVEH9HRzjaY6rsBlv.Ovd13S1dC7Wlo_ZLRAUlEAnU3do5MnkZuEeCLrSxTuUJnSrOthCJ29lfsoJotMeVZM6Ub3gb3p5ws000Yc11lmZBwHTe3ExVVXj67F4NET11pQyVlkg8wG9jIcTvycyL11bbTqMu4WMQZL3BPfvaDfoi0mhSGTOYcwPQJy6yIizgoThCaTic0qCYa3s7OSvSqV9bVDoNoj6YTjCtAtWuSa7Euo3cRcHshxADx_6zD.72XxO1Eb4OGTPczkqidTwi6isCfezznHugzgWCAwAcegzY2unYcIAJLCNf2brJ2M2Oy26fx8U9hU4jjVCjKJvTLTjc50OCVq1G5RD1XD87qpEPUdqm9O8vJffzEYaU0DpXpH3nQMqCffAY6kIhQ5CUPj4NyML4kG7UDf_dUo_tVwEWeuwaSFG0RKa.2bgXQuPGFLrFrc2jVOnNiFQN4agPTn2IiQOA.allLgrwJSiL_TB5kTLclNyDUtxQQv3WirmqhWEU39muSkPg4ikV9bj5Tj5DL1w._xOuoj1yfA_TjDz7DbaslzK3c4N2S469G9BCdrX49jGAJZe9NRU",mdrd: "lTeXauthnDkAAgHFpSnfCqV2IWx2F9dJBSzawiugPA4-1749607184-1.2.1.1-kwfKWxOBx3jZ_fj718w586ZyANc2Q5JMpC8HIeb9JZ2ifoxmpSwqu2XGUjvdW0Iqp40ktgkQbMOcRuSN22ot.kxCEkdzuuKEBqthRjUuLHO0r1kxzqjHnbr23sVNymzM.N7M4nlZgD927wr.rlm0fzAYLtGqDUAKsv8ywEJAecwF6_UkZ1WnpaHnQCDvZzU17BTglUwFViifZmf3vUM9gEr1GuhV4b236Y83SY1cEritasc4Dedueob.G.cB6i1Pqwj1Hblv8S2f67thHHzAxTwR6fPslks4ktCHi7F2mWR_dMLSl21CUasZIF_Ou1_Gsostee177OLubD5IrHvVCIxudnVhtuImREhD9OaTL04RvUKrEemeiVZcBNw4kGGtP.PZPdLa3U2DlECGQ5ePEkeDeh4DS.3N5pWgj6Y2ONj6NbHFI1lYywLfEn7f_D_YlUMBxGGuWwmtmtys8IuXwmkTR1ex3qgL_palS6ut_XB.krwN4CEcxwpZkjZgEgzWecNfspjZ_v.GoEzI67v.RxRy9TK1gMKAfqzcV.QyuJ6T22Sd8ShAvz8uA35.inEmCSxC5q0AeHvwtb2JVZUFPyXO8C6veYKybA5BYrXkokVCbZXryGy7u5ABQ3Sgpm4T0PC36ngWJkQ27x0QNukuoe3lmoa4x7XYak2eWSt3Z8D4EgzsD.A1.qJGm0GwQ25vltYxKUoDhousEwmSI8bXuImtk.U7.lMFom2p0B_E3FjA_HEMUaGvjc.PLP7tieepIOCCPp6iYEqtPs9nXe8XX4oZw_qGfxEoPnHh3DTZJm0IWVGi7EMCqD7btv3pWW6lBy4S0.WR6Gwp.1SakpFiwIruAQ0ynKOsoPBcJhpyTNs_E.LuhaOVYygw9AW1FAZ3s_dmedHy96CJbZ4F5bjB7Lve2hIoHP5kJXIg1_DapzgBLTbk1Kvaqzz8GfRwlW5axcSP1iID.BJtxUvsa1qc_SkAqbew7jE2.HxDF.gBX7jVJhj0HIJTyAe02geSLK7sRReb4mPCTJHhYJp1gGFV8wZgwwD58M1DNwt1iYn1.hkDqr188hBJroEJ23dYZAICEfHa8IkNO7KK1fJ4ds0WasvihOzBlm4jEtwVhUsTZLh1aXHlW9540rUjpLJiTaIaRVrHFpMeRCtHK6u3D6cgg.919O7gyNPNSVzDutoEMdcW4wMDGWwyNYoOCKgGa6Qm2t8pKGn.UwKkbkrbONKnoKpT6LEuyEg4PJjf3VCySAxvQ6mn1TTdNHr8fjKhN7nHPMP8s2tWdHApju2oodXjTo4FgsVRblo7wZqcDDU_FJ57br5qrOFJsxBz3IpKXtLYT1X5AhyVHot77YnAAKu1o4d8yNjd9G8QS04Bhgtt9mG6i1HPnyMSErij7IBtAlyt.1UGzSidi.jOXeLExQbK4Vph9WAJbaheZ3aIqFEenQNsr71ufIxHqvdCHznEWv5GSW_VBlq46J0L3JrvQHiY_38ANSXZpfUQXCHcIiNl_SmcYLpZKuayXhoJ61RHjIsIzlkWix2tneqDVSoaDP93M8qqJCzQG7k9VAOH.kz6t61345XqS64Cg6UCc08ABaiyYMMbCbgCpz6dzQVbPKeLsxnCkV48ROc9kpAlOaViGH_D92bzpEpAUGj7nBHDC1RZkFsu4gCLnGBiChzBlT3FHHq_pCA2CSC.GBf2z_aei.W65Y8BPXFRwzdQZYXBvpaJ0mSB8JFAEPn32fZH47xmEQMTEi.7QoQbT_gZ2Gi0md1cBe8EP6P1Qmb7U2jiFfKk3QN4XXooYTcANLRVJcAq4nkPXQEmH8SAvFVUG2hsEUBNQWMNXaXSWsmWFZGHabq9gJStiBuGqDam5Mpc3sG9Pqza5TKjdBi_b3VYP8U4vidO5uDVc4jdxh_BC.zFnMM1Qc.pZeg9aWtN_xE0QsHtU59zegNHcGSOe7T5hL9ZRDn00CcB44__Pa2B62Qa4BrJxI5ZYkZ4wPxPJeMiI5rogu7ilqBavFodHf6cGsDjWFXtyJ76Ge8CNcfUuCU_DFoC"};var cpo = document.createElement('script');cpo.src = '/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=94dd82c8ec446083';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null, "\/users\/sign_in?__cf_chl_rt_tk=bOgIt4ZYMyK.C4U8_3KCmy6eHS3aheYsern4De22MSY-1749607184-1.0.1.1-42u9FmgyP.kOIMofQBiInFHyJwokOSL0_nK.IHXd4ag" + window._cf_chl_opt.cOgUHash);cpo.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(cpo);}());</script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Waiting for GitLab to boot</title>
+  <style>
+    body {
+      color: #333238;
+      text-align: center;
+      font-family: "Nunito Sans", -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      margin-bottom: .5rem;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1068bf;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .error-container {
+      max-width: 65ch;
+      margin: auto;
+      padding: 1rem 0;
+    }
+
+    .action-container {
+      margin-top: 1.5rem;
+    }
+
+    .go-back {
+      display: none;
+    }
+
+    .footer {
+      margin: 1rem 0 0 0;
+      padding: 1rem 0 0 0;
+      border-top: 1px solid #dcdcde;
+      color: #737278;
+      font-size: 0.75rem;
+    }
+    .footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="error-container">
+    <img src='/-/error-illustrations/error-502-lg.svg' alt="502 error"/>
+    <h1>HTTP 502: Waiting for GitLab to boot</h1>
+    <p>It can take up to a few minutes for GitLab to boot completely.</p>
+    <p>This page will automatically reload every 5 seconds.</p>
+    <div class="action-container">
+      <a href="javascript:history.back()" class="js-go-back go-back">Go back</a>
+    </div>
+
+    <div class="footer">
+      <p>Refreshed at <span id="refreshedAt"></span></p>
+    </div>
+  </div>
+
+  <script>
+    const now = new Date();
+    const refreshedAt = now.toLocaleTimeString();
+
+    document.getElementById("refreshedAt").innerText = refreshedAt;
+
+    window.setTimeout(() => location.reload(), 5000);
+
+    if (history.length > 1) {
+      const goBack = document.querySelector('.js-go-back');
+      goBack.style.display = 'inline';
+    }
+  </script>
+</body>
+</html>
