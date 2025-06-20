@@ -5,7 +5,7 @@
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/gif/naisi-01.gif
 #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/fenliu.list
 #!tg-group=https://t.me/lanjieguanggao
-#!date=2025-06-03 21:11:00
+#!date=2025-06-20 23:40:17
 #!support=约9392行
 #!proxy-select=reject
 #############################################
@@ -837,11 +837,12 @@ DOMAIN,v1.log.moji.com
 # > 咪咕视频
 DOMAIN-SUFFIX,ad.cmvideo.cn
 DOMAIN,ggc.cmvideo.cn
-DOMAIN,ggic03.miguvideo.com
-DOMAIN,ggmk.miguvideo.com
 DOMAIN,ggv.cmvideo.cn
 DOMAIN,ggx.cmvideo.cn
 DOMAIN,ggx03.miguvideo.com
+DOMAIN,ggic03.miguvideo.com
+DOMAIN,ggmk.miguvideo.com
+DOMAIN,ggadoffline.miguvideo.com
 
 # > 小米米家
 DOMAIN,sdkconfig.ad.xiaomi.com
