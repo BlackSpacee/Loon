@@ -15,8 +15,6 @@ DOMAIN,dl.l.google.com
 DOMAIN,redirector.gvt1.com
 # > Google Flights
 DOMAIN-SUFFIX,googletraveladservices.com
-# > Firebase Cloud Messaging
-DOMAIN-WILDCARD,*mtalk*.google.com
 # ------
 # > Tencent
 DOMAIN,fairplay.l.qq.com
