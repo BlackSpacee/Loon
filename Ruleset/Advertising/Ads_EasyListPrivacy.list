@@ -1,9 +1,9 @@
 ## [Adblock Plus 1.1]
-## ! Version: 202610310121
+## ! Version: 202610311546
 ## ! Title: EasyPrivacy
-## ! Last modified: 31 Oct 2026 01:21 UTC
+## ! Last modified: 31 Oct 2026 15:46 UTC
 ## ! Expires: 4 days (update frequency)
-## ! Commit: 8441235efb81fa70fb61ff1e2673701bda6b6080
+## ! Commit: 2b886f881b0562413c3ac7c2b43bbf572918e991
 ## ! *** easylist:template_header.txt ***
 ## ! 
 ## ! Please report any unblocked adverts or problems
@@ -506,6 +506,7 @@ DOMAIN-SUFFIX,turboeagle.co
 DOMAIN-SUFFIX,turbolion.io
 DOMAIN-SUFFIX,tvpixel.com
 DOMAIN-SUFFIX,tw.cx
+DOMAIN-SUFFIX,ubbrobccheck20.cc
 DOMAIN-SUFFIX,ugdturner.com
 DOMAIN-SUFFIX,uidapi.com
 DOMAIN-SUFFIX,uimarketpro.com
@@ -1016,6 +1017,7 @@ DOMAIN-SUFFIX,cicdserver.com
 DOMAIN-SUFFIX,ciderfeast.com
 DOMAIN-SUFFIX,cinemabonus.com
 DOMAIN-SUFFIX,cinemafair.com
+DOMAIN-SUFFIX,circascope.com
 DOMAIN-SUFFIX,circlelevel.com
 DOMAIN-SUFFIX,citizensactive.com
 DOMAIN-SUFFIX,citydeal.net
@@ -1789,6 +1791,7 @@ DOMAIN-SUFFIX,ivykiosk.com
 DOMAIN-SUFFIX,j93557g.com
 DOMAIN-SUFFIX,jailbulb.com
 DOMAIN-SUFFIX,jamexport.com
+DOMAIN-SUFFIX,jazzpianofast.com
 DOMAIN-SUFFIX,jellyfinstream.com
 DOMAIN-SUFFIX,jetskiscovers.com
 DOMAIN-SUFFIX,jewelryforest.com
@@ -1797,6 +1800,7 @@ DOMAIN-SUFFIX,jigsawlucky.com
 DOMAIN-SUFFIX,joblessdrum.com
 DOMAIN-SUFFIX,jobmist.com
 DOMAIN-SUFFIX,joshpaintings.com
+DOMAIN-SUFFIX,joybegins.com
 DOMAIN-SUFFIX,joyfulharbor.com
 DOMAIN-SUFFIX,joyouspool.com
 DOMAIN-SUFFIX,joyoussurprise.com
@@ -1825,6 +1829,7 @@ DOMAIN-SUFFIX,justwowjars.com
 DOMAIN-SUFFIX,kartbarriersystem.com
 DOMAIN-SUFFIX,keenquill.com
 DOMAIN-SUFFIX,kernellife.com
+DOMAIN-SUFFIX,keymono.net
 DOMAIN-SUFFIX,kidpowers.com
 DOMAIN-SUFFIX,kidrobotgames.com
 DOMAIN-SUFFIX,kindhush.com
@@ -3833,6 +3838,7 @@ DOMAIN-SUFFIX,events.jotform.com
 DOMAIN-SUFFIX,events.mapbox.com
 DOMAIN-SUFFIX,events.matterport.com
 DOMAIN-SUFFIX,events.medio.com
+DOMAIN-SUFFIX,events.mics-notrack.com
 DOMAIN-SUFFIX,events.missena.io
 DOMAIN-SUFFIX,events.ocdn.eu
 DOMAIN-SUFFIX,events.paramount.tech
