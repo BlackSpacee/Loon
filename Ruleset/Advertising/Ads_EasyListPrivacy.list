@@ -1,9 +1,9 @@
 ## [Adblock Plus 1.1]
-## ! Version: 202611130738
+## ! Version: 202611140226
 ## ! Title: EasyPrivacy
-## ! Last modified: 13 Nov 2026 07:38 UTC
+## ! Last modified: 14 Nov 2026 02:26 UTC
 ## ! Expires: 4 days (update frequency)
-## ! Commit: 7733428ccf7d9c59a0162128babd65f643213a34
+## ! Commit: a68512430cf0299bd0a30102d4e3c32fd7e5cda9
 ## ! *** easylist:template_header.txt ***
 ## ! 
 ## ! Please report any unblocked adverts or problems
@@ -41,6 +41,7 @@ DOMAIN-SUFFIX,admaxium.com
 DOMAIN-SUFFIX,admediasales.com
 DOMAIN-SUFFIX,admetrics.events
 DOMAIN-SUFFIX,adnext.co
+DOMAIN-SUFFIX,adnz.co
 DOMAIN-SUFFIX,adrsbl.io
 DOMAIN-SUFFIX,adrtx.net
 DOMAIN-SUFFIX,adscore.com
@@ -2533,6 +2534,7 @@ DOMAIN-SUFFIX,robotsrefinery.com
 DOMAIN-SUFFIX,rockagainst.com
 DOMAIN-SUFFIX,rockcarving.com
 DOMAIN-SUFFIX,rocketmonitor.com
+DOMAIN-SUFFIX,rocketserver.net
 DOMAIN-SUFFIX,rockspreading.com
 DOMAIN-SUFFIX,rockstarwriter.com
 DOMAIN-SUFFIX,roguephilosopher.com
@@ -2812,6 +2814,7 @@ DOMAIN-SUFFIX,spaceaffinity.com
 DOMAIN-SUFFIX,spareapp.com
 DOMAIN-SUFFIX,sparkgoal.com
 DOMAIN-SUFFIX,sparklingshelf.com
+DOMAIN-SUFFIX,spasmgame.com
 DOMAIN-SUFFIX,specialreview.net
 DOMAIN-SUFFIX,specialscissors.com
 DOMAIN-SUFFIX,specialtypin.com
@@ -3002,6 +3005,7 @@ DOMAIN-SUFFIX,tastelesstrees.com
 DOMAIN-SUFFIX,tastesnake.com
 DOMAIN-SUFFIX,tawdryson.com
 DOMAIN-SUFFIX,taxisubsea.com
+DOMAIN-SUFFIX,taxiwear.com
 DOMAIN-SUFFIX,tealjewel.com
 DOMAIN-SUFFIX,teamstatus.net
 DOMAIN-SUFFIX,tearfulglass.com
@@ -3020,6 +3024,7 @@ DOMAIN-SUFFIX,teeoffcafe.com
 DOMAIN-SUFFIX,teeshining.com
 DOMAIN-SUFFIX,telephoneapparatus.com
 DOMAIN-SUFFIX,tempertrick.com
+DOMAIN-SUFFIX,tempowraps.com
 DOMAIN-SUFFIX,temptteam.com
 DOMAIN-SUFFIX,tendertest.com
 DOMAIN-SUFFIX,tenhourweek.com
@@ -3326,6 +3331,7 @@ DOMAIN-SUFFIX,wrongwound.com
 DOMAIN-SUFFIX,wtaccesscontrol.com
 DOMAIN-SUFFIX,yachtloft.com
 DOMAIN-SUFFIX,yellowscissors.com
+DOMAIN-SUFFIX,yetiminis.com
 DOMAIN-SUFFIX,yieldingwoman.com
 DOMAIN-SUFFIX,youcandrawanything.com
 DOMAIN-SUFFIX,yourgiftedbaby.com
@@ -3428,6 +3434,7 @@ DOMAIN-SUFFIX,analytics.adobe.io
 DOMAIN-SUFFIX,analytics.agoda.com
 DOMAIN-SUFFIX,analytics.aimtell.com
 DOMAIN-SUFFIX,analytics.algolia.com
+DOMAIN-SUFFIX,analytics.alvarezrosa.com
 DOMAIN-SUFFIX,analytics.amakings.com
 DOMAIN-SUFFIX,analytics.api.justeattakeaway.com
 DOMAIN-SUFFIX,analytics.apnewsregistry.com
@@ -3683,6 +3690,7 @@ DOMAIN-SUFFIX,cdn.prod.euid.eu
 DOMAIN-SUFFIX,cdn.ravm.tv
 DOMAIN-SUFFIX,cdn.seonintelligence.com
 DOMAIN-SUFFIX,cdn.usefathom.com
+DOMAIN-SUFFIX,cdn.visits.dqapis.com
 DOMAIN-SUFFIX,cdns.brsrvr.com
 DOMAIN-SUFFIX,cf-pixelfront-analytics.widencdn.net
 DOMAIN-SUFFIX,cf.api.instant.one
@@ -4150,6 +4158,7 @@ DOMAIN-SUFFIX,native-ads-events-api.c4s-rd.services
 DOMAIN-SUFFIX,native-ads-events-api2.c4s-rd.services
 DOMAIN-SUFFIX,neocounter.neoworx-blog-tools.net
 DOMAIN-SUFFIX,netlify-rum.netlify.app
+DOMAIN-SUFFIX,nexus.firecrown.com
 DOMAIN-SUFFIX,ninja.onap.io
 DOMAIN-SUFFIX,nitrous-analytics.s3.amazonaws.com
 DOMAIN-SUFFIX,noa.yahoo.com
@@ -4345,6 +4354,7 @@ DOMAIN-SUFFIX,rum.perfops.net
 DOMAIN-SUFFIX,rum.uptime.com
 DOMAIN-SUFFIX,rumstat.cdnvideo.ru
 DOMAIN-SUFFIX,rw.marchex.io
+DOMAIN-SUFFIX,rybbit-analytics.livecounts.io
 DOMAIN-SUFFIX,rybbit.sg-app.com
 DOMAIN-SUFFIX,s.autopilotapp.com
 DOMAIN-SUFFIX,s.axon.ai
@@ -4541,6 +4551,7 @@ DOMAIN-SUFFIX,tag.aticdn.net
 DOMAIN-SUFFIX,tag.atom.gamedistribution.com
 DOMAIN-SUFFIX,tag.aumago.com
 DOMAIN-SUFFIX,tag.brandcdn.com
+DOMAIN-SUFFIX,tag.decentriq.com
 DOMAIN-SUFFIX,tag.digops.sincro.io
 DOMAIN-SUFFIX,tag.elevaate.io
 DOMAIN-SUFFIX,tag.flagship.io
@@ -5817,6 +5828,7 @@ DOMAIN-SUFFIX,c.wort-suche.com
 DOMAIN-SUFFIX,c.xbox.com
 DOMAIN-SUFFIX,cactus.joybuy.com
 DOMAIN-SUFFIX,cdapi.collegedunia.com
+DOMAIN-SUFFIX,cdid.trip.com
 DOMAIN-SUFFIX,cdn.eaec.fpfis.tech.ec.europa.eu
 DOMAIN-SUFFIX,cdp.howtotrade.com
 DOMAIN-SUFFIX,chloro.trip.com
@@ -5992,6 +6004,7 @@ DOMAIN-SUFFIX,fp.measure.office.com
 DOMAIN-SUFFIX,fp.uncensored.com
 DOMAIN-SUFFIX,fpa-cdn.adweek.com
 DOMAIN-SUFFIX,fpa-cdn.arstechnica.com
+DOMAIN-SUFFIX,fpa-events.theintercept.com
 DOMAIN-SUFFIX,fpc.fingerprint.com
 DOMAIN-SUFFIX,fpt.microsoft.com
 DOMAIN-SUFFIX,fresnel-events.vimeocdn.com
@@ -6167,6 +6180,7 @@ DOMAIN-SUFFIX,ol-collector.quillbot.com
 DOMAIN-SUFFIX,op.dragonfru.it
 DOMAIN-SUFFIX,ophan.theguardian.com
 DOMAIN-SUFFIX,optimizely.techtarget.com
+DOMAIN-SUFFIX,otel-gw.booking.com
 DOMAIN-SUFFIX,otel-mobile.doordash.com
 DOMAIN-SUFFIX,p.codio.com
 DOMAIN-SUFFIX,p.controld.com
@@ -6263,6 +6277,7 @@ DOMAIN-SUFFIX,reports.tunein.com
 DOMAIN-SUFFIX,researchlog.dbresearch.com
 DOMAIN-SUFFIX,rfk.biglots.com
 DOMAIN-SUFFIX,ring.staticmoly.me
+DOMAIN-SUFFIX,riskpoc.trip.com
 DOMAIN-SUFFIX,roas-service.store-services-prod.remarkable.com
 DOMAIN-SUFFIX,rps-p2.rockpapershotgun.com
 DOMAIN-SUFFIX,rps-uk.rockpapershotgun.com
@@ -6294,6 +6309,7 @@ DOMAIN-SUFFIX,service.techzine.eu
 DOMAIN-SUFFIX,sherlock-events-sampler.ebay.com
 DOMAIN-SUFFIX,shopmetric.rediff.com
 DOMAIN-SUFFIX,sid.nordstrom.com
+DOMAIN-SUFFIX,sink.gw.booking.com
 DOMAIN-SUFFIX,sjc.cloud.optable.co
 DOMAIN-SUFFIX,slipstream.skyscanner.net
 DOMAIN-SUFFIX,smetrics.couponcabin.com
